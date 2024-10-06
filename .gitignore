@@ -1,0 +1,16 @@
+# ignore all files starting with . or ~
+.*
+~*
+!/.gitignore
+!/.gitattributes
+
+# ignore theme config
+config.yml
+
+# ignore node dependency directories (used by gulp)
+node_modules/
+dev\node_modules\*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db

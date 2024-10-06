@@ -1,0 +1,32 @@
+<section class="quote-form">
+  <div class="quote-form-container">
+    <h1>Request a Quote</h1>
+    <form action="/contact" method="post" accept-charset="UTF-8">
+      <!-- Hidden fields required by Shopify -->
+      <input type="hidden" name="form_type" value="contact">
+      <input type="hidden" name="utf8" value="✓">
+
+      <!-- Name input -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <!-- Email input -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <!-- Message/Description input -->
+      <label for="message">Describe your request:</label>
+      <textarea id="message" name="body" placeholder="Describe your request" required></textarea>
+
+      <!-- Submit button -->
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
