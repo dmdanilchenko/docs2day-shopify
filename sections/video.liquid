@@ -10,7 +10,7 @@
           {%- if section.settings.image -%}
             {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', sizes: 'min(100vw, 860px)', widths: '300,400,500,600,700,800,900,1000,1200', class: 'video-wrapper__image' -}}
           {%- elsif bsectionlock.settings.video_url.type == 'youtube' -%}
-            <img loading="lazy" class="video-wrapper__image" src="https://img.youtube.com/vi/{{ section.settings.video_url.id }}/maxresdefault.jpg" alt="">
+            <img class="video-wrapper__image" src="https://img.youtube.com/vi/{{ section.settings.video_url.id }}/maxresdefault.jpg" alt="">
           {%- else -%}
             <div class="placeholder-background">
               {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -51,7 +51,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image",
-      "info": "1200 x 700px .jpg recommended. Used when video is not loaded (required for Vimeo)."
+      "info": "1200 x 700px .jpg recommended. Used when video is not loaded (required for Vimeo and YouTube)."
     }
   ],
   "presets": [

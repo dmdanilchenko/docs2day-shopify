@@ -40,7 +40,7 @@
 }
 {%- endcapture -%}
 
-<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings='{{ section_settings }}'>
+<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container container--flush">
     <div class="page__sub-header">
       <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb">
@@ -199,7 +199,43 @@
                         <div id="{{ filter.param_name | handle | escape }}" class="collection__filter-collapsible" {% if is_filter_expanded %}aria-hidden="false" style="height: auto; overflow: visible"{% else %}aria-hidden="true"{% endif %}>
                           {%- case filter.type -%}
                             {%- when 'list' -%}
-                              {%- if show_color_swatch -%}
+                              {%- if filter.presentation == 'image' -%}
+                                <div class="collection__filter-visual-filter-list">
+                                  <div class="visual-filter-list">
+                                    {%- for filter_value in filter.values -%}
+                                      {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                      <div class="visual-filter">
+                                        <input class="visual-filter__radio" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                        <label for="{{ filter_value.param_name }}-{{ filter_value.value }}" class="visual-filter__item {% if filter_value.active %}is-selected{% endif %}">
+                                          {%- if filter_value.image != blank -%}
+                                            {{- filter_value.image | image_url: width: filter_value.image.width | image_tag: loading: 'lazy', widths: '32,64,96' -}}
+                                          {%- endif -%}
+
+                                          <span>{{- filter_value.label -}}</span>
+                                        </label>
+                                      </div>
+                                    {%- endfor -%}
+                                  </div>
+                                </div>
+                              {%- elsif filter.presentation == 'swatch' -%}
+                                <div class="collection__filter-color-list">
+                                  <div class="color-swatch-list color-swatch-list--large">
+                                    {%- for filter_value in filter.values -%}
+                                      {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                      <div class="color-swatch {% if downcased_label == 'white' or downcased_label == 'blanc' %}color-swatch--white{% endif %}" data-tooltip="{{ filter_value.label | escape }}">
+                                        <input class="color-swatch__radio" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                        <label for="{{ filter_value.param_name }}-{{ filter_value.value }}" class="color-swatch__item {% if filter_value.active %}is-selected{% endif %}" aria-label="{{ filter_value.label | escape }}">
+                                          <span class="color-swatch__item" style="{% render 'color-swatch-style', swatch: filter_value.swatch %}"></span>
+                                        </label>
+                                      </div>
+                                    {%- endfor -%}
+                                  </div>
+                                </div>
+                              {%- elsif show_color_swatch -%}
                                 <div class="collection__filter-color-list">
                                   <div class="color-swatch-list color-swatch-list--large">
                                     {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
@@ -672,13 +708,48 @@
                   <div id="mobile-{{ filter.param_name | handle | escape }}" class="collection__filter-collapsible" aria-hidden="true">
                     {%- case filter.type -%}
                       {%- when 'list' -%}
-                        {%- if show_color_swatch -%}
+                        {%- if filter.presentation == 'image' -%}
+                          <div class="collection__filter-visual-filter-list">
+                            <div class="visual-filter-list">
+                              {%- for filter_value in filter.values -%}
+                                {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                <div class="visual-filter">
+                                  <input class="visual-filter__radio" type="checkbox" name="{{ filter_value.param_name }}" id="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                  <label for="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" class="visual-filter__item {% if filter_value.active %}is-selected{% endif %}">
+                                    {%- if filter_value.image != blank -%}
+                                      {{- filter_value.image | image_url: width: filter_value.image.width | image_tag: loading: 'lazy', widths: '32,64,96' -}}
+                                    {%- endif -%}
+
+                                    <span>{{- filter_value.label -}}</span>
+                                  </label>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          </div>
+                        {%- elsif filter.presentation == 'swatch' -%}
+                          <div class="collection__filter-color-list">
+                            <div class="color-swatch-list color-swatch-list--large">
+                              {%- for filter_value in filter.values -%}
+                                {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                <div class="color-swatch {% if downcased_label == 'white' or downcased_label == 'blanc' %}color-swatch--white{% endif %}" data-tooltip="{{ filter_value.label | escape }}">
+                                  <input class="color-swatch__radio" type="checkbox" name="{{ filter_value.param_name }}" id="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                  <label for="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" class="color-swatch__item {% if filter_value.active %}is-selected{% endif %}" aria-label="{{ filter_value.label | escape }}">
+                                    <span class="color-swatch__item" style="{% render 'color-swatch-style', swatch: filter_value.swatch %}"></span>
+                                  </label>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          </div>
+                        {%- elsif show_color_swatch -%}
                           <div class="collection__filter-color-list">
                             <div class="color-swatch-list color-swatch-list--stack">
                               {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
 
                               {%- for filter_value in filter.values -%}
-                                {%- capture color_id -%}filter-color-{% increment color_index %}{%- endcapture -%}
                                 {%- assign downcased_value = filter_value.label | downcase -%}
 
                                 <div class="color-swatch {% if downcased_value == 'white' or downcased_value == 'blanc' %}color-swatch--white{% endif %}">

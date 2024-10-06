@@ -20,7 +20,7 @@
           <p class="store-availability-information__stock">{{ closest_location.pick_up_time }}</p>
 
           <p class="store-availability-information__stores">
-            <button class="store-availability-information__link link link--accented" data-action="open-modal" aria-controls="StoreAvailabilityModal-{{ product_variant.id }}">
+            <button type="button" class="store-availability-information__link link link--accented" data-action="open-modal" aria-controls="StoreAvailabilityModal-{{ product_variant.id }}">
               {%- if pick_up_availabilities.size == 1 -%}
                 {{- 'store_availability.general.view_store_info' | t -}}
               {%- else -%}
@@ -34,7 +34,7 @@
           </p>
           {%- if pick_up_availabilities.size > 1 -%}
             <p class="store-availability-information__stores">
-              <button class="store-availability-information__link" data-action="open-modal" aria-controls="StoreAvailabilityModal-{{ product_variant.id }}">
+              <button type="button" class="store-availability-information__link" data-action="open-modal" aria-controls="StoreAvailabilityModal-{{ product_variant.id }}">
                 {{- 'store_availability.general.check_other_stores' | t -}}
               </button>
             </p>
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <div class="store-availabilities-modal modal" aria-hidden="true" tabindex="-1" id="StoreAvailabilityModal-{{ product_variant.id }}">
+    <dialog class="store-availabilities-modal modal" tabindex="-1" id="StoreAvailabilityModal-{{ product_variant.id }}">
       <div class="modal__dialog" role="dialog">
         <div class="store-availabilities-modal__header modal__header modal__header--bordered">
           <div class="store-availabilities-modal__product-information">
@@ -54,7 +54,7 @@
             {%- endif -%}
           </div>
 
-          <button class="store-availabilities-modal__close modal__close link" data-action="close-modal" title="{{ 'general.accessibility.close' | t | escape }}">
+          <button type="button" class="store-availabilities-modal__close modal__close link" data-action="close-modal" title="{{ 'general.accessibility.close' | t | escape }}">
             {%- render 'icon', icon: 'close' -%}
           </button>
         </div>
@@ -86,6 +86,6 @@
           {%- endfor -%}
         </div>
       </div>
-    </div>
+    </dialog>
   {%- endif -%}
 </div>

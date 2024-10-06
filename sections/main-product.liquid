@@ -5,72 +5,69 @@
 {%- capture section_settings -%}
 {
   "showShippingEstimator": {% if template == 'product.quick-view' or product.available == false or shipping_estimator_block == blank %}false{% else %}true{% endif %},
-  "showQuantitySelector": {{ variant_selector_block.settings.show_quantity_selector | json }},
-  "showPaymentButton": {% if product.template_suffix == 'pre-order' %}false{% else %}{{ buy_buttons_block.settings.show_payment_button | json }}{% endif %},
-  "showInventoryQuantity": {% if product.template_suffix != 'pre-order' %}{{ variant_selector_block.settings.show_inventory_quantity | json }}{% else %}false{% endif %},
-  "lowInventoryThreshold": {{ variant_selector_block.settings.low_inventory_threshold | json }},
   "galleryTransitionEffect": {{ section.settings.carousel_effect | json }},
   "enableImageZoom": {% if template == 'product.quick-view' %}false{% else %}{{ section.settings.enable_image_zoom | json }}{% endif %},
   "zoomEffect": {{ section.settings.zoom_effect | json }},
   "enableVideoLooping": {{ section.settings.enable_video_looping | json }},
   "productOptions": {{ product.options | json | escape }},
-  "enableHistoryState": {% if template == 'product.quick-view' %}false{% else %}true{% endif %},
   "infoOverflowScroll": {% if template == 'product.quick-view' %}false{% else %}true{% endif %},
-  "isQuickView": {% if template == 'product.quick-view' %}true{% else %}false{% endif %}
+  "isQuickView": false
 }
 {%- endcapture -%}
 
-<section data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
-  {%- if template != 'product.quick-view' -%}
-    <div class="container container--flush">
-      <div class="page__sub-header">
-        <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb">
-          <ol class="breadcrumb__list" role="list">
-            <li class="breadcrumb__item">
-              <a class="breadcrumb__link link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a> {%- render 'icon', icon: 'arrow-right' -%}
-            </li>
+<section data-section-id="{{ section.id }}" data-section-type="product" data-section-settings="{{ section_settings | escape_once }}">
+  <div class="container container--flush">
+    <div class="page__sub-header">
+      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb">
+        <ol class="breadcrumb__list" role="list">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a> {%- render 'icon', icon: 'arrow-right' -%}
+          </li>
 
-            <li class="breadcrumb__item">
-              {%- if collection -%}
-                <a class="breadcrumb__link link" href="{{ collection.url }}">{{ collection.title }}</a> {%- render 'icon', icon: 'arrow-right' -%}
-              {%- else -%}
-                <a class="breadcrumb__link link" href="{{ routes.all_products_collection_url }}">{{- 'collection.general.all_products' | t -}}</a> {%- render 'icon', icon: 'arrow-right' -%}
-              {%- endif -%}
-            </li>
-
-            <li class="breadcrumb__item">
-              <span class="breadcrumb__link" aria-current="page">{{ product.title | truncate: 40 }}</span>
-            </li>
-          </ol>
-        </nav>
-
-        {%- if collection.previous_product or collection.next_product -%}
-          <div class="page__navigation">
-            {%- if collection.previous_product -%}
-              <span class="page__navigation-item page__navigation-item--prev">
-                <a href="{{ collection.previous_product.url }}" class="link" rel="prev">{%- render 'icon', icon: 'arrow-left' -%} {{- 'product.general.previous_product' | t -}}</a>
-              </span>
+          <li class="breadcrumb__item">
+            {%- if collection -%}
+              <a class="breadcrumb__link link" href="{{ collection.url }}">{{ collection.title }}</a> {%- render 'icon', icon: 'arrow-right' -%}
+            {%- else -%}
+              <a class="breadcrumb__link link" href="{{ routes.all_products_collection_url }}">{{- 'collection.general.all_products' | t -}}</a> {%- render 'icon', icon: 'arrow-right' -%}
             {%- endif -%}
+          </li>
 
-            {%- if collection.next_product -%}
-              <span class="page__navigation-item page__navigation-item--next">
-                <a href="{{ collection.next_product.url }}" class="link" rel="next">{{- 'product.general.next_product' | t -}} {%- render 'icon', icon: 'arrow-right' -%}</a>
-              </span>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      </div>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__link" aria-current="page">{{ product.title | truncate: 40 }}</span>
+          </li>
+        </ol>
+      </nav>
 
+      {%- if collection.previous_product or collection.next_product -%}
+        <div class="page__navigation">
+          {%- if collection.previous_product -%}
+            <span class="page__navigation-item page__navigation-item--prev">
+              <a href="{{ collection.previous_product.url }}" class="link" rel="prev">{%- render 'icon', icon: 'arrow-left' -%} {{- 'product.general.previous_product' | t -}}</a>
+            </span>
+          {%- endif -%}
+
+          {%- if collection.next_product -%}
+            <span class="page__navigation-item page__navigation-item--next">
+              <a href="{{ collection.next_product.url }}" class="link" rel="next">{{- 'product.general.next_product' | t -}} {%- render 'icon', icon: 'arrow-right' -%}</a>
+            </span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- capture product_form_id -%}product-form-main-{{ product.id }}-{{ section.id }}{%- endcapture -%}
+
+    <product-rerender id="product-info-{{ product.id }}-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
       <div class="product-block-list product-block-list--{{ section.settings.image_size }}">
         <div class="product-block-list__wrapper">
           {%- if product.media.size > 0 -%}
             <div class="product-block-list__item product-block-list__item--gallery">
-              {% render 'product-gallery' %}
+              {% render 'product-gallery', product_form_id: product_form_id %}
             </div>
           {%- endif -%}
 
           <div class="product-block-list__item product-block-list__item--info">
-            {%- render 'product-info' -%}
+            {%- render 'product-info', product: product, product_form_id: product_form_id, update_url: true -%}
           </div>
 
           {%- for block in section.blocks -%}
@@ -178,15 +175,15 @@
             {%- when 'liquid' -%}
               {%- comment -%}
               --------------------------------------------------------------------------------------
-              LIQUID COE
+              LIQUID CODE
               --------------------------------------------------------------------------------------
               {%- endcomment -%}
 
               {%- assign title = block.settings.title -%}
               {%- assign liquid = block.settings.liquid -%}
 
-              {%- if title != blank and liquid != blank -%}
-                <div class="product-block-list__item product-block-list__item--content" {{ block.shopify_attributes }}>
+              <div class="product-block-list__item product-block-list__item--content" data-block-type="{{ block.type }}" data-block-id="{{ block.id }}" {{ block.shopify_attributes }}>
+                {%- if title != blank and liquid != blank -%}
                   <div class="card">
                     {%- if block.settings.display_mode == 'collapse' -%}
                       <button class="card__collapsible-button" data-action="toggle-collapsible" aria-expanded="false" aria-controls="block-{{ section.id }}-{{ block.id }}">
@@ -220,8 +217,8 @@
                       </div>
                     {%- endif -%}
                   </div>
-                </div>
-              {%- endif -%}
+                {%- endif -%}
+              </div>
 
               {%- comment -%}
               --------------------------------------------------------------------------------------
@@ -246,23 +243,6 @@
                     </div>
                   {%- endif -%}
                 </product-recommendations>
-
-              {%- comment -%}
-              --------------------------------------------------------------------------------------
-              REVIEWS
-              --------------------------------------------------------------------------------------
-              {%- endcomment -%}
-              {%- when 'reviews' -%}
-                <div class="product-block-list__item product-block-list__item--reviews" {{ block.shopify_attributes }}>
-                  <span id="product-reviews" class="anchor"></span>
-
-                  <div class="card">
-                    <div class="card__section">
-                      {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
-                      <div id="shopify-product-reviews" class="spr-reviews {% if reviews_count > 0 %}spr-reviews--has-reviews{% endif %}" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
-                    </div>
-                  </div>
-                </div>
 
               {%- comment -%}
               --------------------------------------------------------------------------------------
@@ -312,10 +292,12 @@
 
                           {%- assign badge_width = block.settings.custom_security_badge.width | at_most: 450 | append: 'x' -%}
                           <img class="product__trust-badge" style="width: {{ block.settings.custom_security_badge_width }}px"
-                               loading="lazy"
-                               src="{{ block.settings.custom_security_badge | img_url: badge_width }}"
-                               srcset="{{ block.settings.custom_security_badge | img_url: badge_width }} 1x, {{ block.settings.custom_security_badge | img_url: badge_width, scale: 2 }} 2x"
-                               alt="{{ block.settings.custom_security_badge.alt | escape }}">
+                              loading="lazy"
+                              width="{{ block.settings.custom_security_badge.width }}"
+                              height="{{ block.settings.custom_security_badge.height }}"
+                              src="{{ block.settings.custom_security_badge | img_url: badge_width }}"
+                              srcset="{{ block.settings.custom_security_badge | img_url: badge_width }} 1x, {{ block.settings.custom_security_badge | img_url: badge_width, scale: 2 }} 2x"
+                              alt="{{ block.settings.custom_security_badge.alt | escape }}">
                         {%- endif -%}
                       </div>
                     </div>
@@ -404,15 +386,40 @@
           {%- endfor -%}
         </div>
       </div>
-    </div>
-  {%- else -%}
-    {%- comment -%}We display the quick view within the product template so we can re-use the same settings{%- endcomment -%}
-    <div class="featured-product">
-      {%- render 'product-gallery' -%}
-      {%- render 'product-info' -%}
-    </div>
-  {%- endif -%}
+    </product-rerender>
+  </div>
 </section>
+
+{%- comment -%}We display the quick view within the product template so we can re-use the same settings{%- endcomment -%}
+{%- capture product_form_id -%}product-form-quick-buy-{{ product.id }}-{{ section.id }}{%- endcapture -%}
+
+{%- capture quick_buy_section_settings -%}
+{
+  "showShippingEstimator": false,
+  "galleryTransitionEffect": {{ section.settings.carousel_effect | json }},
+  "enableImageZoom": {% if template == 'product.quick-view' %}false{% else %}{{ section.settings.enable_image_zoom | json }}{% endif %},
+  "zoomEffect": {{ section.settings.zoom_effect | json }},
+  "enableVideoLooping": {{ section.settings.enable_video_looping | json }},
+  "infoOverflowScroll": false,
+  "productOptions": {{ product.options | json | escape }},
+  "isQuickView": true
+}
+{%- endcapture -%}
+
+{% comment %}
+The quick buy content is rendered as a template to ensure it does not appear on actual product pages. It is extracted by quick view scripts
+and injected only on quick buy modal
+{% endcomment %}
+<template>
+  <section data-section-id="{{ section.id }}" data-section-type="product-quick-view" data-section-settings="{{ quick_buy_section_settings | escape_once }}">
+    <product-rerender id="quick-buy-modal-content" observe-form="{{ product_form_id }}" allow-partial-rerender>
+      <div class="featured-product">
+        {%- render 'product-gallery' -%}
+        {%- render 'product-info', product: product, product_form_id: product_form_id -%}
+      </div>
+    </product-rerender>
+  </section>
+</template>
 
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
@@ -499,26 +506,23 @@
           "type": "select",
           "id": "color_mode",
           "label": "Color selector type",
-          "info": "Variant image mode requires that all variant has an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-variant-images#add-images-to-existing-variants)",
+          "info": "Enable [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) on product options.",
           "options": [
             {
-              "value": "block",
-              "label": "Block"
+              "value": "swatch",
+              "label": "Swatch"
             },
             {
-              "value": "dropdown",
-              "label": "Dropdown"
-            },
-            {
-              "value": "color",
-              "label": "Color swatch"
-            },
-            {
-              "value": "variant_image",
-              "label": "Variant image"
+              "value": "none",
+              "label": "None"
             }
           ],
-          "default": "color"
+          "default": "swatch"
+        },
+        {
+          "type": "text",
+          "id": "variant_image_options",
+          "label": "Show variant image for options"
         },
         {
           "type": "checkbox",
@@ -537,10 +541,6 @@
           "content": "Inventory"
         },
         {
-          "type": "paragraph",
-          "content": "You can also add a stock countdown. [Learn more](https://support.maestrooo.com/article/177-product-show-an-stock-countdown-bar)."
-        },
-        {
           "type": "checkbox",
           "id": "show_inventory_quantity",
           "label": "Show inventory quantity",
@@ -555,6 +555,24 @@
           "max": 100,
           "step": 1,
           "default": 0
+        },
+        {
+          "type": "number",
+          "id": "progress_bar_max_value",
+          "label": "Progress bar max value",
+          "info": "Advancement is calculated according to this value.",
+          "default": 50
+        }
+      ]
+    },
+    {
+      "type": "volume_pricing",
+      "name": "Volume pricing table",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Volume pricing is only available to Shopify Plus merchants. [Learn more](https://help.shopify.com/en/manual/b2b/catalogs/quantity-pricing#volume-pricing)"
         }
       ]
     },
@@ -568,6 +586,13 @@
           "id": "show_payment_button",
           "label": "Show dynamic checkout button",
           "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "label": "Show recipient information form for gift card products",
+          "info": "Gift card products can optionally be sent directly to a recipient along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)",
           "default": true
         }
       ]
@@ -752,17 +777,6 @@
           "id": "show_quick_buy",
           "label": "Show quick buy",
           "default": true
-        }
-      ]
-    },
-    {
-      "type": "reviews",
-      "name": "Reviews",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "You need to install [Shopify's free Product Reviews](https://apps.shopify.com/product-reviews) app before enabling those options."
         }
       ]
     },

@@ -51,7 +51,7 @@
 }
 {%- endcapture -%}
 
-<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings='{{ section_settings }}'>
+<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container {% if search.performed and search.results_count > 0 %}container--flush{% endif %}">
     {%- if search.performed and search.results_count > 0 -%}
       <div class="page__sub-header">
@@ -77,8 +77,6 @@
 
           <form class="empty-state__quick-form" action="{{ routes.search_url }}" method="get">
             <input type="hidden" name="type" value="product">
-            <input type="hidden" name="options[prefix]" value="last">
-            <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
 
             <div class="form__connected-item">
               <div class="form__input-wrapper form__input-wrapper--labelled">
@@ -136,8 +134,6 @@
                         <input type="hidden" name="sort_by" value="{{ sort_by }}">
                         <input type="hidden" name="q" value="{{ search.terms | escape }}">
                         <input type="hidden" name="type" value="product">
-                        <input type="hidden" name="options[prefix]" value="last">
-                        <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
 
                         <p class="card__title--small heading">{{ 'collection.filter.all' | t }}</p>
 
@@ -168,7 +164,7 @@
                           {%- endfor -%}
 
                           {%- if active_filter_values > 0 -%}
-                            <button type="button" class="collection__clear-filter button button--small button--transparent button--full" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}&q={{ search.terms | escape }}&type=product&options[prefix]=last&options[unavailable_products]={{ settings.search_unavailable_products }}">{{ 'collection.filter.clear_all' | t }}</button>
+                            <button type="button" class="collection__clear-filter button button--small button--transparent button--full" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}&q={{ search.terms | escape }}&type=product">{{ 'collection.filter.clear_all' | t }}</button>
                           {%- endif -%}
                         </div>
 
@@ -204,7 +200,43 @@
                                 <div id="{{ filter.param_name | handle | escape }}" class="collection__filter-collapsible" {% if is_filter_expanded %}aria-hidden="false" style="height: auto; overflow: visible"{% else %}aria-hidden="true"{% endif %}>
                                   {%- case filter.type -%}
                                     {%- when 'list' -%}
-                                      {%- if show_color_swatch -%}
+                                      {%- if filter.presentation == 'image' -%}
+                                        <div class="collection__filter-visual-filter-list">
+                                          <div class="visual-filter-list">
+                                            {%- for filter_value in filter.values -%}
+                                              {%- assign downcased_label = filter_value.label | downcase -%}
+        
+                                              <div class="visual-filter">
+                                                <input class="visual-filter__radio" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+        
+                                                <label for="{{ filter_value.param_name }}-{{ filter_value.value }}" class="visual-filter__item {% if filter_value.active %}is-selected{% endif %}">
+                                                  {%- if filter_value.image != blank -%}
+                                                    {{- filter_value.image | image_url: width: filter_value.image.width | image_tag: loading: 'lazy', widths: '32,64,96' -}}
+                                                  {%- endif -%}
+        
+                                                  <span>{{- filter_value.label -}}</span>
+                                                </label>
+                                              </div>
+                                            {%- endfor -%}
+                                          </div>
+                                        </div>
+                                      {%- elsif filter.presentation == 'swatch' -%}
+                                        <div class="collection__filter-color-list">
+                                          <div class="color-swatch-list color-swatch-list--large">
+                                            {%- for filter_value in filter.values -%}
+                                              {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                              <div class="color-swatch {% if downcased_label == 'white' or downcased_label == 'blanc' %}color-swatch--white{% endif %}" data-tooltip="{{ filter_value.label | escape }}">
+                                                <input class="color-swatch__radio" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                                <label for="{{ filter_value.param_name }}-{{ filter_value.value }}" class="color-swatch__item {% if filter_value.active %}is-selected{% endif %}" aria-label="{{ filter_value.label | escape }}">
+                                                  <span class="color-swatch__item" style="{% render 'color-swatch-style', swatch: filter_value.swatch %}"></span>
+                                                </label>
+                                              </div>
+                                            {%- endfor -%}
+                                          </div>
+                                        </div>
+                                      {%- elsif show_color_swatch -%}
                                         <div class="collection__filter-color-list">
                                           <div class="color-swatch-list color-swatch-list--large">
                                             {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
@@ -428,7 +460,7 @@
                               {%- endfor -%}
 
                               {%- if active_filters_count > 1 -%}
-                                <button class="collection__mobile-active-clear" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}q={{ search.terms | escape }}&type=product&options[prefix]=last&options[unavailable_products]={{ settings.search_unavailable_products }}">{{ 'collection.filter.clear_all' | t }}</button>
+                                <button class="collection__mobile-active-clear" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}q={{ search.terms | escape }}&type=product">{{ 'collection.filter.clear_all' | t }}</button>
                               {%- endif -%}
                             </div>
 
@@ -449,7 +481,9 @@
                         {%- endif -%}
 
                         <div class="product-list product-list--collection">
-                          {%- for product in search.results -%}
+                          {%- assign product_results = search.results | where: 'object_type', 'product' -%}
+
+                          {%- for product in product_results -%}
                             {%- render 'product-item', product: product, list: show_as_list, grid_classes: grid_classes -%}
                           {%- endfor -%}
                         </div>
@@ -476,15 +510,7 @@
                   </div>
                 {%- endif -%}
 
-                {%- comment -%}
-                If the merchant has enabled the pages and articles, we allocate a space and an additional Ajax requests
-                will be done to fetch the results. Note that as we don't know if there are page and/or blog results,
-                we hide the div by default
-                {%- endcomment -%}
-
-                {%- if settings.search_mode != 'product' -%}
-                  <div class="link-search-results" style="display: none"></div>
-                {%- endif -%}
+                <div class="link-search-results" style="display: none"></div>
               </div>
             </div>
           </div>
@@ -526,15 +552,13 @@
               <span class="collection-drawer__title heading h3">{{ 'collection.filter.all' | t }} <span class="collection-drawer__filter-count" {% if active_filters_count == 0 %}style="display: none"{% endif %}>({{ active_filters_count }})</span></span>
             </div>
 
-            <button class="button button--transparent button--extra-small" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}&q={{ search.terms | escape }}&type=product&options[prefix]=last&options[unavailable_products]={{ settings.search_unavailable_products }}" {% if active_filters_count == 0 %}style="display: none"{% endif %}>{{ 'collection.filter.clear' | t }}</button>
+            <button class="button button--transparent button--extra-small" data-action="clear-filters" data-url="{{ routes.search_url }}?sort_by={{ sort_by }}&q={{ search.terms | escape }}&type=product" {% if active_filters_count == 0 %}style="display: none"{% endif %}>{{ 'collection.filter.clear' | t }}</button>
           </header>
 
           <form id="mobile-collection-filters-form" class="collection-drawer__inner">
             <input type="hidden" name="sort_by" value="{{ sort_by }}">
             <input type="hidden" name="q" value="{{ search.terms | escape }}">
             <input type="hidden" name="type" value="product">
-            <input type="hidden" name="options[prefix]" value="last">
-            <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
 
             {%- if quick_links_menu.links.size > 0 -%}
               {%- capture link_id -%}filter-{% increment link_id %}{%- endcapture -%}
@@ -632,7 +656,44 @@
                   <div id="mobile-{{ filter.param_name | handle | escape }}" class="collection__filter-collapsible" aria-hidden="true">
                     {%- case filter.type -%}
                       {%- when 'list' -%}
-                        {%- if show_color_swatch -%}
+                        {%- if filter.presentation == 'image' -%}
+                          <div class="collection__filter-visual-filter-list">
+                            <div class="visual-filter-list">
+                              {%- for filter_value in filter.values -%}
+                                {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                <div class="visual-filter">
+                                  <input class="visual-filter__radio" type="checkbox" name="{{ filter_value.param_name }}" id="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                  <label for="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" class="visual-filter__item {% if filter_value.active %}is-selected{% endif %}">
+                                    {%- if filter_value.image != blank -%}
+                                      {{- filter_value.image | image_url: width: filter_value.image.width | image_tag: loading: 'lazy', widths: '32,64,96' -}}
+                                    {%- endif -%}
+
+                                    <span>{{- filter_value.label -}}</span>
+                                  </label>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          </div>
+                        {%- elsif filter.presentation == 'swatch' -%}
+                          <div class="collection__filter-color-list">
+                            <div class="color-swatch-list color-swatch-list--large">
+                              {%- for filter_value in filter.values -%}
+                                {%- capture color_id -%}filter-color-{% increment color_index %}{%- endcapture -%}
+                                {%- assign downcased_label = filter_value.label | downcase -%}
+
+                                <div class="color-swatch {% if downcased_label == 'white' or downcased_label == 'blanc' %}color-swatch--white{% endif %}" data-tooltip="{{ filter_value.label | escape }}">
+                                  <input class="color-swatch__radio" type="checkbox" name="{{ filter_value.param_name }}" id="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" value="{{ filter_value.value }}" {% if filter_value.active %}checked{% endif %}>
+
+                                  <label for="mobile-{{ filter_value.param_name }}-{{ filter_value.value }}" class="color-swatch__item {% if filter_value.active %}is-selected{% endif %}" aria-label="{{ filter_value.label | escape }}">
+                                    <span class="color-swatch__item" style="{% render 'color-swatch-style', swatch: filter_value.swatch %}"></span>
+                                  </label>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          </div>
+                        {%- elsif show_color_swatch -%}
                           <div class="collection__filter-color-list">
                             <div class="color-swatch-list color-swatch-list--stack">
                               {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}

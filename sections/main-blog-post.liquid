@@ -49,7 +49,7 @@
               </li>
 
               <li class="social-media__item social-media__item--twitter">
-                <a href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">{%- render 'icon', icon: 'twitter' -%}</a>
+                <a href="https://twitter.com/intent/tweet?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">{%- render 'icon', icon: 'twitter' -%}</a>
               </li>
 
               <li class="social-media__item">
@@ -136,7 +136,7 @@
                   {%- for comment in article.comments -%}
                     <div class="article-comment">
                       {%- if section.settings.show_gravatar -%}
-                        <img loading="lazy" class="article-comment__gravatar" src="//www.gravatar.com/avatar/{{ comment.email | md5 }}?s=100" alt="{{ comment.author }}">
+                        <img class="article-comment__gravatar" src="//www.gravatar.com/avatar/{{ comment.email | md5 }}?s=100" alt="{{ comment.author }}">
                       {%- endif -%}
 
                       <div class="article-comment__inner">

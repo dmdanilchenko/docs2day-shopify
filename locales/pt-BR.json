@@ -46,14 +46,17 @@
       "success": "Você se inscreveu na nossa newsletter!",
       "email_placeholder": "Seu e-mail",
       "subscribe": "Inscrever-me"
+    },
+    "form": {
+      "max_characters": "Máximo de {{ max_chars }} caracteres"
     }
   },
   "header": {
     "general": {
-      "country": "País/Região",
+      "country": "País\/Região",
       "language": "Idioma",
       "account": "Minha conta",
-      "login": "Entrar / Criar conta",
+      "login": "Entrar \/ Criar conta",
       "welcome": "Olá {{first_name}}",
       "cart": "Carrinho"
     },
@@ -77,12 +80,14 @@
       "products": "Produtos",
       "blog_posts": "Postagens",
       "pages": "Páginas",
-      "blog_posts_and_pages": "Páginas & postagens"
+      "blog_posts_and_pages": "Páginas & postagens",
+      "suggestions": "Sugestões",
+      "collections": "Coleções"
     }
   },
   "footer": {
     "general": {
-      "country": "País/Região",
+      "country": "País\/Região",
       "language": "Idioma",
       "follow_us": "Siga-nos",
       "we_accept": "Nós aceitamos"
@@ -92,7 +97,6 @@
       "input": "Seu e-mail",
       "submit": "Enviar"
     },
-
     "cookie_bar": {
       "accept": "Aceitar",
       "decline": "Recusar"
@@ -399,6 +403,11 @@
         "other": "{{ count }} avaliações"
       }
     },
+    "volume_pricing": {
+      "title": "Preços por volume",
+      "minimum": "Mais de {{ quantity }}",
+      "price_at_each": "{{ price }}\/cada"
+    },
     "labels": {
       "sold_out": "Esgotado"
     },
@@ -425,6 +434,11 @@
       "contact_us": "Contate-nos",
       "added": "Produtos foram adicionados ao seu carrinho",
       "added_short": "Adicionado !"
+    },
+    "quantity": {
+      "minimum_of": "Mínimo de {{ min }}",
+      "maximum_of": "Máximo de {{ max }}",
+      "increment_of": "Incremento de {{ step }}"
     }
   },
   "store_availability": {
@@ -448,6 +462,13 @@
       "shop_link": "Comece a comprar",
       "print": "Imprimir",
       "add_to_apple_wallet": "Adicionar ao Apple Wallet"
+    },
+    "recipient": {
+      "checkbox": "Quero enviar como presente",
+      "email_label": "E-mail do destinatário",
+      "name_label": "Nome do destinatário (opcional)",
+      "send_on_label": "Enviar em (opcional)",
+      "message_label": "Mensagem (opcional)"
     }
   },
   "blog": {

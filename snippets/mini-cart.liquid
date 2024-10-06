@@ -42,19 +42,21 @@
         <div class="mini-cart__line-item-list">
           {%- for line_item in cart.items -%}
             <div class="mini-cart__line-item">
-              <div class="mini-cart__image-wrapper">
-                {%- comment -%}For vertical images we force to contain them on a square ratio to avoid growing too large{%- endcomment -%}
+              {%- if line_item.image != blank -%}
+                <div class="mini-cart__image-wrapper">
+                  {%- comment -%}For vertical images we force to contain them on a square ratio to avoid growing too large{%- endcomment -%}
 
-                {%- if line_item.image.aspect_ratio < 1 -%}
-                  <div class="aspect-ratio aspect-ratio--square">
-                    {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '180px', widths: '180,360' -}}
-                  </div>
-                {%- else -%}
-                  <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: line_item.image.aspect_ratio }}%">
-                    {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '180px', widths: '180,360' -}}
-                  </div>
-                {%- endif -%}
-              </div>
+                  {%- if line_item.image.aspect_ratio < 1 -%}
+                    <div class="aspect-ratio aspect-ratio--square">
+                      {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '180px', widths: '180,360' -}}
+                    </div>
+                  {%- else -%}
+                    <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: line_item.image.aspect_ratio }}%">
+                      {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '180px', widths: '180,360' -}}
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
 
               <div class="mini-cart__item-wrapper">
                 <div class="mini-cart__product-info">
@@ -141,15 +143,29 @@
                 {%- unless line_item.product.tags contains '__gift' -%}
                   <div class="mini-cart__quantity">
                     <div class="quantity-selector">
-                      {%- assign allow_to_add_more = true -%}
+                      {% liquid
+                        assign max_quantity = ''
+                        assign variant = line_item.variant
+                  
+                        if variant.inventory_management != blank and variant.inventory_policy == 'deny'
+                          assign current_quantity_for_variant = cart | item_count_for_variant: variant.id
+                          assign max_quantity = variant.inventory_quantity | minus: current_quantity_for_variant | plus: line_item.quantity
+                        endif
+                  
+                        if variant.quantity_rule.max != nil
+                          assign max_quantity = max_quantity | default: 999999 | at_most: variant.quantity_rule.max
+                        endif
 
-                      {%- if line_item.variant.inventory_management and line_item.variant.inventory_policy == 'deny' and line_item.quantity == line_item.variant.inventory_quantity -%}
-                        {%- assign allow_to_add_more = false -%}
-                      {%- endif -%}
+                        assign increment = line_item.quantity | plus: line_item.variant.quantity_rule.increment
 
-                      <button class="quantity-selector__button" data-action="decrease-quantity" data-quantity="{{ line_item.quantity | minus: 1 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
-                      <input aria-label="{{ 'product.form.quantity' | t }}" class="quantity-selector__value" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" size="{{ line_item.quantity | append: '' | size | at_least: 2 }}">
-                      <button class="quantity-selector__button" data-action="increase-quantity" data-quantity="{{ line_item.quantity | plus: 1 }}" data-line="{{ forloop.index }}" {% if allow_to_add_more %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
+                        if line_item.variant.quantity_rule.max != nil
+                          assign increment = increment | at_most: line_item.variant.quantity_rule.max
+                        endif
+                      %}
+
+                      <button class="quantity-selector__button" data-action="decrease-quantity" data-quantity="{{ line_item.quantity | minus: line_item.variant.quantity_rule.increment | at_least: 0 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
+                      <input aria-label="{{ 'product.form.quantity' | t }}" class="quantity-selector__value" type="number" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" step="{{ line_item.variant.quantity_rule.increment }}" min="{{ line_item.variant.quantity_rule.min }}" {% if line_item.variant.quantity_rule.max != nil %}max="{{ line_item.variant.quantity_rule.max }}"{% endif %}>
+                      <button class="quantity-selector__button" data-action="increase-quantity" data-quantity="{{ increment }}" data-line="{{ forloop.index }}" {% if max_quantity == blank or line_item.quantity < max_quantity %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
                     </div>
 
                     <a href="{{ routes.cart_change_url }}?quantity=0&line={{ forloop.index }}" data-action="decrease-quantity" data-quantity="0" data-line="{{ forloop.index }}" class="mini-cart__quantity-remove link">{{ 'cart.items.remove' | t }}</a>
@@ -196,7 +212,7 @@
 
         <div class="mini-cart__button-container">
           <div class="button-group button-group--loose button-group--fit">
-            <a href="{{ routes.cart_url }}" class="button button--secondary">{{ 'cart.general.view_cart' | t }}</a>
+            <a href="{{ routes.cart_url }}" class="button button--secondary" data-no-instant>{{ 'cart.general.view_cart' | t }}</a>
             {%- if settings.cart_show_checkout_button -%}
               <button type="submit" name="checkout" class="button button--primary">{{ 'cart.general.checkout' | t }}</button>
             {%- endif -%}

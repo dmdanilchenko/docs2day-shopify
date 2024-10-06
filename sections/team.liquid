@@ -71,7 +71,7 @@
 {%- if section.settings.image -%}
   <style>
     .page__header--image,
-    .page__header--image .heading {
+    .page__header--image :is(.heading, .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6) {
       color: {{ section.settings.color }};
     }
   </style>

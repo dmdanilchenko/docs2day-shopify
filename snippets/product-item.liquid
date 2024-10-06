@@ -4,6 +4,12 @@
 <div class="product-item {% if horizontal %}product-item--horizontal{% elsif list %}product-item--list{% else %}product-item--vertical{% endif %} {% if complementary_products %}product-item--complementary{% endif %} {% if section.id == 'blog-sidebar' %}product-item--compact{% endif %} {{ grid_classes }}">
   {%- capture product_labels -%}
     {%- unless hide_labels -%}
+      {%- assign custom_badges = product.metafields.custom.badges.value -%}
+
+      {%- for badge in custom_badges -%}
+        <span class="product-label product-label--custom1">{{ badge }}</span>
+      {%- endfor -%}
+
       {%- for tag in product.tags -%}
         {%- if tag contains '__label:' -%}
           <span class="product-label product-label--custom1">{{ tag | split: '__label:' | last }}</span>
@@ -204,7 +210,7 @@
                   {%- endif -%}
 
                   <input class="color-swatch__radio" type="radio" name="{{ color_name }}" id="{{ color_id }}" value="{{ value | escape }}" {% if value_to_match == value %}checked="checked"{% endif %} data-variant-url="{{ variant_for_value.url }}" {% if variant_for_value.featured_media %}data-media-id="{{ variant_for_value.featured_media.id }}" data-image-url="{{ image_url }}" data-image-aspect-ratio="{{ variant_for_value.featured_media.preview_image.aspect_ratio }}"{% endif %} aria-label="{{ value | escape }}">
-                  <label class="color-swatch__item" for="{{ color_id }}" style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: downcased_value %}" title="{{ value | escape }}">
+                  <label class="color-swatch__item" for="{{ color_id }}" style="{% render 'color-swatch-style', swatch: value.swatch, color_swatch_config: color_swatch_config, value: downcased_value %}" title="{{ value | escape }}">
                     <span class="visually-hidden">{{ value }}</span>
                   </label>
                   <a href="{{ product.url }}" class="color-swatch__item-link">+{{ option.values.size | minus: forloop.index0 }}</a>

@@ -1,10 +1,10 @@
 {%- capture section_settings -%}
 {
-  "showShippingEstimator": {% if cart.item_count == 0 %}false{% else %}{{ section.settings.show_shipping_estimator | json }}{% endif %}
+  "showShippingEstimator": {% if cart.item_count == 0 or cart.requires_shipping == false %}false{% else %}{{ section.settings.show_shipping_estimator | json }}{% endif %}
 }
 {%- endcapture -%}
 
-<section data-section-id="{{ section.id }}" data-section-type="cart" data-section-settings='{{ section_settings }}' data-item-count="{{ cart.item_count }}">
+<section data-section-id="{{ section.id }}" data-section-type="cart" data-section-settings="{{ section_settings | escape_once }}" data-item-count="{{ cart.item_count }}">
   {%- if cart.item_count == 0 -%}
     <div class="container">
       <div class="empty-state">
@@ -177,15 +177,29 @@
 
                                 {%- unless line_item.product.tags contains '__gift' -%}
                                   <div class="quantity-selector">
-                                    {%- assign allow_to_add_more = true -%}
+                                    {% liquid
+                                      assign max_quantity = ''
+                                      assign variant = line_item.variant
+                                
+                                      if variant.inventory_management != blank and variant.inventory_policy == 'deny'
+                                        assign current_quantity_for_variant = cart | item_count_for_variant: variant.id
+                                        assign max_quantity = variant.inventory_quantity | minus: current_quantity_for_variant | plus: line_item.quantity
+                                      endif
+                                
+                                      if variant.quantity_rule.max != nil
+                                        assign max_quantity = max_quantity | default: 999999 | at_most: variant.quantity_rule.max
+                                      endif
+              
+                                      assign increment = line_item.quantity | plus: line_item.variant.quantity_rule.increment
+              
+                                      if line_item.variant.quantity_rule.max != nil
+                                        assign increment = increment | at_most: line_item.variant.quantity_rule.max
+                                      endif
+                                    %}
 
-                                    {%- if line_item.variant.inventory_management and line_item.variant.inventory_policy == 'deny' and line_item.quantity == line_item.variant.inventory_quantity -%}
-                                      {%- assign allow_to_add_more = false -%}
-                                    {%- endif -%}
-
-                                    <button type="button" class="quantity-selector__button" data-action="decrease-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | minus: 1 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | minus: 1 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
-                                    <input aria-label="{{ 'product.form.quantity' | t }}" class="quantity-selector__value" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" size="{{ line_item.quantity | append: '' | size | at_least: 2 }}">
-                                    <button type="button" class="quantity-selector__button" data-action="increase-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | plus: 1 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | plus: 1 }}" data-line="{{ forloop.index }}" {% if allow_to_add_more %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
+                                    <button type="button" class="quantity-selector__button" data-action="decrease-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | minus: line_item.variant.quantity_rule.increment | at_least: 0 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | minus: line_item.variant.quantity_rule.increment | at_least: 0 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
+                                    <input aria-label="{{ 'product.form.quantity' | t }}" type="number" class="quantity-selector__value" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" step="{{ line_item.variant.quantity_rule.increment }}" min="{{ line_item.variant.quantity_rule.min }}" {% if line_item.variant.quantity_rule.max != nil %}max="{{ line_item.variant.quantity_rule.max }}"{% endif %}>
+                                    <button type="button" class="quantity-selector__button" data-action="increase-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ increment }}&line={{ forloop.index }}" data-quantity="{{ increment }}" data-line="{{ forloop.index }}" {% if max_quantity == blank or line_item.quantity < max_quantity %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
                                   </div>
                                 {%- else -%}
                                   <span>{{ line_item.quantity }}</span>
@@ -202,15 +216,29 @@
 
                           {%- unless line_item.product.tags contains '__gift' -%}
                             <div class="quantity-selector">
-                              {%- assign allow_to_add_more = true -%}
+                              {% liquid
+                                assign max_quantity = ''
+                                assign variant = line_item.variant
+                          
+                                if variant.inventory_management != blank and variant.inventory_policy == 'deny'
+                                  assign current_quantity_for_variant = cart | item_count_for_variant: variant.id
+                                  assign max_quantity = variant.inventory_quantity | minus: current_quantity_for_variant | plus: line_item.quantity
+                                endif
+                          
+                                if variant.quantity_rule.max != nil
+                                  assign max_quantity = max_quantity | default: 999999 | at_most: variant.quantity_rule.max
+                                endif
+        
+                                assign increment = line_item.quantity | plus: line_item.variant.quantity_rule.increment
+        
+                                if line_item.variant.quantity_rule.max != nil
+                                  assign increment = increment | at_most: line_item.variant.quantity_rule.max
+                                endif
+                              %}
 
-                              {%- if line_item.variant.inventory_management and line_item.variant.inventory_policy == 'deny' and line_item.quantity == line_item.variant.inventory_quantity -%}
-                                {%- assign allow_to_add_more = false -%}
-                              {%- endif -%}
-
-                              <button type="button" class="quantity-selector__button" data-action="decrease-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | minus: 1 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | minus: 1 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
-                              <input aria-label="{{ 'product.form.quantity' | t }}" class="quantity-selector__value" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" size="{{ line_item.quantity | append: '' | size | at_least: 2 }}">
-                              <button type="button" class="quantity-selector__button" data-action="increase-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | plus: 1 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | plus: 1 }}" data-line="{{ forloop.index }}" {% if allow_to_add_more %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
+                              <button type="button" class="quantity-selector__button" data-action="decrease-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | minus: line_item.variant.quantity_rule.increment | at_least: 0 }}&line={{ forloop.index }}" data-quantity="{{ line_item.quantity | minus: line_item.variant.quantity_rule.increment | at_least: 0 }}" data-line="{{ forloop.index }}" aria-label="{{ 'cart.items.decrease_quantity' | t }}" title="{{ 'cart.items.decrease_quantity' | t }}">{% render 'icon', icon: 'minus' %}</button>
+                              <input aria-label="{{ 'product.form.quantity' | t }}" type="number" class="quantity-selector__value" inputmode="numeric" data-current-value="{{ line_item.quantity }}" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}" step="{{ line_item.variant.quantity_rule.increment }}" min="{{ line_item.variant.quantity_rule.min }}" {% if line_item.variant.quantity_rule.max != nil %}max="{{ line_item.variant.quantity_rule.max }}"{% endif %}>
+                              <button type="button" class="quantity-selector__button" data-action="increase-quantity" data-href="{{ routes.cart_change_url }}?quantity={{ increment }}&line={{ forloop.index }}" data-quantity="{{ increment }}" data-line="{{ forloop.index }}" {% if max_quantity == blank or line_item.quantity < max_quantity %}aria-label="{{ 'cart.items.increase_quantity' | t }}" title="{{ 'cart.items.increase_quantity' | t }}"{% else %}disabled="disabled" aria-label="{{ 'cart.items.no_more_stock' | t }}" data-tooltip="{{ 'cart.items.no_more_stock' | t }}" data-tooltip-position="bottom-left"{% endif %}>{% render 'icon', icon: 'plus' %}</button>
                             </div>
                           {%- else -%}
                             <span>{{ line_item.quantity }}</span>
@@ -533,7 +561,7 @@
                   }
                   {%- endcapture -%}
 
-                  <div class="section" data-section-id="{{ section.id }}-upsell" data-section-type="featured-collection" data-section-settings='{{ section_settings }}'>
+                  <div class="section" data-section-id="{{ section.id }}-upsell" data-section-type="featured-collection" data-section-settings="{{ section_settings | escape_once }}">
                     <header class="section__header">
                       <h2 class="section__title heading h3">{{ section.settings.upsell_heading | escape }}</h2>
                     </header>
@@ -599,7 +627,7 @@
     },
     {
       "type": "paragraph",
-      "content": "Gift wrap needs to be set up as a product. [Read more](https://support.maestrooo.com/article/190-cart-set-up-a-gift-wrap-product)"
+      "content": "Gift wrap needs to be set up as a product."
     },
     {
       "type": "product",

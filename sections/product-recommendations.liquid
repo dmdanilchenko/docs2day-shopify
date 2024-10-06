@@ -8,7 +8,7 @@
 }
 {%- endcapture -%}
 
-<section class="section" data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-settings='{{ section_settings }}'>
+<section class="section" data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container">
     {%- if section.settings.heading != blank -%}
       <header class="section__header">

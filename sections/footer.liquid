@@ -137,7 +137,7 @@
                       {%- render 'icon', icon: 'arrow-bottom' -%}
                     </button>
 
-                    <div id="footer-currency-picker" class="value-picker value-picker--auto value-picker--small" data-picker-position="top" aria-hidden="true">
+                    <div id="footer-currency-picker" class="value-picker value-picker--align-left value-picker--auto value-picker--small" data-picker-position="top" aria-hidden="true">
                       {% render 'icon', icon: 'nav-triangle-borderless' %}
 
                       <div class="value-picker__inner value-picker__inner--restrict">
@@ -169,14 +169,20 @@
 
         {%- if section.settings.show_social_media -%}
           {%- capture social_media -%}{% render 'social-media', show_social_media_name: false %}{%- endcapture -%}
+        {%- endif -%}
 
-          {%- if social_media != blank -%}
-            <div class="footer__aside-item footer__aside-item--social">
-              <p class="footer__aside-title">{{ 'footer.general.follow_us' | t }}</p>
+        {%- if social_media != blank or shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+          <div class="footer__aside-item footer__aside-item--social">
+            <p class="footer__aside-title">{{ 'footer.general.follow_us' | t }}</p>
 
-              {{ social_media }}
-            </div>
-          {%- endif -%}
+            {{- social_media -}}
+
+            {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+              <div class="footer__follow-on-shop">
+                {{- shop | login_button: action: 'follow' -}}
+              </div>
+            {%- endif -%}
+          </div>
         {%- endif -%}
 
         {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
@@ -197,29 +203,6 @@
       </aside>
     </div>
   </div>
-
-  {%- comment -%}
-    In order to reduce the number of static sections, we were asked by Shopify team to move the cookie bar to the footer instead of its own
-    section. This feels a bit hacky but it works :).
-  {%- endcomment -%}
-
-  {%- if section.settings.show_cookie_bar -%}
-    <aside class="cookie-bar" aria-hidden="true">
-      <div class="container">
-        <div class="cookie-bar__inner">
-          <div class="cookie-bar__text rte">
-            {{- section.settings.text -}}
-          </div>
-
-          <div class="cookie-bar__choice-container"> 
-            <div class="button-group button-group--fit">
-            <button type="button" class="cookie-bar__button button button--primary" data-action="accept-terms">{{ 'footer.cookie_bar.accept' | t }}</button>
-            <button type="button" class="cookie-bar__button button button--secondary" data-action="decline-terms">{{ 'footer.cookie_bar.decline' | t }}</button>
-          </div>
-        </div>
-      </div>
-    </aside>
-  {%- endif -%}
 </footer>
 
 
@@ -232,6 +215,13 @@
       "id": "show_social_media",
       "label": "Show social media",
       "info": "Make sure to have properly configured your social media in the theme settings.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_follow_on_shop",
+      "label": "Show Follow on Shop",
+      "info": "To allow customers to follow your store on the Shop app from your storefront, Shop Pay must be enabled. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)",
       "default": true
     },
     {
@@ -261,23 +251,7 @@
       "id": "show_country_selector",
       "label": "Show country/region selector",
       "default": true
-    },
-    {
-      "type": "header",
-      "content": "Cookie bar"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_cookie_bar",
-      "label": "Show cookie bar",
-      "default": false
-    },
-    {
-      "type": "richtext",
-      "id": "text",
-      "label": "Text",
-      "default": "<p>Use this bar to show information about your cookie policy.</p>"
-    }    
+    }
   ],
   "blocks": [
     {

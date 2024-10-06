@@ -79,7 +79,7 @@
                   </div>
                 {%- endif -%}
 
-                <div class="block-list__item 1/1 1/2--tablet 1/2--desk {% if section.settings.highlight_first_article and current_tags == blank and forloop.first %}hidden-desk{% endif %}">
+                <div class="block-list__item 1/1 1/2--tablet 1/2--lap-and-up {% if section.settings.highlight_first_article and current_tags == blank and forloop.first %}hidden-desk{% endif %}">
                   {%- render 'article-item', article: article, featured: false -%}
                 </div>
               {%- endfor -%}

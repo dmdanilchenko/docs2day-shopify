@@ -1,6 +1,6 @@
 <style>
   #shopify-section-{{ section.id }},
-  #shopify-section-{{ section.id }} .heading {
+  #shopify-section-{{ section.id }} :is(.heading, .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6) {
     color: {{ section.settings.color }};
   }
 </style>

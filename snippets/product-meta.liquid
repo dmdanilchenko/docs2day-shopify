@@ -17,7 +17,7 @@
       </li>
 
       <li class="social-media__item social-media__item--twitter">
-        <a href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">{%- render 'icon', icon: 'twitter' -%}</a>
+        <a href="https://twitter.com/intent/tweet?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">{%- render 'icon', icon: 'twitter' -%}</a>
       </li>
 
       <li class="social-media__item">
@@ -28,7 +28,7 @@
 {%- endif -%}
 
 <div class="product-meta">
-  {%- if template.name == 'product' and template != 'product.quick-view' -%}
+  {%- if update_url -%}
     <h1 class="product-meta__title heading h1">{{ product.title }}</h1>
   {%- else -%}
     <h3 class="product-meta__title heading h2">
@@ -37,6 +37,12 @@
   {%- endif -%}
 
   {%- capture product_labels -%}
+    {%- assign custom_badges = product.metafields.custom.badges.value -%}
+
+    {%- for badge in custom_badges -%}
+      <span class="product-label product-label--custom1">{{ badge }}</span>
+    {%- endfor -%}
+
     {%- for tag in product.tags -%}
       {%- if tag contains '__label:' -%}
         <span class="product-label product-label--custom1">{{ tag | split: '__label:' | last }}</span>

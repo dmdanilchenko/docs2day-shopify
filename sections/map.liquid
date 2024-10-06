@@ -10,7 +10,7 @@
 }
 {% endcapture %}
 
-<section class="section" data-section-id="{{ section.id }}" data-section-type="map" data-section-settings='{{ section_settings | escape }}'>
+<section class="section" data-section-id="{{ section.id }}" data-section-type="map" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container">
     {%- if section.settings.title != blank -%}
       <header class="section__header">

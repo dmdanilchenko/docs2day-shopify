@@ -21,6 +21,16 @@
     {% assign social_media_count = social_media_count | plus: 1 %}
   {%- endif -%}
 
+  {%- if settings.social_threads != blank -%}
+    <li class="social-media__item social-media__item--threwds">
+      <a href="{{ settings.social_threads | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_label' | t: social_media: 'Threads' }}">
+        {%- render 'icon', icon: 'threads' -%} {%- if show_social_media_name -%}Threads{%- endif -%}
+      </a>
+    </li>
+
+    {% assign social_media_count = social_media_count | plus: 1 %}
+  {%- endif -%}
+
   {%- if settings.social_instagram != blank -%}
     <li class="social-media__item social-media__item--instagram">
       <a href="{{ settings.social_instagram | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_label' | t: social_media: 'Instagram' }}">

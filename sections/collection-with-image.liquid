@@ -5,7 +5,7 @@
 }
 {%- endcapture -%}
 
-<section class="section" data-section-id="{{ section.id }}" data-section-type="featured-collection" data-section-settings='{{ section_settings }}'>
+<section class="section" data-section-id="{{ section.id }}" data-section-type="featured-collection" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container container--flush">
     {%- assign collection = section.settings.collection -%}
 
