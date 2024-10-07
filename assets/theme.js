@@ -3166,14 +3166,14 @@ var require_photoswipe = __commonJS({
             /*
             			elastic: {
             				out: function ( k ) {
-            
+
             					var s, a = 0.1, p = 0.4;
             					if ( k === 0 ) return 0;
             					if ( k === 1 ) return 1;
             					if ( !a || a < 1 ) { a = 1; s = p / 4; }
             					else s = p * Math.asin( 1 / a ) / ( 2 * Math.PI );
             					return ( a * Math.pow( 2, - 10 * k) * Math.sin( ( k - s ) * ( 2 * Math.PI ) / p ) + 1 );
-            
+
             				},
             			},
             			back: {
@@ -3185,16 +3185,16 @@ var require_photoswipe = __commonJS({
             		*/
           },
           /**
-           * 
+           *
            * @return {object}
-           * 
+           *
            * {
            *  raf : request animation frame function
            *  caf : cancel animation frame function
            *  transfrom : transform property key (with vendor), or null if not supported
            *  oldIE : IE8 or below
            * }
-           * 
+           *
            */
           detectFeatures: function() {
             if (framework.features) {
@@ -3763,8 +3763,8 @@ var require_photoswipe = __commonJS({
           },
           /**
            * Pan image to position
-           * @param {Number} x     
-           * @param {Number} y     
+           * @param {Number} x
+           * @param {Number} y
            * @param {Boolean} force Will ignore bounds if set to true.
            */
           panTo: function(x, y, force) {
@@ -4349,7 +4349,7 @@ var require_photoswipe = __commonJS({
                   4: "mouse",
                   // event.MSPOINTER_TYPE_MOUSE
                   2: "touch",
-                  // event.MSPOINTER_TYPE_TOUCH 
+                  // event.MSPOINTER_TYPE_TOUCH
                   3: "pen"
                   // event.MSPOINTER_TYPE_PEN
                 };
@@ -8556,7 +8556,7 @@ var Form = class _Form {
       if (formElement.name === "" || formElement.disabled) {
         continue;
       }
-      if (formElement.name && !formElement.disabled && (formElement.checked || /select|textarea/i.test(formElement.nodeName) || /hidden|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number|range|color/i.test(formElement.type))) {
+      if (formElement.name && !formElement.disabled && (formElement.checked || /select|textarea/i.test(formElement.nodeName) || /hidden|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number|range|file|color/i.test(formElement.type))) {
         let stringKeys = stringKey(formElement.name, formElement.value);
         hash = _Form.extend(hash, stringKeys);
       }
@@ -11155,16 +11155,26 @@ var ProductForm = class extends HTMLElement {
     event2.stopPropagation();
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[name="properties[file]"]') && formElement.querySelector('[name="properties[file]"]').required && !formElement.querySelector('[name="properties[file]"]').value) {
+      this._showAlert("Please upload file", "error", target);
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       document.dispatchEvent(new CustomEvent("theme:loading:end"));
       if (response.ok) {
         target.removeAttribute("disabled");

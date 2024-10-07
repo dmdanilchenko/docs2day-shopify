@@ -19,7 +19,8 @@
 
               {%- when 'volume_pricing' -%}
                 {%- render 'volume-pricing-table', variant: product.selected_or_first_available_variant -%}
-
+              {%- when 'attachment' -%}
+                {%- render 'product-attachment', product: product, form: form, block: block -%}
               {%- when 'buy_buttons' -%}
                 {%- render 'product-buy-buttons', product: product, form: form, block: block -%}
 

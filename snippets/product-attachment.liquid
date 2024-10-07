@@ -1,0 +1,7 @@
+<div class="product-form__info-item product-form__info-item--attachment">
+  <label class="product-form__info-title text--strong">{{ block.settings.label }}:</label>
+  <div class="product-form__info-content">
+    <input type="file" name="properties[{{ block.settings.label }}]"
+           {%- if block.settings.required -%}required{%- endif -%} >
+  </div>
+</div>

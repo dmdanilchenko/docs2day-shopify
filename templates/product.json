@@ -1,1 +1,93 @@
-{"sections":{"main":{"type":"main-product","blocks":{"product_meta":{"type":"product_meta","settings":{"show_vendor":true,"show_sku":false,"show_reviews_badge":false,"show_share_buttons":true}},"variant_selector":{"type":"variant_selector","disabled":true,"settings":{"selector_mode":"block","color_mode":"color","show_quantity_selector":true,"show_taxes_included":false,"show_inventory_quantity":false,"low_inventory_threshold":0}},"description":{"type":"description","settings":{"display_mode":"show_all"}},"button_p3pBck":{"type":"button","settings":{"text":"Request a Quote","link":"shopify:\/\/pages\/contact"}}},"block_order":["product_meta","variant_selector","description","button_p3pBck"],"settings":{"image_size":"small","enable_video_looping":false,"enable_image_zoom":true,"zoom_effect":"outside","carousel_effect":"fade"}},"product-recommendations":{"type":"product-recommendations","settings":{"heading":"You may also like","show_quick_buy":false}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"title":"Recently viewed","show_quick_buy":false}}},"order":["main","product-recommendations","recently-viewed-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_reviews_badge": false,
+            "show_share_buttons": true
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "color_mode": "color",
+            "variant_image_options": "",
+            "show_quantity_selector": false,
+            "show_taxes_included": false,
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0,
+            "progress_bar_max_value": 50
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "display_mode": "show_all"
+          }
+        },
+        "attachment_t4jR9c": {
+          "type": "attachment",
+          "settings": {
+            "label": "File Upload",
+            "required": true
+          }
+        },
+        "button_p3pBck": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "text": "Request a Quote",
+            "link": "shopify:\/\/pages\/contact"
+          }
+        },
+        "buy_buttons_bHtEWp": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "description",
+        "attachment_t4jR9c",
+        "button_p3pBck",
+        "buy_buttons_bHtEWp"
+      ],
+      "settings": {
+        "image_size": "small",
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "zoom_effect": "outside",
+        "carousel_effect": "fade"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "show_quick_buy": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

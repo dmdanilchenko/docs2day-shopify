@@ -116,7 +116,14 @@
                                       {%- continue -%}
                                     {%- endif -%}
 
-                                    <li class="line-item__property">{{ property.first }}: {{ property.last }}</li>
+                                    {% if property.last contains '/uploads/' %}
+                                      <li class="line-item__property"><a href="{{ property.last }}" class="link" target="_blank">
+                                          {{ property.last | split: '/' | last }}
+                                        </a>
+                                      </li>
+                                    {% else %}
+                                      <li class="line-item__property">{{ property.first }}: {{ property.last }}</li>
+                                    {% endif %}
                                   {%- endfor -%}
                                 </ul>
                               {%- endunless -%}
