@@ -31,11 +31,11 @@
             "display_mode": "show_all"
           }
         },
-        "attachment_t4jR9c": {
+        "attachment_RGAVUV": {
           "type": "attachment",
           "settings": {
-            "label": "File Upload",
-            "required": true
+            "label": "File upload",
+            "required": false
           }
         },
         "button_p3pBck": {
@@ -46,7 +46,7 @@
             "link": "shopify:\/\/pages\/contact"
           }
         },
-        "buy_buttons_bHtEWp": {
+        "buy_buttons_pjXWfm": {
           "type": "buy_buttons",
           "settings": {
             "show_payment_button": true,
@@ -58,9 +58,9 @@
         "product_meta",
         "variant_selector",
         "description",
-        "attachment_t4jR9c",
+        "attachment_RGAVUV",
         "button_p3pBck",
-        "buy_buttons_bHtEWp"
+        "buy_buttons_pjXWfm"
       ],
       "settings": {
         "image_size": "small",
