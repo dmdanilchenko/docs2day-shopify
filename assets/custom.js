@@ -65,4 +65,20 @@ window.addEventListener('load', function () {
             }
         });
     }
+
+    var logout = document.querySelector('a[href^="/account/logout"]');
+    if (logout) {
+        logout.addEventListener('click', function (event) {
+            event.preventDefault();
+            let href = logout.getAttribute('href'),
+                target = '';
+            fetch(window.Shopify.routes.root + 'cart/clear.js')
+                .then(response => {
+                    window.open(href, (!target ? "_self" : target));
+                })
+                .then(data => {
+                    return data
+                });
+        });
+    }
 });
