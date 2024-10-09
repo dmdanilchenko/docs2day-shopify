@@ -9,28 +9,32 @@
           "type": "item",
           "settings": {
             "icon": "bi-delivery",
-            "title": "Free shipping"
+            "title": "Free shipping",
+            "content": "<p>Short content about your store<\/p>"
           }
         },
         "item-2": {
           "type": "item",
           "settings": {
             "icon": "bi-returns",
-            "title": "Satisfied or refunded"
+            "title": "Satisfied or refunded",
+            "content": "<p>Short content about your store<\/p>"
           }
         },
         "item-3": {
           "type": "item",
           "settings": {
             "icon": "bi-customer-support",
-            "title": "Top-notch support"
+            "title": "Top-notch support",
+            "content": "<p>Short content about your store<\/p>"
           }
         },
         "item-4": {
           "type": "item",
           "settings": {
             "icon": "bi-secure-payment",
-            "title": "Secure payments"
+            "title": "Secure payments",
+            "content": "<p>Short content about your store<\/p>"
           }
         }
       },
@@ -40,12 +44,26 @@
         "item-3",
         "item-4"
       ],
-      "settings": {}
+      "settings": {
+        "stack_mobile": false
+      }
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "links_BarQan": {
+          "type": "links",
+          "settings": {
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "links_BarQan"
+      ],
       "settings": {
         "show_social_media": true,
+        "enable_follow_on_shop": false,
         "show_payment_icons": true,
         "show_locale_selector": true,
         "show_country_selector": true

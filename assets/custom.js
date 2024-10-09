@@ -81,4 +81,13 @@ window.addEventListener('load', function () {
                 });
         });
     }
+
+    let triggerMyAccountDropdown = document.querySelector('button[data-action="toggle-my-account-linklist"]'),
+        dropdown = document.getElementById('my-account-linklist');
+    if (triggerMyAccountDropdown && dropdown) {
+        triggerMyAccountDropdown.addEventListener('click', function (event) {
+            triggerMyAccountDropdown.setAttribute('aria-expanded', triggerMyAccountDropdown.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+            dropdown.setAttribute('aria-hidden', dropdown.getAttribute('aria-hidden') === 'true' ? 'false' : 'true');
+        });
+    }
 });
