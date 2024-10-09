@@ -34,6 +34,14 @@
                     <div id="block-{{ block.id }}" class="footer__collapsible">
                       <div class="footer__collapsible-content">
                         <ul class="footer__linklist list--unstyled" role="list">
+                          {%- if shop.customer_accounts_enabled -%}
+                            {%- if customer -%}
+                              <a href="{{ routes.account_url }}" class="footer__link-item link">{{- 'header.general.account' | t -}}</a>
+                            {%- else -%}
+                              <a href="{{ routes.account_login_url }}" class="footer__link-item link">{{- 'header.general.login' | t -}}</a>
+                            {%- endif -%}
+                          {%- endif -%}
+
                           {%- for link in menu.links -%}
                             <li>
                               <a href="{{ link.url }}" class="footer__link-item link">{{ link.title }}</a>
