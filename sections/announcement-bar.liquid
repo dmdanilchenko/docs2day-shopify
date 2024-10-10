@@ -33,6 +33,7 @@
           <div class="newsletter">
             {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
               {%- if form.posted_successfully? -%}
+                {%- assign open_announcement = true -%}
                 <p class="alert alert--success alert--center">{{ 'home_page.newsletter.success' | t }}</p>
                 {%- if form.context == 'announcement-bar' -%}
                   {%- assign open_announcement = true -%}
@@ -96,6 +97,12 @@
   {%- endif -%}
 
   document.documentElement.style.setProperty('--announcement-bar-height', document.getElementById('shopify-section-{{ section.id }}').clientHeight + 'px');
+
+  {%- if open_announcement -%}
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.announcement-bar__button').click();
+    });
+  {%- endif -%}
 </script>
 
 {% schema %}

@@ -50,7 +50,8 @@
         currencyCodeEnabled: {{ settings.currency_code_enabled | json }},
         showDiscount: {{ settings.show_discount | json }},
         discountMode: {{ settings.discount_mode | json }},
-        cartType: {{ settings.cart_type | json }}
+        cartType: {{ settings.cart_type | json }},
+        requiredFieldErrorMessage: {{ 'general.errors.required_field' | t | json }}
       };
 
       window.routes = {

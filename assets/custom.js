@@ -34,36 +34,39 @@
  * }));
  */
 window.addEventListener('load', function () {
-    var form = document.getElementById('create_customer');
+    formValidation(document.getElementById('create_customer'));
+    formValidation(document.getElementById('contact_form'));
 
-    if (form) {
-        form.addEventListener('submit', function (event) {
-            let errors = false;
-            // get all required inputs
-            form.querySelectorAll('input[required]').forEach(function (input) {
-                if (!input.value) {
-                    // add aria-invalid="true"
-                    input.setAttribute('aria-invalid', 'true');
-                    errors = true;
-                } else {
-                    input.setAttribute('aria-invalid', 'false');
-                }
-                if (input.parentNode.querySelector('.error')) {
-                    input.parentNode.querySelector('.error').remove();
-                }
-                if (!input.value) {
-                    var error = document.createElement('span');
-                    error.className = 'error';
-                    error.textContent = 'It is required field.';
-                    //insert to parent
-                    input.parentNode.append(error);
+    function formValidation(form) {
+        if (form) {
+            form.addEventListener('submit', function (event) {
+                let errors = false;
+                // get all required inputs
+                form.querySelectorAll('input[required]').forEach(function (input) {
+                    if (!input.value) {
+                        // add aria-invalid="true"
+                        input.setAttribute('aria-invalid', 'true');
+                        errors = true;
+                    } else {
+                        input.setAttribute('aria-invalid', 'false');
+                    }
+                    if (input.parentNode.querySelector('.error')) {
+                        input.parentNode.querySelector('.error').remove();
+                    }
+                    if (!input.value) {
+                        var error = document.createElement('span');
+                        error.className = 'error';
+                        error.textContent = window.theme.requiredFieldErrorMessage;
+                        //insert to parent
+                        input.parentNode.append(error);
+                    }
+                });
+
+                if (errors) {
+                    event.preventDefault();
                 }
             });
-
-            if (errors) {
-                event.preventDefault();
-            }
-        });
+        }
     }
 
     var logout = document.querySelector('a[href^="/account/logout"]');
