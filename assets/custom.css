@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;
     }
@@ -35,5 +35,11 @@
         left: auto;
         right: -50px;
         box-shadow: 0 1px 5px 2px #0000001a;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .footer__title {
+        display: none;
     }
 }
