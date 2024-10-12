@@ -2,7 +2,7 @@
   <div class="container container--medium">
     <div class="layout">
       <div class="layout__section">
-        {%- form 'contact', class: 'form' -%}
+        {%- form 'contact', class: 'form' , novalidate: 'novalidate' -%}
           {%- if section.settings.form_heading != blank -%}
             <div class="form__header {% unless section.settings.show_store_info %}text-center{% endunless %}">
               <h2 class="heading h3">{{ section.settings.form_heading | escape }}</h2>
@@ -122,7 +122,6 @@
     </div>
   </div>
 </div>
-
 {% schema %}
 {
   "name": "Contact form",

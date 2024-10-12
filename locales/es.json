@@ -49,6 +49,9 @@
     },
     "form": {
       "max_characters": "{{ max_chars }} caracteres máx."
+    },
+    "errors": {
+      "required_field": "Es un campo obligatorio."
     }
   },
   "header": {

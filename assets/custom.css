@@ -1,3 +1,45 @@
 .product-info__block-item--attachment {
     margin-bottom: 20px;
 }
+
+.form__input-wrapper .error {
+    display: block;
+    text-align: left;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.header__action-item-content {
+    position: relative;
+}
+
+
+.header__action-item-link.header__account-icon.hidden-desk {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+    #my-account-linklist {
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #my-account-linklist {
+        border-radius: 3px;
+        width: auto;
+        min-width: 160px;
+        top: calc(100% + 15px);
+        left: auto;
+        right: -50px;
+        box-shadow: 0 1px 5px 2px #0000001a;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .footer__title {
+        display: none;
+    }
+}

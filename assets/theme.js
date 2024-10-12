@@ -9024,16 +9024,26 @@ var CartSection = class {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       if (response.ok) {
         target.removeAttribute("disabled");
         this.element.dispatchEvent(new CustomEvent("product:added", {
@@ -9390,16 +9400,25 @@ var CollectionSection = class {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       target.removeAttribute("disabled");
       if (response.ok) {
         this.element.dispatchEvent(new CustomEvent("product:added", {
@@ -9537,16 +9556,25 @@ var FeaturedCollectionSection = class {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       target.removeAttribute("disabled");
       if (response.ok) {
         this.element.dispatchEvent(new CustomEvent("product:added", {
@@ -10274,16 +10302,25 @@ var ProductRecommendationsSection = class {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       target.removeAttribute("disabled");
       if (response.ok) {
         this.element.dispatchEvent(new CustomEvent("product:added", {
@@ -10424,16 +10461,25 @@ var RecentlyViewedProductsSection = class {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       target.removeAttribute("disabled");
       if (response.ok) {
         this.element.dispatchEvent(new CustomEvent("product:added", {
@@ -10969,16 +11015,26 @@ var ProductRecommendations = class extends HTMLElement {
     target.setAttribute("disabled", "disabled");
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
     const formElement = target.closest('form[action*="/cart/add"]');
-    fetch(`${window.routes.cartAddUrl}.js`, {
-      body: JSON.stringify(Form.serialize(formElement)),
-      credentials: "same-origin",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-        // This is needed as currently there is a bug in Shopify that assumes this header
-      }
-    }).then((response) => {
+    // if properties[file] is not filed, show _showAlert
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
+      this._showAlert("Please upload file", "error", target);
+      target.removeAttribute("disabled");
+      return;
+    }
+    const config = fetchConfig('javascript');
+    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+    delete config.headers['Content-Type'];
+
+    function fetchConfig(type = 'json') {
+      return {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+      };
+    }
+
+    config.body = new FormData(formElement);
+
+    fetch(`${window.routes.cartAddUrl}.js`, config).then((response) => {
       target.removeAttribute("disabled");
       if (response.ok) {
         this.dispatchEvent(new CustomEvent("product:added", {
@@ -11157,8 +11213,9 @@ var ProductForm = class extends HTMLElement {
     document.dispatchEvent(new CustomEvent("theme:loading:start"));
 
     // if properties[file] is not filed, show _showAlert
-    if (formElement.querySelector('[name="properties[file]"]') && formElement.querySelector('[name="properties[file]"]').required && !formElement.querySelector('[name="properties[file]"]').value) {
+    if (formElement.querySelector('[type="file"]') && formElement.querySelector('[type="file"]').required && !formElement.querySelector('[type="file"]').value) {
       this._showAlert("Please upload file", "error", target);
+      target.removeAttribute("disabled");
       return;
     }
     const config = fetchConfig('javascript');

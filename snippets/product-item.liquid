@@ -315,13 +315,7 @@
 
             {%- if product.available -%}
               {%- if product.variants.size == 1 -%}
-                <button type="submit" class="{{ quick_buy_classes }}" data-action="add-to-cart">
-                  {%- if product.template_suffix == 'pre-order' -%}
-                    {{- 'collection.product.pre_order' | t -}}
-                  {%- else -%}
-                    {{- 'collection.product.add_to_cart' | t -}}
-                  {%- endif -%}
-                </button>
+                <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ 'collection.product.choose_options' | t }}</a>
               {%- else -%}
                 <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ 'collection.product.choose_options' | t }}</a>
               {%- endif -%}

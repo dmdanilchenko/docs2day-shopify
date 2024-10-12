@@ -33,4 +33,64 @@
  *   bubbles: true
  * }));
  */
+window.addEventListener('load', function () {
+    formValidation(document.getElementById('create_customer'));
+    formValidation(document.getElementById('contact_form'));
 
+    function formValidation(form) {
+        if (form) {
+            form.addEventListener('submit', function (event) {
+                let errors = false;
+                // get all required inputs
+                form.querySelectorAll('input[required]').forEach(function (input) {
+                    if (!input.value) {
+                        // add aria-invalid="true"
+                        input.setAttribute('aria-invalid', 'true');
+                        errors = true;
+                    } else {
+                        input.setAttribute('aria-invalid', 'false');
+                    }
+                    if (input.parentNode.querySelector('.error')) {
+                        input.parentNode.querySelector('.error').remove();
+                    }
+                    if (!input.value) {
+                        var error = document.createElement('span');
+                        error.className = 'error';
+                        error.textContent = window.theme.requiredFieldErrorMessage;
+                        //insert to parent
+                        input.parentNode.append(error);
+                    }
+                });
+
+                if (errors) {
+                    event.preventDefault();
+                }
+            });
+        }
+    }
+
+    var logout = document.querySelector('a[href^="/account/logout"]');
+    if (logout) {
+        logout.addEventListener('click', function (event) {
+            event.preventDefault();
+            let href = logout.getAttribute('href'),
+                target = '';
+            fetch(window.Shopify.routes.root + 'cart/clear.js')
+                .then(response => {
+                    window.open(href, (!target ? "_self" : target));
+                })
+                .then(data => {
+                    return data
+                });
+        });
+    }
+
+    let triggerMyAccountDropdown = document.querySelector('button[data-action="toggle-my-account-linklist"]'),
+        dropdown = document.getElementById('my-account-linklist');
+    if (triggerMyAccountDropdown && dropdown) {
+        triggerMyAccountDropdown.addEventListener('click', function (event) {
+            triggerMyAccountDropdown.setAttribute('aria-expanded', triggerMyAccountDropdown.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+            dropdown.setAttribute('aria-hidden', dropdown.getAttribute('aria-hidden') === 'true' ? 'false' : 'true');
+        });
+    }
+});
