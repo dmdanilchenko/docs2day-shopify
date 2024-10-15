@@ -98,7 +98,7 @@
 
                         {% if property.last contains '/uploads/' %}
                           <li class="mini-cart__property"><a href="{{ property.last }}" class="link" target="_blank">
-                              {{ property.last | split: '/' | last }}
+                              {{ 'cart.general.uploaded_file' | t }}.{{ property.last | split: '.' | last }}
                             </a>
                           </li>
                         {% else %}
