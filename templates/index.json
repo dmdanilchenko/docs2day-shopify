@@ -1,1 +1,177 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/6F00ACBA-2583-4A8A-921F-067A9DD42816.jpg","mobile_image":"shopify:\/\/shop_images\/6F00ACBA-2583-4A8A-921F-067A9DD42816.jpg","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"56ccd999-5391-4525-a657-b4984a3852f1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp","mobile_image":"shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"slide-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Image_8-6-2024_at_10.01_pm.jpg","mobile_image":"shopify:\/\/shop_images\/Image_8-6-2024_at_10.01_pm.jpg","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"19ef68ba-819b-4fdb-8f16-a075dddc5df9":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2C79A2FE-A0E2-4581-A7E6-856D7D2AC1DA.webp","mobile_image":"shopify:\/\/shop_images\/2C79A2FE-A0E2-4581-A7E6-856D7D2AC1DA.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}}},"block_order":["slide-2","56ccd999-5391-4525-a657-b4984a3852f1","slide-1","19ef68ba-819b-4fdb-8f16-a075dddc5df9"],"settings":{"edge_to_edge":true,"section_size":"small","carousel_effect":"slide","autoplay":true,"cycle_speed":3}},"mosaic_yrH8cT":{"type":"mosaic","blocks":{"item_fwBMTM":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/DD10E121-65A9-4AAA-A64A-9FF69AF14A3C.webp","show_overlay":true,"overlay_opacity":80,"background":"#ffffff","text_color":"#ffffff","title":"Personalised document creation","content":"We create and adjust documents to match your exact needs, ensuring everything is perfect for you from start to finish.","content_position":"top_left","button_background":"#0c1e30","button_text_color":"#ffffff","button_text":"Learn more","link":""}},"item_7GXxrn":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/76B3B671-A907-4E6C-A2AD-ADFFF776ACEB.webp","show_overlay":true,"overlay_opacity":80,"background":"#ffffff","text_color":"#ffffff","title":"Efficient","content":"Our streamlined processes ensure your documents are prepared and delivered on time.","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_QDPHr3":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/CDF15610-71A1-4549-A3DA-627C5801F4F6.webp","show_overlay":true,"overlay_opacity":80,"background":"#ffffff","text_color":"#ffffff","title":"About Docs2Day","content":"At Docs2Day, we create high-quality document templates and offer comprehensive documentation services. From academic papers and technical manuals to professional Word, Excel, and PowerPoint documents, we cover all your needs. Our expertise includes translating, writing, and developing specialised templates for various industries. Whatever your requirements, we ensure precision and excellence.","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_DymQg3":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/E3674D16-42DB-4374-BFE2-EF0B2077EC14.webp","show_overlay":true,"overlay_opacity":80,"background":"#ffffff","text_color":"#ffffff","title":"Secure","content":"Your data and documents are safe with us. Confidentiality guaranteed!","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_Y6XfYb":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/ED58298F-D5D2-4D35-844E-AD962CFA6D16.webp","show_overlay":true,"overlay_opacity":90,"background":"#ffffff","text_color":"#ffffff","title":"Constant support","content":"Need help? Our friendly support team is available 24\/7 to answer your questions and ensure everything runs smoothly.","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}}},"block_order":["item_fwBMTM","item_7GXxrn","item_QDPHr3","item_DymQg3","item_Y6XfYb"],"settings":{"section_size":"medium"}},"collection-list":{"type":"collection-list","blocks":{"collection-3":{"type":"collection","settings":{"collection":"career-documents","image":"shopify:\/\/shop_images\/6F00ACBA-2583-4A8A-921F-067A9DD42816.jpg","link":""}},"collection_aAeQK9":{"type":"collection","settings":{"collection":"writing-and-editing","image":"shopify:\/\/shop_images\/IMG_3937.jpg","link":""}},"collection-1":{"type":"collection","settings":{"collection":"safety-documents","image":"shopify:\/\/shop_images\/Image_8-6-2024_at_10.01_pm.jpg","link":""}},"collection-2":{"type":"collection","settings":{"collection":"translation-service","image":"shopify:\/\/shop_images\/2C79A2FE-A0E2-4581-A7E6-856D7D2AC1DA.webp","link":""}},"collection-4":{"type":"collection","settings":{"collection":"other-documents","image":"shopify:\/\/shop_images\/7FE75B22-89EC-442B-A0FB-C33E32E610F7.webp","link":""}}},"block_order":["collection-3","collection_aAeQK9","collection-1","collection-2","collection-4"],"settings":{"title":"Our collections","link_title":"View all","link":"shopify:\/\/collections","round_images":true,"show_collection_title":true}},"newsletter":{"type":"newsletter","settings":{"title":"","content":"","background":"#0c1e30","text":"#ffffff"}}},"order":["slideshow","mosaic_yrH8cT","collection-list","newsletter"]}
+{
+  "sections": {
+    "slideshow_DBqmGG": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QTrLkh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp",
+            "mobile_image": "shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "text_color": "#ffffff",
+            "title": "Get the Professional Edge with Tailored Career Documents",
+            "content": "Expert Resume, Cover Letter, and LinkedIn Profile Services to Boost Your Career",
+            "content_position": "middle_center",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "View Our Services",
+            "link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "image_QTrLkh"
+      ],
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "mosaic_yrH8cT": {
+      "type": "mosaic",
+      "blocks": {
+        "item_fwBMTM": {
+          "type": "item",
+          "settings": {
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "Resume Writing Service",
+            "content": "Tailored resumes that showcase your unique skills and experience, designed to align with specific job requirements. Stand out in the competitive job market with a professionally crafted resume that increases your chances of landing the job you need.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/resumes-1"
+          }
+        },
+        "item_7GXxrn": {
+          "type": "item",
+          "settings": {
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "Cover Letter Writing",
+            "content": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/cover-letter"
+          }
+        },
+        "item_DymQg3": {
+          "type": "item",
+          "settings": {
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "LinkedIn Profile Optimisation",
+            "content": "Boost your professional online presence with a LinkedIn profile that’s optimised for visibility and impact. Our service enhances your profile to attract recruiters and align with your career goals, giving you a competitive edge.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/linkedin-optimisation"
+          }
+        }
+      },
+      "block_order": [
+        "item_fwBMTM",
+        "item_7GXxrn",
+        "item_DymQg3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "section_size": "medium"
+      }
+    },
+    "mosaic_Lj9ANB": {
+      "type": "mosaic",
+      "blocks": {
+        "item_qk8nRR": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2D4F8FE6-A326-4191-83E3-17A4B0215F62.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "Personal Experience and Insight",
+            "content": "We understand the challenges of standing out in today’s job market. Our firsthand experience in successfully navigating job searches gives us the insight to help you succeed.",
+            "content_position": "top_left",
+            "button_background": "#0c1e30",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_nnX6bH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18E581A7-6F2E-4B30-867F-A9A879AA728C.webp",
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "title": "Tailored to Your Needs",
+            "content": "Each service is carefully crafted to fit your specific career goals and the demands of the role you’re pursuing, ensuring you have the best chance of landing the job you want.",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_UfGTre": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/989CD4BA-A85A-43D3-9B7A-2649CB0DBBFD.webp",
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "title": "Committed to Your Success",
+            "content": "We’re dedicated to helping you succeed, providing professional, personalised support at every step to make sure you’re fully prepared to impress employers.",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qk8nRR",
+        "item_nnX6bH",
+        "item_UfGTre"
+      ],
+      "settings": {
+        "section_size": "medium"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "",
+        "content": "",
+        "background": "#0c1e30",
+        "text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "slideshow_DBqmGG",
+    "mosaic_yrH8cT",
+    "mosaic_Lj9ANB",
+    "newsletter"
+  ]
+}

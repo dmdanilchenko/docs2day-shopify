@@ -1,1 +1,130 @@
-{"sections":{"main":{"type":"main-page","settings":{}},"faq":{"type":"faq","blocks":{"separator-1":{"type":"separator","settings":{"title":"Shipping"}},"question-1":{"type":"question","settings":{"title":"Do you ship overseas?","answer":"<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"}},"question-2":{"type":"question","settings":{"title":"How long will it take to get my order?","answer":"<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"}},"question-3":{"type":"question","settings":{"title":"What shipping carriers do you use?","answer":"<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"}},"separator-2":{"type":"separator","settings":{"title":"Product"}},"question-4":{"type":"question","settings":{"title":"Can I return my product?","answer":"<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"}},"question-5":{"type":"question","settings":{"title":"Can I get my product personalized?","answer":"<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"}}},"block_order":["separator-1","question-1","question-2","question-3","separator-2","question-4","question-5"],"settings":{}}},"order":["main","faq"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "separator-1": {
+          "type": "separator",
+          "settings": {
+            "title": "Getting Started"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I get started with your services?",
+            "answer": "<p>Simply select the service or package that fits your needs from our Services page, then follow the instructions to upload your existing resume, cover letter, or LinkedIn profile (if applicable). Our team will start crafting your new documents right away!<\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can you help if I don’t have a resume or cover letter yet?",
+            "answer": "<p>Absolutely! We’re here to build a resume or cover letter from scratch. Just provide us with details about your experience, skills, and job goals, and we’ll handle the rest.<\/p>"
+          }
+        },
+        "separator-2": {
+          "type": "separator",
+          "settings": {
+            "title": "Process & Turnaround"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to complete my resume, cover letter, or LinkedIn profile?",
+            "answer": "<p>Our standard turnaround time is <strong>3 to 5 business days<\/strong>, but if you need it sooner, we also offer rush services for an additional fee.<\/p>"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "How do I upload my current resume or LinkedIn profile for updates?",
+            "answer": "<p>When you place your order, you’ll have the option to upload your existing documents. We’ll review your current materials and give them a fresh, professional update.<\/p>"
+          }
+        },
+        "question_AHx3ex": {
+          "type": "question",
+          "settings": {
+            "title": "What if I need both a resume and a cover letter?",
+            "answer": "<p>You can choose one of our <strong>bundle packages<\/strong>, such as the Essential Package, which includes both a professionally crafted resume and a tailored cover letter at a discounted rate.<\/p>"
+          }
+        },
+        "separator_4ejQHb": {
+          "type": "separator",
+          "settings": {
+            "title": "Revisions & Satisfaction"
+          }
+        },
+        "question_W7iGn9": {
+          "type": "question",
+          "settings": {
+            "title": "Can I request revisions if I’m not fully satisfied?",
+            "answer": "<p>Yes, we offer <strong>up to two rounds of revisions<\/strong> at no additional charge to ensure you’re 100% happy with your documents.<\/p>"
+          }
+        },
+        "question_EycbDB": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide a refund if I’m not satisfied?",
+            "answer": "<p>Due to the personalized nature of our services, we do not offer refunds. However, we’re committed to your satisfaction and will work with you to ensure you’re happy with the final product.<\/p>"
+          }
+        },
+        "separator_aNBmjk": {
+          "type": "separator",
+          "settings": {
+            "title": "Specific Services"
+          }
+        },
+        "question_c6Rrcj": {
+          "type": "question",
+          "settings": {
+            "title": "Can you help with resumes and cover letters for specific industries?",
+            "answer": "<p>Yes! Our team has experience across a variety of industries, including marketing, finance, technology, and more. We tailor each resume or cover letter to fit the job and industry you’re targeting.<\/p>"
+          }
+        },
+        "question_bYHiBF": {
+          "type": "question",
+          "settings": {
+            "title": "How does your subscription plan work?",
+            "answer": "<p>Our subscription plan offers ongoing support for job seekers. You’ll receive a fresh cover letter, resume update, or LinkedIn optimisation every month to keep your materials up to date as you apply for new roles.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "separator-1",
+        "question-1",
+        "question-2",
+        "separator-2",
+        "question-4",
+        "question-5",
+        "question_AHx3ex",
+        "separator_4ejQHb",
+        "question_W7iGn9",
+        "question_EycbDB",
+        "separator_aNBmjk",
+        "question_c6Rrcj",
+        "question_bYHiBF"
+      ],
+      "settings": {
+        "show_contact_info": true,
+        "contact_info_heading": "Any question?",
+        "contact_info_text": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>",
+        "contact_1_icon": "bi-phone",
+        "contact_1_heading": "Customer support",
+        "contact_1_text": "<p>Enter your text here<\/p>",
+        "contact_2_icon": "bi-email",
+        "contact_2_heading": "Send a message",
+        "contact_2_text": "<p>Enter your text here<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "mosaic_98937B": {
+      "type": "mosaic",
+      "blocks": {
+        "item_FrBPiF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/F9606ACD-9C06-408F-9E14-7E39318A78B0.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "...",
+            "content": "\"The resume I received was spot on. It was customised exactly to the job I was applying for! The whole process was easy, professional, and efficient—can’t recommend them enough.\"",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_wV8ciF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/F9606ACD-9C06-408F-9E14-7E39318A78B0.webp",
+            "show_overlay": true,
+            "overlay_opacity": 80,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "...",
+            "content": "“I’ve always found cover letters a pain, but this service made it simple. They really nailed it! Cheers.”",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_pwkyQx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/F9606ACD-9C06-408F-9E14-7E39318A78B0.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "...",
+            "content": "“After Docs2Day team worked on my LinkedIn profile, I started getting more views and messages from recruiters. Definitely made a difference.”",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_FrBPiF",
+        "item_wV8ciF",
+        "item_pwkyQx"
+      ],
+      "settings": {
+        "section_size": "medium"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Newsletter",
+        "content": "",
+        "background": "#081f2f",
+        "text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "mosaic_98937B",
+    "newsletter"
+  ]
+}

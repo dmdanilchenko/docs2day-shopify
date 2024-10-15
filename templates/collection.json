@@ -12,7 +12,7 @@
         "show_quick_buy": "list_grid",
         "show_quick_view": "list_grid",
         "quick_links": "",
-        "quick_links_show_products_count": true,
+        "quick_links_show_products_count": false,
         "show_filters": false,
         "show_filter_color_swatch": true,
         "open_group_filters_mode": "all_closed"

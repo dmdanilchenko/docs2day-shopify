@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "mosaic_xcQt98": {
+      "type": "mosaic",
+      "blocks": {
+        "item_rHmMmV": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "Resume Writing Service",
+            "content": "Tailored resumes designed to help you stand out.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/resumes-1"
+          }
+        },
+        "item_R8KcPQ": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "Cover Letter Writing Service",
+            "content": "Personalised, job-specific cover letters to make a strong first impression.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/cover-letter"
+          }
+        },
+        "item_Wir4BU": {
+          "type": "item",
+          "settings": {
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#081f2f",
+            "text_color": "#ffffff",
+            "title": "LinkedIn Profile Optimisation",
+            "content": "Enhance your online presence and attract recruiters.",
+            "content_position": "middle_left",
+            "button_background": "#fb913c",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": "shopify:\/\/products\/linkedin-optimisation"
+          }
+        }
+      },
+      "block_order": [
+        "item_rHmMmV",
+        "item_R8KcPQ",
+        "item_Wir4BU"
+      ],
+      "settings": {
+        "section_size": "medium"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Newsletter",
+        "content": "",
+        "background": "#081f2f",
+        "text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "mosaic_xcQt98",
+    "newsletter"
+  ]
+}
