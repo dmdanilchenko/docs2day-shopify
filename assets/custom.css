@@ -14,10 +14,29 @@
     position: relative;
 }
 
-
 .header__action-item-link.header__account-icon.hidden-desk {
     display: flex;
     align-items: center;
+}
+
+input::file-selector-button {
+    text-align: center;
+    line-height: 48px;
+    font-weight: var(--text-font-bolder-weight);
+    font-size: var(--base-text-font-size);
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 0 30px;
+    transition: background .25s ease-in-out, color .25s ease-in-out, box-shadow .25s ease-in-out;
+    display: inline-block;
+    position: relative;
+    background: var(--secondary-button-background);
+    color: var(--secondary-button-text-color);
+}
+
+input::file-selector-button:hover {
+    background: rgba(var(--secondary-button-background-rgb), .8);
 }
 
 @media screen and (max-width: 1279px) {
