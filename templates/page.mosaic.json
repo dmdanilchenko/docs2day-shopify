@@ -4,65 +4,11 @@
       "type": "main-page",
       "settings": {}
     },
-    "mosaic_xcQt98": {
-      "type": "mosaic",
-      "blocks": {
-        "item_rHmMmV": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "background": "#081f2f",
-            "text_color": "#ffffff",
-            "title": "Resume Writing Service",
-            "content": "Tailored resumes designed to help you stand out.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/resumes-1"
-          }
-        },
-        "item_R8KcPQ": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "background": "#081f2f",
-            "text_color": "#ffffff",
-            "title": "Cover Letter Writing Service",
-            "content": "Personalised, job-specific cover letters to make a strong first impression.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/cover-letter"
-          }
-        },
-        "item_Wir4BU": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "background": "#081f2f",
-            "text_color": "#ffffff",
-            "title": "LinkedIn Profile Optimisation",
-            "content": "Enhance your online presence and attract recruiters.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/linkedin-optimisation"
-          }
-        }
-      },
-      "block_order": [
-        "item_rHmMmV",
-        "item_R8KcPQ",
-        "item_Wir4BU"
-      ],
+    "custom_html_xDUNK4": {
+      "type": "custom-html",
       "settings": {
-        "section_size": "medium"
+        "title": "",
+        "html": "<style>\n  .services-container {\n    display: flex;\n    flex-direction: column;\n    gap: 40px;\n    padding: 20px;\n    background-color: #f5f5f5;\n  }\n\n  .service-row {\n    display: grid;\n    grid-template-columns: 150px 1fr;\n    align-items: center;\n    gap: 20px;\n    background-color: #fff;\n    padding: 20px;\n    border-radius: 10px;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  }\n\n  .service-icon {\n    width: 100%;\n    max-width: 130px;\n    height: auto;\n  }\n\n  .service-content {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    gap: 10px;\n  }\n\n  .service-title {\n    font-size: 22px;\n    font-weight: bold;\n    margin: 0;\n    color: #000;\n  }\n\n  .service-description {\n    font-size: 16px;\n    line-height: 1.5;\n    color: #555;\n    margin: 0;\n  }\n\n  .learn-more {\n    align-self: flex-end;\n    color: #fb913c;\n    font-weight: bold;\n    text-decoration: none;\n    font-size: 16px;\n    margin-top: 10px;\n  }\n\n  .learn-more:hover {\n    text-decoration: underline;\n  }\n<\/style>\n\n<div class=\"services-container\">\n  <!-- Resume Writing Service -->\n  <div class=\"service-row\">\n    <img src=\"https:\/\/via.placeholder.com\/130\" alt=\"Resume Icon\" class=\"service-icon\">\n    <div class=\"service-content\">\n      <h2 class=\"service-title\">Resume Writing Service<\/h2>\n      <p class=\"service-description\">\n        Your resume is often your first impression with potential employers—make sure it counts. Our resume writing service creates job-specific, personalized resumes that showcase your skills, experience, and qualifications in the best possible light.\n      <\/p>\n      <a href=\"\/products\/resumes-1\" class=\"learn-more\">Learn more →<\/a>\n    <\/div>\n  <\/div>\n\n  <!-- Cover Letter Writing Service -->\n  <div class=\"service-row\">\n    <img src=\"https:\/\/via.placeholder.com\/130\" alt=\"Cover Letter Icon\" class=\"service-icon\">\n    <div class=\"service-content\">\n      <h2 class=\"service-title\">Cover Letter Writing Service<\/h2>\n      <p class=\"service-description\">\n        Make a lasting impression with a tailored cover letter. Our service helps you align your experience with the job and present yourself professionally.\n      <\/p>\n      <a href=\"\/products\/cover-letter\" class=\"learn-more\">Learn more →<\/a>\n    <\/div>\n  <\/div>\n\n  <!-- LinkedIn Profile Optimisation Service -->\n  <div class=\"service-row\">\n    <img src=\"https:\/\/via.placeholder.com\/130\" alt=\"LinkedIn Icon\" class=\"service-icon\">\n    <div class=\"service-content\">\n      <h2 class=\"service-title\">LinkedIn Profile Optimisation Service<\/h2>\n      <p class=\"service-description\">\n        Your LinkedIn profile is your digital business card. We optimize your profile to showcase your expertise and attract recruiters.\n      <\/p>\n      <a href=\"\/products\/linkedin-optimisation\" class=\"learn-more\">Learn more →<\/a>\n    <\/div>\n  <\/div>\n\n  <!-- Package Deals -->\n  <div class=\"service-row\">\n    <img src=\"https:\/\/via.placeholder.com\/130\" alt=\"Package Icon\" class=\"service-icon\">\n    <div class=\"service-content\">\n      <h2 class=\"service-title\">Package Deals<\/h2>\n      <p class=\"service-description\">\n        Get the best value with our package deals that combine essential services at a discounted price.\n      <\/p>\n      <a href=\"\/pages\/package-deals\" class=\"learn-more\">Learn more →<\/a>\n    <\/div>\n  <\/div>\n\n  <!-- Subscription Plans -->\n  <div class=\"service-row\">\n    <img src=\"https:\/\/via.placeholder.com\/130\" alt=\"Subscription Icon\" class=\"service-icon\">\n    <div class=\"service-content\">\n      <h2 class=\"service-title\">Subscription Plans<\/h2>\n      <p class=\"service-description\">\n        Stay prepared for every opportunity with our monthly subscription plans, offering ongoing support for your job search.\n      <\/p>\n      <a href=\"\/pages\/subscription-plans\" class=\"learn-more\">Learn more →<\/a>\n    <\/div>\n  <\/div>\n<\/div>"
       }
     },
     "newsletter": {
@@ -70,14 +16,14 @@
       "settings": {
         "title": "Newsletter",
         "content": "",
-        "background": "#081f2f",
+        "background": "#2d3282",
         "text": "#ffffff"
       }
     }
   },
   "order": [
     "main",
-    "mosaic_xcQt98",
+    "custom_html_xDUNK4",
     "newsletter"
   ]
 }

@@ -6,8 +6,6 @@
         "image_QTrLkh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp",
-            "mobile_image": "shopify:\/\/shop_images\/1EA36D63-1626-4A7D-AFC1-C7B34574DF5D.webp",
             "show_overlay": true,
             "overlay_opacity": 100,
             "text_color": "#ffffff",
@@ -17,7 +15,7 @@
             "button_background": "#fb913c",
             "button_text_color": "#ffffff",
             "button_text": "View Our Services",
-            "link": "shopify:\/\/collections\/all"
+            "link": "shopify:\/\/pages\/services"
           }
         }
       },
@@ -38,9 +36,9 @@
         "item_fwBMTM": {
           "type": "item",
           "settings": {
-            "show_overlay": true,
+            "show_overlay": false,
             "overlay_opacity": 80,
-            "background": "#081f2f",
+            "background": "#2d3282",
             "text_color": "#ffffff",
             "title": "Resume Writing Service",
             "content": "Tailored resumes that showcase your unique skills and experience, designed to align with specific job requirements. Stand out in the competitive job market with a professionally crafted resume that increases your chances of landing the job you need.",
@@ -54,9 +52,9 @@
         "item_7GXxrn": {
           "type": "item",
           "settings": {
-            "show_overlay": true,
+            "show_overlay": false,
             "overlay_opacity": 80,
-            "background": "#081f2f",
+            "background": "#2d3282",
             "text_color": "#ffffff",
             "title": "Cover Letter Writing",
             "content": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates.",
@@ -70,9 +68,9 @@
         "item_DymQg3": {
           "type": "item",
           "settings": {
-            "show_overlay": true,
+            "show_overlay": false,
             "overlay_opacity": 80,
-            "background": "#081f2f",
+            "background": "#2d3282",
             "text_color": "#ffffff",
             "title": "LinkedIn Profile Optimisation",
             "content": "Boost your professional online presence with a LinkedIn profile that’s optimised for visibility and impact. Our service enhances your profile to attract recruiters and align with your career goals, giving you a competitive edge.",
@@ -163,7 +161,7 @@
       "settings": {
         "title": "",
         "content": "",
-        "background": "#0c1e30",
+        "background": "#2d3282",
         "text": "#ffffff"
       }
     }

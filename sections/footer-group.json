@@ -2,34 +2,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-customer-support",
-            "title": "Top-notch support",
-            "content": ""
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "icon": "bi-secure-payment",
-            "title": "Secure payments",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "item-3",
-        "item-4"
-      ],
-      "settings": {
-        "stack_mobile": false
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -53,7 +25,6 @@
     }
   },
   "order": [
-    "text-with-icons",
     "footer"
   ]
 }
