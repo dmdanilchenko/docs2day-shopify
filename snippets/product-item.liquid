@@ -315,9 +315,9 @@
 
             {%- if product.available -%}
               {%- if product.variants.size == 1 -%}
-                <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ 'collection.product.choose_options' | t }}</a>
+                <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ section.settings.quick_buy_text }}</a>
               {%- else -%}
-                <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ 'collection.product.choose_options' | t }}</a>
+                <a href="{{ product.url }}" class="{{ quick_buy_classes }}">{{ section.settings.quick_buy_text }}</a>
               {%- endif -%}
             {%- else -%}
               <button class="{{ quick_buy_classes | replace: 'button--primary', 'button--disabled' }}" disabled>{{ 'collection.product.sold_out' | t }}</button>
@@ -329,7 +329,7 @@
               {%- assign quick_view_classes = 'product-item__action-button product-item__action-button--list-view-only button button--small button--ternary hidden-phone' -%}
             {%- endif -%}
 
-            <button type="button" class="{{ quick_view_classes }}" data-action="open-modal" data-secondary-action="open-quick-view" aria-controls="modal-quick-view-{{ section.id }}" data-product-url="{{ product.url }}">{{ 'collection.product.quick_view' | t }}</button>
+            <button type="button" class="{{ quick_view_classes }}" data-action="open-modal" data-secondary-action="open-quick-view" aria-controls="modal-quick-view-{{ section.id }}" data-product-url="{{ product.url }}">{{ section.settings.quick_view_text }}</button>
           {%- endform -%}
         {%- endcapture -%}
 

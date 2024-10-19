@@ -1,6 +1,21 @@
 <footer class="footer" data-section-id="{{ section.id }}" data-section-type="footer" role="contentinfo">
   <div class="container">
     <div class="footer__wrapper">
+      <a href="{{ routes.root_url }}" class="footer__logo-link">
+        {%- if section.settings.logo != blank -%}
+          {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
+          <span class="visually-hidden">{{ shop.name }}</span>
+          <img class="footer__logo-image"
+               style="max-width: {{ section.settings.logo_max_width }}px"
+               width="{{ section.settings.logo.width }}"
+               height="{{ section.settings.logo.height }}"
+               src="{{ section.settings.logo | img_url: image_size, scale: 2 }}"
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+        {%- else -%}
+          <span class="footer__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+
       {%- if section.blocks.size > 0 -%}
         <div class="footer__block-list">
           {%- for block in section.blocks -%}
@@ -171,7 +186,7 @@
             {%- endform -%}
           {%- endif -%}
 
-          {%- capture copyright_info -%}© {{ 'now' | date: '%Y' }} {{ shop.name }}<br>{{ powered_by_link }}{%- endcapture -%}
+          {%- capture copyright_info -%}© {{ 'now' | date: '%Y' }} {{ shop.name }}{%- endcapture -%}
           <p class="hidden-pocket">{{ copyright_info }}</p>
         </div>
 
@@ -213,11 +228,54 @@
   </div>
 </footer>
 
+<style>
+    {%- if section.settings.logo -%}
+    .footer__logo-image {
+        max-width: {{ section.settings.mobile_logo_max_width }}px !important;
+    }
+
+    @media screen and (min-width: 641px) {
+        .footer__logo-image {
+            max-width: {{ section.settings.logo_max_width }}px !important;
+        }
+    }
+    {%- endif -%}
+</style>
 
 {% schema %}
 {
   "name": "Footer",
   "settings": [
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image",
+      "info": "400 x 120px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Image width",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_max_width",
+      "min": 50,
+      "max": 170,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 80
+    },
     {
       "type": "checkbox",
       "id": "show_social_media",

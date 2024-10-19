@@ -155,21 +155,11 @@
       "settings": {
         "section_size": "medium"
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
-      }
     }
   },
   "order": [
     "slideshow_DBqmGG",
     "mosaic_yrH8cT",
-    "mosaic_Lj9ANB",
-    "newsletter"
+    "mosaic_Lj9ANB"
   ]
 }
