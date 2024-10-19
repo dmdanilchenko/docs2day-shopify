@@ -1,0 +1,105 @@
+
+/* Container for the three packages */
+.package-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Styling for each package box */
+.package-box {
+    width: 30%;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.package-icon {
+    font-size: 40px;
+    color: #8098f9; /* Light blue */
+    margin-bottom: 10px;
+}
+
+/* Title container to ensure equal height */
+.title-container {
+    height: 40px; /* Ensures alignment between all titles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Blue title styling */
+.package-title {
+    font-size: 18px;
+    color: #8098f9; /* Light blue */
+    font-weight: bold;
+}
+
+/* Price styling */
+.package-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.learn-more-button {
+    background-color: #fb913c; /* Orange */
+    color: white!important; /* White text color */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%; /* Full width */
+    max-width: 250px; /* Limits max width */
+    margin: 0 auto 30px; /* Centers button and adds bottom margin */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+}
+
+.learn-more-button:hover {
+    background-color: #e86b1e;
+}
+
+/* Paragraph styling directly under the button */
+.bold-paragraph {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0 20px; /* Proper spacing between elements */
+    text-align: center;
+}
+
+/* Custom bullet point styling */
+.package-box ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.package-box ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.package-box ul li::before {
+    content: '✔️';
+    color: #fb913c; /* Orange */
+    margin-right: 10px;
+    font-size: 18px;
+    background: none;
+    left: -30px;
+    line-height: 0;
+}
+
+
