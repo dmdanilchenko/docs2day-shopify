@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="{{ 'custom-subscriptions.css' | asset_url }}">
+<section class="section" data-section-id="{{ section.id }}" data-section-type="html">
+  <div class="container">
+    <div class="html rte">
+      <div class="subscription-container">
+        {%- for block in section.blocks -%}
+          <div class="plan-box">
+            <div class="plan-header">
+              <div class="plan-icon">
+                {%- if block.settings.image == blank -%}
+                  ⚡
+                {%- else -%}
+                  <img src="{{ block.settings.image | img_url: '100x100' }}" alt="icon">
+                {%- endif -%}
+              </div>
+              <h2 class="plan-title">{{ block.settings.title }}</h2>
+              <div class="plan-price">{{ block.settings.price }}</div>
+            </div>
+            <a class="subscribe-button" href="{{ block.settings.url }}">{{ block.settings.button_title }}</a>
+            <p class="bold-paragraph">{{ block.settings.description_title }}</p>
+            {{ block.settings.description }}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Custom Subscriptions",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Subscription Name"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$30 AUD/month"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_title",
+          "label": "Title",
+          "default": "Subscribe Now"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Description"
+        },
+        {
+          "type": "text",
+          "id": "description_title",
+          "label": "Title",
+          "default": "Cover Letter Plan"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Stay prepared for every opportunity with our Cover Letter Plan. For just$30 AUD per month, you’ll receive a professionally tailored cover letterfor each new job application. This plan ensures you always make a strongfirst impression.</p><ul><li>Up to 5 personalised cover letters</li><li>A job-specific cover letter to make your application stand out</li></ul>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Products",
+      "name": "Custom Subscriptions"
+    }
+  ]
+}
+{% endschema %}

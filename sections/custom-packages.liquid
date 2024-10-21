@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="{{ 'custom-packages.css' | asset_url }}">
+<section class="section" data-section-id="{{ section.id }}" data-section-type="html">
+  <div class="container">
+    <div class="html rte">
+      <div class="package-container">
+        {%- for block in section.blocks -%}
+          <div class="package-box">
+            <div class="package-icon">
+              {%- if block.settings.image == blank -%}
+                ⚡
+              {%- else -%}
+                <img src="{{ block.settings.image | img_url: '100x100' }}" alt="icon">
+              {%- endif -%}
+            </div>
+            <div class="title-container">
+              <div class="package-title">{{ block.settings.title }}</div>
+            </div>
+            <div class="package-price">{{ block.settings.price }}</div>
+            <a href="{{ block.settings.url }}" class="learn-more-button">
+              {{ block.settings.button_title }}
+            </a>
+            <p class="bold-paragraph">{{ block.settings.description_title }}</p>
+            {{ block.settings.description }}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Custom Packages",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Package Name"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$300"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_title",
+          "label": "Title",
+          "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Description"
+        },
+        {
+          "type": "text",
+          "id": "description_title",
+          "label": "Title",
+          "default": "Resume + Cover Letter"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<ul><li>A custom resume designed to highlight your experience and skills</li><li>A personalised cover letter tailored to the job you’re applying for</li><li>LinkedIn profile optimisation to boost recruiter visibility</li></ul>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Products",
+      "name": "Custom Packages"
+    }
+  ]
+}
+{% endschema %}
