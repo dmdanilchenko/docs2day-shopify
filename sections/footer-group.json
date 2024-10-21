@@ -16,14 +16,11 @@
         "links_BarQan"
       ],
       "settings": {
-        "logo": "shopify:\/\/shop_images\/Docs2Day_logo.svg",
-        "logo_max_width": 80,
-        "mobile_logo_max_width": 80,
-        "show_social_media": true,
+        "show_social_media": false,
         "enable_follow_on_shop": false,
-        "show_payment_icons": false,
-        "show_locale_selector": false,
-        "show_country_selector": false
+        "show_payment_icons": true,
+        "show_locale_selector": true,
+        "show_country_selector": true
       }
     }
   },
