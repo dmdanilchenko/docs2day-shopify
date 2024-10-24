@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "custom-css-class": "page-type-subscription"
+      }
     },
     "custom_packages_maYXCC": {
       "type": "custom-packages",

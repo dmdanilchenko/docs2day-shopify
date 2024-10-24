@@ -1,3 +1,25 @@
+.container {
+    max-width: 1360px;
+}
+
+.page-type-subscription {
+    max-width: 1150px;
+}
+
+.page-type-subscription .page__content {
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: #475467;
+    margin-bottom: 64px;
+}
+
+.page-type-subscription .page__header {
+    margin-bottom: 20px;
+}
+
 .product-info__block-item--attachment {
     margin-bottom: 20px;
 }
@@ -60,5 +82,10 @@ input::file-selector-button:hover {
 @media screen and (min-width: 641px) {
     .footer__title {
         display: none;
+    }
+
+    .h1, .rte h1 {
+        font-size: 36px;
+        line-height: 1.2222;
     }
 }

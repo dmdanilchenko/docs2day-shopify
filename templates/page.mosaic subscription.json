@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "custom-css-class": "page-type-subscription"
+      }
     },
     "custom_subscriptions_BXAHVx": {
       "type": "custom-subscriptions",
@@ -10,8 +12,8 @@
         "block_XWzj8r": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5A77F398-FB8A-4DC5-93DD-BE97B5700808.webp",
-            "title": "Subscription Name",
+            "image": "shopify:\/\/shop_images\/Featured_icon_2c277b17-2a84-44d4-8eb9-d6a8fc8c5473.svg",
+            "title": "Cover Letter Plan",
             "price": "$30 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "",
@@ -22,13 +24,13 @@
         "block_CVUM9M": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0AFA94BB-089C-48D3-9060-5BB676CD2019.webp",
-            "title": "Subscription Name 2",
+            "image": "shopify:\/\/shop_images\/Featured_icon_d03061da-2360-4b01-aaad-fa0888ce15b2.svg",
+            "title": "Job Seeker Pro Plan",
             "price": "$75 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "",
             "description_title": "Job Seeker Pro Plan",
-            "description": "<p>Stay prepared for every opportunity with our Cover Letter Plan. For just $75 AUD per month, you’ll receive a professionally tailored cover letterfor each new job application. This plan ensures you always make a strongfirst impression.<\/p><ul><li>Up to 5 personalised cover letters<\/li><li>A job-specific cover letter to make your application stand out<\/li><\/ul>"
+            "description": "<p>Gain full support in your job search with the Job Seeker Pro Plan. Each month, you’ll receive a custom resume update, a new cover letter tailored to your next job application, and LinkedIn profile adjustments to keep your profile fresh and relevant. Ideal for those actively applying and looking to keep their job application materials up to date.<\/p><ul><li>1 resume update<\/li><li>2 personalised cover letters<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
           }
         }
       },
