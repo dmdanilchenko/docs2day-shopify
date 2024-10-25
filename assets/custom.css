@@ -61,6 +61,43 @@ input::file-selector-button:hover {
     background: rgba(var(--secondary-button-background-rgb), .8);
 }
 
+.footer__newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer__newsletter-form button {
+    margin-top: 0;
+}
+
+.form__input-wrapper {
+    margin-bottom: 0;
+}
+
+.footer__link-item {
+    display: block;
+    color: var(--Secondary-300, #A4BCFD);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.footer__aside-item--localization, .footer__aside-item--copyright {
+    color: var(--Gray-300, #D1D1D6);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.social-media__item-list {
+    gap: 14px;
+}
+
+.social-media__item svg {
+    opacity: 1;
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;
@@ -84,8 +121,67 @@ input::file-selector-button:hover {
         display: none;
     }
 
+    .footer__block-item--newsletter .footer__title {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: none;
+    }
+
+    .footer__wrapper {
+        text-align: center;
+    }
+
+    .footer__logo-link {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    .footer__linklist {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .footer__block-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__block-item--newsletter {
+        max-width: 508px;
+        width: 100%;
+        padding: 24px;
+    }
+
     .h1, .rte h1 {
         font-size: 36px;
         line-height: 1.2222;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .footer__block-item--links {
+        max-width: none;
+    }
+
+    .footer__aside {
+        border-top: 1px solid var(--footer-body-text-color);
+        padding-top: 30px;
+    }
+
+    .footer__aside-title {
+        display: none;
+    }
+
+    .footer__linklist {
+        flex-flow: row;
+    }
+
+    .footer__block-item--newsletter {
+        flex-basis: auto;
     }
 }

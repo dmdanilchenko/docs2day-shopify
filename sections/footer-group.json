@@ -5,6 +5,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "newsletter_9APfUq": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Subscribe to our Newsletter",
+            "subheading": ""
+          }
+        },
         "links_BarQan": {
           "type": "links",
           "settings": {
@@ -13,14 +20,18 @@
         }
       },
       "block_order": [
+        "newsletter_9APfUq",
         "links_BarQan"
       ],
       "settings": {
-        "show_social_media": false,
+        "logo": "shopify:\/\/shop_images\/Docs2Day_logo.svg",
+        "logo_max_width": 80,
+        "mobile_logo_max_width": 80,
+        "show_social_media": true,
         "enable_follow_on_shop": false,
-        "show_payment_icons": true,
-        "show_locale_selector": true,
-        "show_country_selector": true
+        "show_payment_icons": false,
+        "show_locale_selector": false,
+        "show_country_selector": false
       }
     }
   },
