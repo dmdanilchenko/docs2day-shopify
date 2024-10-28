@@ -2,6 +2,42 @@
     max-width: 1360px;
 }
 
+.home-transparent-header main {
+    top: -130px;
+    position: relative;
+}
+
+.home-transparent-header:not(.is-scrolled) .shopify-section--announcement-bar {
+    position: relative;
+    z-index: 1;
+}
+
+.home-transparent-header:not(.is-scrolled) .announcement-bar {
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.home-transparent-header:not(.is-scrolled) .header {
+    background-color: transparent;
+}
+
+.home-transparent-header:not(.is-scrolled) .nav-bar {
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.home-transparent-header:not(.is-scrolled) .nav-bar:after {
+    background: transparent;
+}
+
+.home-transparent-header:not(.is-scrolled) .nav-bar__link {
+    color: #fff;
+}
+
+.home-transparent-header:not(.is-scrolled) .nav-bar__link:hover, .home-transparent-header:not(.is-scrolled) .nav-bar__link:focus {
+    color: var(--accent-color);
+}
+
 .page-type-subscription {
     max-width: 1150px;
 }
@@ -113,6 +149,15 @@ input::file-selector-button:hover {
     border-radius: 8px;
 }
 
+.slideshow__buttons {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;
@@ -132,6 +177,11 @@ input::file-selector-button:hover {
 }
 
 @media screen and (min-width: 641px) {
+
+    .home-transparent-header main {
+        top: -200px;
+    }
+
     .footer__title {
         display: none;
     }
@@ -176,9 +226,28 @@ input::file-selector-button:hover {
         font-size: 36px;
         line-height: 1.2222;
     }
+
+    .slideshow__buttons {
+        flex-flow: row;
+    }
 }
 
 @media screen and (min-width: 1000px) {
+    .home-transparent-header main {
+        top: -260px;
+    }
+
+    .slideshow__title {
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -1.2px;
+    }
+
+    .slideshow__content {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .footer__block-item--links {
         max-width: none;
     }
