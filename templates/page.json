@@ -3,7 +3,9 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "custom-css-class": "page"
+      }
     },
     "image_with_text_GDTrwL": {
       "type": "image-with-text",
@@ -52,15 +54,6 @@
         "button_text": "",
         "button_link": "shopify:\/\/collections\/all"
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Newsletter",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
-      }
     }
   },
   "order": [
@@ -68,7 +61,6 @@
     "image_with_text_GDTrwL",
     "image_with_text_PE9Rdn",
     "image_with_text_jrLAkE",
-    "image_with_text_BgyBmJ",
-    "newsletter"
+    "image_with_text_BgyBmJ"
   ]
 }

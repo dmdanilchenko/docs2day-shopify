@@ -98,6 +98,21 @@ input::file-selector-button:hover {
     opacity: 1;
 }
 
+.form__field {
+    border-radius: 8px;
+    border: 1px solid var(--Gray-300, #D0D5DD);
+    box-shadow: 0px 1px 2px 0px rgba(4, 54, 55, 0.05);
+}
+
+.form__field:focus {
+    border: 1px solid var(--Secondary-300, #A4BCFD);
+    box-shadow: 0px 1px 2px 0px rgba(45, 49, 166, 0.05), 0px 0px 0px 4px #E0EAFF;
+}
+
+.button {
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;

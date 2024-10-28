@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="{{ 'custom-contact-form.css' | asset_url }}">
 <div {% if page.handle != 'contact' %}class="section"{% endif %}>
-  <div class="container container--medium">
+  <div class="container container--medium {% if section.settings.show_store_info_left %}container--secondary-left{% endif %}">
     <div class="layout">
       <div class="layout__section">
         {%- form 'contact', class: 'form' , novalidate: 'novalidate' -%}
@@ -96,7 +97,7 @@
         {%- endform -%}
       </div>
 
-      {%- if section.settings.show_store_info -%}
+      {%- if section.settings.show_store_info or section.settings.show_store_info_left -%}
         <div class="layout__section layout__section--large-secondary">
           <div class="contact__store-info">
             {%- if section.settings.store_heading != blank -%}
@@ -147,7 +148,13 @@
     {
       "type": "checkbox",
       "id": "show_store_info",
-      "label": "Show store info",
+      "label": "Show store info on Right side",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_store_info_left",
+      "label": "Show store info on Left side",
       "default": false
     },
     {

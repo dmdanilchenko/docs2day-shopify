@@ -39,20 +39,10 @@
         "block_CVUM9M"
       ],
       "settings": {}
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Newsletter",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
-      }
     }
   },
   "order": [
     "main",
-    "custom_subscriptions_BXAHVx",
-    "newsletter"
+    "custom_subscriptions_BXAHVx"
   ]
 }

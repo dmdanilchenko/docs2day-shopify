@@ -53,19 +53,22 @@
       ],
       "settings": {}
     },
-    "newsletter": {
-      "type": "newsletter",
+    "contact_form_XLTLqn": {
+      "type": "contact-form",
       "settings": {
-        "title": "Newsletter",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
+        "form_heading": "Contact Us",
+        "form_content": "",
+        "show_store_info": true,
+        "show_store_info_left": true,
+        "store_heading": "",
+        "store_image": "shopify:\/\/shop_images\/48a1fa35776faec66b059beaa7c84a31.jpg",
+        "store_info": ""
       }
     }
   },
   "order": [
     "main",
     "custom_packages_maYXCC",
-    "newsletter"
+    "contact_form_XLTLqn"
   ]
 }
