@@ -1,66 +1,74 @@
 /* Main container for subscription plans */
 .subscription-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Aligns squares at the top */
-    gap: 30px; /* Adds space between the two squares */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: stretch;
     margin-top: 40px;
-    padding: 20px;
 }
 
 /* Individual plan box styling */
 .plan-box {
-    width: 48%; /* Adjusted width to fit side-by-side */
+    width: 100%; /* Adjusted width to fit side-by-side */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border: 1px solid #ddd;
-    padding: 30px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    color: #475467; /* Dark grey */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 /* Icon and title section */
 .plan-header {
     text-align: center;
-    margin-bottom: 15px;
+    width: 100%;
 }
 
 .plan-icon {
     font-size: 40px;
     color: #8098f9; /* Light blue */
-    margin-bottom: 5px;
 }
 
-.plan-title {
-    font-size: 20px;
-    color: #8098f9; /* Light blue */
-    font-weight: bold;
-    margin: 0;
+.plan-icon img {
+    margin: 0 0 20px;
+}
+
+.subscription-container .plan-title {
+    color: #6172F3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 0 8px;
 }
 
 /* Price styling */
 .plan-price {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 600;
     color: #000;
-    margin: 15px 0;
+    margin: 0 0 24px;
+    line-height: 38px;
+    letter-spacing: -0.64px;
 }
 
 /* Subscribe Now button */
 .subscribe-button {
     background-color: #fb913c; /* Orange */
     color: white !important;
-    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    font-weight: bold;
     width: 100%; /* Full width of the container */
-    max-width: 300px;
-    margin-bottom: 20px;
+    max-width: none;
+    margin-bottom: 48px;
     text-align: center;
 }
 
@@ -69,12 +77,18 @@
 }
 
 /* Bold black text under the button */
-.bold-paragraph {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000; /* Black bold text */
-    margin: 10px 0 20px;
+.plan-box .bold-paragraph {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 24px;
+    color: #101828;
     text-align: center;
+    font-style: normal;
+    line-height: 38px;
+}
+
+.plan-box p:not(:last-child){
+    margin: 0 0 24px;
 }
 
 /* Plan content section */
@@ -91,20 +105,30 @@
 }
 
 /* Bullet points */
-.custom-list {
+
+
+.plan-box ul {
     list-style: none;
     padding: 0;
+    margin-left: 36px;
 }
 
-.custom-list li {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
+.plan-box ul li:not(:last-child) {
+    line-height: 24px;
+    margin-bottom: 16px;
 }
 
-.custom-list li::before {
-    content: '✔️';
-    margin-right: 10px;
-    font-size: 18px;
-    color: #fb913c; /* Orange */
+.plan-box ul li:before {
+    content: url("check-icon.svg");
+    background: none;
+    left: -36px;
+    width: 24px;
+    height: 24px;
+    top: 3px;
+}
+
+@media screen and (min-width: 1000px) {
+    .subscription-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }

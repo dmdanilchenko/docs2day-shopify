@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "custom-css-class": "page"
+      }
     },
     "mosaic_98937B": {
       "type": "mosaic",
@@ -67,20 +69,10 @@
       "settings": {
         "section_size": "medium"
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Newsletter",
-        "content": "",
-        "background": "#081f2f",
-        "text": "#ffffff"
-      }
     }
   },
   "order": [
     "main",
-    "mosaic_98937B",
-    "newsletter"
+    "mosaic_98937B"
   ]
 }

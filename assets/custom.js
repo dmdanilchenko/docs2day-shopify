@@ -93,4 +93,19 @@ window.addEventListener('load', function () {
             dropdown.setAttribute('aria-hidden', dropdown.getAttribute('aria-hidden') === 'true' ? 'false' : 'true');
         });
     }
+
+
+    // add or remove class is-scrolled to body
+    const body = document.body;
+    window.addEventListener('scroll', function () {
+        checkScroll()
+    });
+    checkScroll();
+    function checkScroll() {
+        if (window.scrollY > 100) {
+            body.classList.add('is-scrolled');
+        } else {
+            body.classList.remove('is-scrolled');
+        }
+    }
 });

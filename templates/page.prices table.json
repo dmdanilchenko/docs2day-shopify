@@ -2,20 +2,96 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "newsletter",
       "settings": {
-        "title": "Newsletter",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
+        "custom-css-class": "page"
       }
+    },
+    "custom_packages_mPx9Rn": {
+      "type": "custom-packages",
+      "blocks": {
+        "block_pU4kKV": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_010db08a-dea3-4822-89b3-c67ed5231269.svg",
+            "title": "Essential Package",
+            "price": "$300",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + Cover Letter",
+            "description": "<ul><li>A professionally tailored resume to showcase your strengths<\/li><li>A job-specific cover letter to make your application stand out.<\/li><\/ul>"
+          }
+        },
+        "block_ipAQ3q": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_e9db64f1-1f67-4abd-9a8b-0c8b52a5ba9b.svg",
+            "title": "Professional Package",
+            "price": "$460",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + Cover Letter + LinkedIn Optimisation",
+            "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+          }
+        },
+        "block_FYgAYg": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_dbf2de34-0fcf-47e1-8ba8-1b4d116b0472.svg",
+            "title": "Resume + LinkedIn Optimisation Package",
+            "price": "$375",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + LinkedIn Optimisation",
+            "description": "<ul><li>A tailored resume that aligns with your career goals<\/li><li>A fully optimised LinkedIn profile to increase your chances of getting noticed by recruiters<\/li><\/ul>"
+          }
+        },
+        "block_T6xn3M": {
+          "type": "block",
+          "settings": {
+            "title": "Package Name",
+            "price": "$300",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + Cover Letter",
+            "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+          }
+        },
+        "block_NPcFXY": {
+          "type": "block",
+          "settings": {
+            "title": "Package Name",
+            "price": "$300",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + Cover Letter",
+            "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+          }
+        },
+        "block_iRfgH9": {
+          "type": "block",
+          "settings": {
+            "title": "Package Name",
+            "price": "$300",
+            "button_title": "Learn more",
+            "url": "",
+            "description_title": "Resume + Cover Letter",
+            "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_pU4kKV",
+        "block_ipAQ3q",
+        "block_FYgAYg",
+        "block_T6xn3M",
+        "block_NPcFXY",
+        "block_iRfgH9"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "newsletter"
+    "custom_packages_mPx9Rn"
   ]
 }

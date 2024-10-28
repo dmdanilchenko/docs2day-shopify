@@ -1,17 +1,15 @@
-
 /* Container for the three packages */
 .package-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
     margin-top: 40px;
     flex-wrap: wrap;
 }
 
 /* Styling for each package box */
 .package-box {
-    width: 30%;
-    padding: 30px;
+    padding: 32px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
@@ -52,15 +50,13 @@
 /* Button styling */
 .learn-more-button {
     background-color: #fb913c; /* Orange */
-    color: white!important; /* White text color */
-    padding: 12px 25px;
+    color: white !important; /* White text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     width: 100%; /* Full width */
-    max-width: 250px; /* Limits max width */
     margin: 0 auto 30px; /* Centers button and adds bottom margin */
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -81,6 +77,7 @@
 
 /* Custom bullet point styling */
 .package-box ul {
+    margin-left: 36px;
     list-style: none;
     padding: 0;
     text-align: left;
@@ -92,14 +89,23 @@
     align-items: center;
 }
 
-.package-box ul li::before {
-    content: '✔️';
-    color: #fb913c; /* Orange */
-    margin-right: 10px;
-    font-size: 18px;
+.package-box ul li:before {
+    content: url("check-icon.svg");
     background: none;
-    left: -30px;
-    line-height: 0;
+    left: -36px;
+    width: 24px;
+    height: 24px;
+    top: 3px;
 }
 
+@media screen and (min-width: 641px) {
+    .package-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media screen and (min-width: 1000px) {
+    .package-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

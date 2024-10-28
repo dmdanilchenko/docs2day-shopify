@@ -8,8 +8,9 @@
     },
     "privacy-banner": {
       "type": "privacy-banner",
-      "disabled": true,
-      "settings": {}
+      "settings": {
+        "text": "<p>Use this bar to show information about your cookie policy.<\/p>"
+      }
     }
   },
   "order": [

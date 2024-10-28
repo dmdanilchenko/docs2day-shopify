@@ -6,16 +6,21 @@
         "image_QTrLkh": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/21ea0a9f91f69ac1edc74acedd556726.png",
             "show_overlay": true,
             "overlay_opacity": 100,
             "text_color": "#ffffff",
             "title": "Get the Professional Edge with Tailored Career Documents",
             "content": "Expert Resume, Cover Letter, and LinkedIn Profile Services to Boost Your Career",
-            "content_position": "middle_center",
+            "content_position": "middle_left",
             "button_background": "#fb913c",
             "button_text_color": "#ffffff",
             "button_text": "View Our Services",
-            "link": "shopify:\/\/pages\/services"
+            "link": "shopify:\/\/pages\/services",
+            "button_alt_background": "#444ce7",
+            "button_alt_text_color": "#ffffff",
+            "button_alt_text": "Get Started Now",
+            "link_alt": "shopify:\/\/pages\/contact"
           }
         }
       },
@@ -23,7 +28,7 @@
         "image_QTrLkh"
       ],
       "settings": {
-        "edge_to_edge": false,
+        "edge_to_edge": true,
         "section_size": "preserve_ratio",
         "carousel_effect": "slide",
         "autoplay": true,
@@ -155,21 +160,11 @@
       "settings": {
         "section_size": "medium"
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "",
-        "content": "",
-        "background": "#2d3282",
-        "text": "#ffffff"
-      }
     }
   },
   "order": [
     "slideshow_DBqmGG",
     "mosaic_yrH8cT",
-    "mosaic_Lj9ANB",
-    "newsletter"
+    "mosaic_Lj9ANB"
   ]
 }
