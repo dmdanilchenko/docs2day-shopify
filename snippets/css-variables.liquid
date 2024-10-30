@@ -89,7 +89,7 @@
     --footer-accent-color-rgb:    {{ settings.footer_accent_color | color_extract: 'red' }}, {{ settings.footer_accent_color | color_extract: 'green' }}, {{ settings.footer_accent_color | color_extract: 'blue' }};
     --footer-border:              {% if settings.footer_background_color == settings.background %}1px solid var(--border-color){% else %}none{% endif %};
     
-    --flickity-arrow-color: {{ settings.border_color | color_darken: 20 }};
+    --flickity-arrow-color: #F2F4F7;
 
     {%- assign product_on_sale_lightness = settings.product_on_sale_accent | color_extract: 'lightness' -%}
     {%- assign product_custom_label_1_lightness = settings.product_label_1_background | color_extract: 'lightness' -%}

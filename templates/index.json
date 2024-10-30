@@ -35,66 +35,82 @@
         "cycle_speed": 5
       }
     },
-    "mosaic_yrH8cT": {
-      "type": "mosaic",
+    "featured_collection_6kPAdJ": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "title": "Docs2Day Services",
+        "products_count": 12,
+        "layout": "vertical",
+        "stack_products": false,
+        "show_quick_buy": false,
+        "link_title": "View all",
+        "link_url": "shopify:\/\/collections"
+      }
+    },
+    "custom_testimonials_88iAEk": {
+      "type": "custom-testimonials",
       "blocks": {
-        "item_fwBMTM": {
-          "type": "item",
+        "testimonial_FaUEy4": {
+          "type": "testimonial",
           "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "Resume Writing Service",
-            "content": "Tailored resumes that showcase your unique skills and experience, designed to align with specific job requirements. Stand out in the competitive job market with a professionally crafted resume that increases your chances of landing the job you need.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/resumes-1"
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient",
+            "stars": 5
           }
         },
-        "item_7GXxrn": {
-          "type": "item",
+        "testimonial_B9jjKY": {
+          "type": "testimonial",
           "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "Cover Letter Writing",
-            "content": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/cover-letter"
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient",
+            "stars": 5
           }
         },
-        "item_DymQg3": {
-          "type": "item",
+        "testimonial_qfDPPY": {
+          "type": "testimonial",
           "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "LinkedIn Profile Optimisation",
-            "content": "Boost your professional online presence with a LinkedIn profile that’s optimised for visibility and impact. Our service enhances your profile to attract recruiters and align with your career goals, giving you a competitive edge.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/linkedin-optimisation"
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient",
+            "stars": 5
+          }
+        },
+        "testimonial_pzHEcC": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient",
+            "stars": 5
           }
         }
       },
       "block_order": [
-        "item_fwBMTM",
-        "item_7GXxrn",
-        "item_DymQg3"
+        "testimonial_FaUEy4",
+        "testimonial_B9jjKY",
+        "testimonial_qfDPPY",
+        "testimonial_pzHEcC"
       ],
-      "custom_css": [],
       "settings": {
-        "section_size": "medium"
+        "title": "Testimonials",
+        "bg_color": "#444ce7"
+      }
+    },
+    "blog_posts_PaN6BL": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "blog_posts_count": 3,
+        "title": "Blog posts",
+        "link_title": "View all",
+        "show_category": true,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpt": false,
+        "stack_mobile": false
       }
     },
     "mosaic_Lj9ANB": {
@@ -164,7 +180,9 @@
   },
   "order": [
     "slideshow_DBqmGG",
-    "mosaic_yrH8cT",
+    "featured_collection_6kPAdJ",
+    "custom_testimonials_88iAEk",
+    "blog_posts_PaN6BL",
     "mosaic_Lj9ANB"
   ]
 }
