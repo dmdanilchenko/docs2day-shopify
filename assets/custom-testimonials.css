@@ -1,3 +1,7 @@
+[data-section-type="testimonials"] {
+    margin: 0;
+}
+
 .container--testimonials {
     max-width: none;
     padding-top: 64px;

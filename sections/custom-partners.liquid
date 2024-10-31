@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="{{ 'custom-partners.css' | asset_url }}">
+<section class="section" data-section-id="{{ section.id }}" data-section-type="partners">
+  <div class="container container--partners">
+    <div class="section-header text-center">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="scroller">
+      <div class="scroller__inner">
+        <div class="partners product-list product-list product-list--vertical product-list--scrollable">
+          {% for block in section.blocks %}
+            <div class="partner product-item product-item--vertical 1/4--lap 1/5--desk 1/6--wide">
+              <div class="partner-inner">
+                <a href="{{ block.settings.url }}" class="partner-link" title="{{ block.settings.name }}">
+                  <img src="{{ block.settings.logo | img_url: '300x300' }}" alt="{{ block.settings.name }}" class="partner-image">
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Partners",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Official partner of these companies"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "partner",
+      "name": "Partner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom Partners"
+    }
+  ]
+}
+{% endschema %}
