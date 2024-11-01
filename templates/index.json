@@ -35,136 +35,163 @@
         "cycle_speed": 5
       }
     },
-    "mosaic_yrH8cT": {
-      "type": "mosaic",
-      "blocks": {
-        "item_fwBMTM": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "Resume Writing Service",
-            "content": "Tailored resumes that showcase your unique skills and experience, designed to align with specific job requirements. Stand out in the competitive job market with a professionally crafted resume that increases your chances of landing the job you need.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/resumes-1"
-          }
-        },
-        "item_7GXxrn": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "Cover Letter Writing",
-            "content": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/cover-letter"
-          }
-        },
-        "item_DymQg3": {
-          "type": "item",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 80,
-            "background": "#2d3282",
-            "text_color": "#ffffff",
-            "title": "LinkedIn Profile Optimisation",
-            "content": "Boost your professional online presence with a LinkedIn profile that’s optimised for visibility and impact. Our service enhances your profile to attract recruiters and align with your career goals, giving you a competitive edge.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": "shopify:\/\/products\/linkedin-optimisation"
-          }
-        }
-      },
-      "block_order": [
-        "item_fwBMTM",
-        "item_7GXxrn",
-        "item_DymQg3"
-      ],
-      "custom_css": [],
+    "featured_collection_6kPAdJ": {
+      "type": "featured-collection",
       "settings": {
-        "section_size": "medium"
+        "collection": "all",
+        "title": "Docs2Day Services",
+        "products_count": 12,
+        "layout": "vertical",
+        "stack_products": false,
+        "show_quick_buy": false,
+        "link_title": "View all",
+        "link_url": "shopify:\/\/collections"
       }
     },
-    "mosaic_Lj9ANB": {
-      "type": "mosaic",
+    "custom_testimonials_88iAEk": {
+      "type": "custom-testimonials",
       "blocks": {
-        "item_qk8nRR": {
-          "type": "item",
+        "testimonial_FaUEy4": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2D4F8FE6-A326-4191-83E3-17A4B0215F62.jpg",
-            "show_overlay": true,
-            "overlay_opacity": 80,
-            "background": "#081f2f",
-            "text_color": "#ffffff",
-            "title": "Personal Experience and Insight",
-            "content": "We understand the challenges of standing out in today’s job market. Our firsthand experience in successfully navigating job searches gives us the insight to help you succeed.",
-            "content_position": "top_left",
-            "button_background": "#0c1e30",
-            "button_text_color": "#ffffff",
-            "button_text": "Learn more",
-            "link": ""
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
           }
         },
-        "item_nnX6bH": {
-          "type": "item",
+        "testimonial_B9jjKY": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/18E581A7-6F2E-4B30-867F-A9A879AA728C.webp",
-            "show_overlay": true,
-            "overlay_opacity": 80,
-            "background": "#ffffff",
-            "text_color": "#ffffff",
-            "title": "Tailored to Your Needs",
-            "content": "Each service is carefully crafted to fit your specific career goals and the demands of the role you’re pursuing, ensuring you have the best chance of landing the job you want.",
-            "content_position": "top_left",
-            "button_background": "#4f5558",
-            "button_text_color": "#f3f4f4",
-            "button_text": "Learn more",
-            "link": ""
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
           }
         },
-        "item_UfGTre": {
-          "type": "item",
+        "testimonial_qfDPPY": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/989CD4BA-A85A-43D3-9B7A-2649CB0DBBFD.webp",
-            "show_overlay": true,
-            "overlay_opacity": 80,
-            "background": "#ffffff",
-            "text_color": "#ffffff",
-            "title": "Committed to Your Success",
-            "content": "We’re dedicated to helping you succeed, providing professional, personalised support at every step to make sure you’re fully prepared to impress employers.",
-            "content_position": "top_left",
-            "button_background": "#4f5558",
-            "button_text_color": "#f3f4f4",
-            "button_text": "Learn more",
-            "link": ""
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_pzHEcC": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
           }
         }
       },
       "block_order": [
-        "item_qk8nRR",
-        "item_nnX6bH",
-        "item_UfGTre"
+        "testimonial_FaUEy4",
+        "testimonial_B9jjKY",
+        "testimonial_qfDPPY",
+        "testimonial_pzHEcC"
       ],
       "settings": {
-        "section_size": "medium"
+        "title": "Testimonials",
+        "bg_color": "#444ce7"
+      }
+    },
+    "blog_posts_PaN6BL": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "blog_posts_count": 3,
+        "title": "Stay Updated with Docs2Day News & Insights",
+        "link_title": "View all",
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpt": true,
+        "stack_mobile": false
+      }
+    },
+    "custom_partners_9wTf7P": {
+      "type": "custom-partners",
+      "blocks": {
+        "partner_iahznG": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo.png",
+            "url": "shopify:\/\/pages\/contact",
+            "name": "boltshift"
+          }
+        },
+        "partner_AU7hMV": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_40f17659-e3d9-4abd-85c1-7998a93e3d92.png",
+            "url": "",
+            "name": "lightbox"
+          }
+        },
+        "partner_VCrKXL": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_32a79313-a19e-4611-a9ff-aa830d659e79.png",
+            "url": "",
+            "name": "featherdev"
+          }
+        },
+        "partner_GdFtXc": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_08f50fb3-5784-458a-bc5e-1ac28fabf791.png",
+            "url": "",
+            "name": "spherule"
+          }
+        },
+        "partner_Yz64hi": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_3e11ecc5-184e-4a83-b2ce-bc36476e3dfa.png",
+            "url": "",
+            "name": "global bank"
+          }
+        },
+        "partner_4WbEYP": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_0c1d1d84-961c-46c3-b655-7ab539b7de04.png",
+            "url": "",
+            "name": "nietzsche"
+          }
+        },
+        "partner_p8AQjR": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_0c1d1d84-961c-46c3-b655-7ab539b7de04.png",
+            "url": "",
+            "name": "second"
+          }
+        }
+      },
+      "block_order": [
+        "partner_iahznG",
+        "partner_AU7hMV",
+        "partner_VCrKXL",
+        "partner_GdFtXc",
+        "partner_Yz64hi",
+        "partner_4WbEYP",
+        "partner_p8AQjR"
+      ],
+      "settings": {
+        "title": "Official partner of these companies"
       }
     }
   },
   "order": [
     "slideshow_DBqmGG",
-    "mosaic_yrH8cT",
-    "mosaic_Lj9ANB"
+    "featured_collection_6kPAdJ",
+    "custom_testimonials_88iAEk",
+    "blog_posts_PaN6BL",
+    "custom_partners_9wTf7P"
   ]
 }

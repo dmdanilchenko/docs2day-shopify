@@ -9596,6 +9596,150 @@ var FeaturedCollectionSection = class {
   }
 };
 
+// custom section
+var import_flickity200 = __toESM(require_js());
+var TestimonialsSection = class {
+  constructor(element) {
+    this.element = element;
+    this.delegateElement = new main_default(this.element);
+    this.flickityInstance = new import_flickity200.default(this.element.querySelector(".testimonials"), {
+      watchCSS: true,
+      pageDots: false,
+      prevNextButtons: true,
+      contain: true,
+      resize: false,
+      groupCells: true,
+      cellAlign: "left",
+      draggable: !window.matchMedia("(-moz-touch-enabled: 0), (hover: hover)").matches
+    });
+    let lastWidth = window.innerWidth;
+    window.addEventListener("resize", () => {
+      if (window.innerWidth !== lastWidth) {
+        this.flickityInstance.resize();
+        lastWidth = window.innerWidth;
+      }
+    });
+
+    this.productItemColorSwatch = new ProductItemColorSwatch(this.element);
+    this._fixSafari();
+    this._attachListeners();
+  }
+  onUnload() {
+    this.flickityInstance.destroy();
+    window.removeEventListener("resize", this._fixSafariListener);
+    this.delegateElement.off("change");
+    this.productItemColorSwatch.destroy();
+    if (this.resizeObserver) {
+      this.resizeObserver.disconnect();
+    }
+  }
+  _attachListeners() {
+    this._fixSafariListener = this._fixSafari.bind(this);
+    window.addEventListener("resize", this._fixSafariListener);
+    if (window.ResizeObserver && this.flickityInstance) {
+      this.resizeObserver = new ResizeObserver(() => {
+        this.flickityInstance.resize();
+      });
+      this.element.querySelectorAll(".product-item").forEach((item) => {
+        this.resizeObserver.observe(item);
+      });
+    }
+  }
+  /**
+   * On Safari 11.1 and lower, the browser incorrectly calculate the height of flex and grid items due to a bug
+   * on how padding percentage is calculated (that we use for allocating image space). This is solved in Safari 11.1 and higher.
+   *
+   * For those browsers, we fix that in JavaScript by setting the height directly for each aspect ratio image
+   *
+   * @private
+   */
+  _fixSafari() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.includes("safari") && (userAgent.includes("version/10.1") || userAgent.includes("version/10.3") || userAgent.includes("version/11.0"))) {
+      const isPhone = Responsive.matchesBreakpoint("phone");
+      this.element.querySelectorAll(".product-item__image-wrapper .aspect-ratio, .product-item__image-wrapper .placeholder-svg").forEach((image) => {
+        if (isPhone) {
+          image.parentNode.style.height = null;
+        } else {
+          image.parentNode.style.height = `${image.clientHeight}px`;
+        }
+      });
+    }
+  }
+};
+
+// custom section
+var import_flickity201 = __toESM(require_js());
+var PartnersSection = class {
+  constructor(element) {
+    this.element = element;
+    this.delegateElement = new main_default(this.element);
+    this.flickityInstance = new import_flickity201.default(this.element.querySelector(".partners"), {
+      watchCSS: true,
+      pageDots: false,
+      prevNextButtons: true,
+      contain: true,
+      resize: false,
+      groupCells: true,
+      cellAlign: "left",
+      draggable: !window.matchMedia("(-moz-touch-enabled: 0), (hover: hover)").matches
+    });
+    let lastWidth = window.innerWidth;
+    window.addEventListener("resize", () => {
+      if (window.innerWidth !== lastWidth) {
+        this.flickityInstance.resize();
+        lastWidth = window.innerWidth;
+      }
+    });
+
+    this.productItemColorSwatch = new ProductItemColorSwatch(this.element);
+    this._fixSafari();
+    this._attachListeners();
+  }
+  onUnload() {
+    this.flickityInstance.destroy();
+    window.removeEventListener("resize", this._fixSafariListener);
+    this.delegateElement.off("change");
+    this.productItemColorSwatch.destroy();
+    if (this.resizeObserver) {
+      this.resizeObserver.disconnect();
+    }
+  }
+  _attachListeners() {
+    this._fixSafariListener = this._fixSafari.bind(this);
+    window.addEventListener("resize", this._fixSafariListener);
+    if (window.ResizeObserver && this.flickityInstance) {
+      this.resizeObserver = new ResizeObserver(() => {
+        this.flickityInstance.resize();
+      });
+      this.element.querySelectorAll(".product-item").forEach((item) => {
+        this.resizeObserver.observe(item);
+      });
+    }
+  }
+  /**
+   * On Safari 11.1 and lower, the browser incorrectly calculate the height of flex and grid items due to a bug
+   * on how padding percentage is calculated (that we use for allocating image space). This is solved in Safari 11.1 and higher.
+   *
+   * For those browsers, we fix that in JavaScript by setting the height directly for each aspect ratio image
+   *
+   * @private
+   */
+  _fixSafari() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.includes("safari") && (userAgent.includes("version/10.1") || userAgent.includes("version/10.3") || userAgent.includes("version/11.0"))) {
+      const isPhone = Responsive.matchesBreakpoint("phone");
+      this.element.querySelectorAll(".product-item__image-wrapper .aspect-ratio, .product-item__image-wrapper .placeholder-svg").forEach((image) => {
+        if (isPhone) {
+          image.parentNode.style.height = null;
+        } else {
+          image.parentNode.style.height = `${image.clientHeight}px`;
+        }
+      });
+    }
+  }
+};
+
 // js/sections/GiftCardSection.js
 var GiftCardSection = class {
   constructor(container) {
@@ -11316,6 +11460,8 @@ if (!window.customElements.get("progress-bar")) {
     sections.register("collection-list", CollectionListSection);
     sections.register("collection", CollectionSection);
     sections.register("featured-collection", FeaturedCollectionSection);
+    sections.register("testimonials", TestimonialsSection);
+    sections.register("partners", PartnersSection);
     sections.register("footer", FooterSection);
     sections.register("gift-card", GiftCardSection);
     sections.register("header", HeaderSection);

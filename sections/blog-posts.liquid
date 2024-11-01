@@ -7,7 +7,7 @@
         <h2 class="section__title heading h3">{{ section.settings.title | escape }}</h2>
 
         {%- unless section.settings.link_title == blank -%}
-          <a href="{{ blog.url }}" class="section__action-link link">{{ section.settings.link_title }} {% render 'icon', icon: 'tail-right' %}</a>
+          <a href="{{ blog.url }}" class="button button--primary">{{ section.settings.link_title }} {% render 'icon', icon: 'tail-right' %}</a>
         {%- endunless -%}
       </header>
     {%- endif -%}
