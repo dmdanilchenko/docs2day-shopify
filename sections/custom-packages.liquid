@@ -2,13 +2,40 @@
 <section class="section" data-section-id="{{ section.id }}" data-section-type="html">
   <div class="container">
     <div class="html rte">
-      <div class="package-container">
+      {%- if section.settings.show_filter -%}
+        <div class="filter-container">
+          <div class="filter-container-inner">
+            {% assign product_types_array = "" %}
+            {%- for block in section.blocks -%}
+              {% assign product_types_array = product_types_array | append: block.settings.product_type | append: "," %}
+            {%- endfor -%}
+            {%- assign product_types_array = product_types_array | split: "," | uniq %}
+
+            {%- for type in product_types_array -%}
+              {% if forloop.first %}
+                <button class="filter-button filter-button--active button"
+                        data-filter="package-box--{{ type | downcase | replace: ' ', '-' }}">{{ type }}</button>
+              {% else %}
+                <button class="filter-button button"
+                        data-filter="package-box--{{ type | downcase | replace: ' ', '-' }}">{{ type }}</button>
+              {% endif %}
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {% assign count = 0 %}
+      {% for block in section.blocks %}
+        {% assign count = count | plus: 1 %}
+      {% endfor %}
+      <div class="package-container {% if section.settings.show_filter %} package-container--with-filter {% endif %} {% if count <= 2 %}two-columns{% endif %}">
         {%- for block in section.blocks -%}
+        {%- if section.settings.show_filter -%}
+        <div class="package-box package-box--{{ block.settings.product_type | downcase | replace: ' ', '-' }}">
+          {%- else -%}
           <div class="package-box">
+            {%- endif -%}
             <div class="package-icon">
-              {%- if block.settings.image == blank -%}
-                ⚡
-              {%- else -%}
+              {%- if block.settings.image != blank -%}
                 <img src="{{ block.settings.image | img_url: '100x100' }}" alt="icon">
               {%- endif -%}
             </div>
@@ -20,22 +47,36 @@
               {{ block.settings.button_title }}
             </a>
             <p class="bold-paragraph">{{ block.settings.description_title }}</p>
-            {{ block.settings.description }}
+            <div class="package-description">{{ block.settings.description }}</div>
           </div>
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
-  </div>
 </section>
 {% schema %}
 {
   "name": "Custom Packages",
-  "settings": [],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_filter",
+      "label": "Show filter",
+      "default": false
+    }
+  ],
   "blocks": [
     {
       "type": "block",
       "name": "Block",
       "settings": [
+        {
+          "type": "text",
+          "id": "product_type",
+          "label": "Product type",
+          "default": "Packages",
+          "info": "This is used to filter the products. Use: 'Individual Services', 'Packages', 'Subscription Plans' etc."
+        },
         {
           "type": "image_picker",
           "id": "image",
