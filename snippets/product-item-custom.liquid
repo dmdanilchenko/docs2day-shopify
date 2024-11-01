@@ -254,6 +254,7 @@
           {{ price_list }}
         {%- endif -%}
 
+        <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
         {%- if settings.show_reviews_badge -%}
           <a class="product-item__reviews-badge link" href="{{ product.url }}#product-reviews">
             {%- render 'product-rating', product: product -%}

@@ -8,7 +8,7 @@
           "settings": {
             "show_vendor": true,
             "show_sku": false,
-            "show_reviews_badge": false,
+            "show_reviews_badge": true,
             "show_share_buttons": false
           }
         },
@@ -83,11 +83,27 @@
         "title": "Recently viewed",
         "show_quick_buy": false
       }
+    },
+    "17304071321d725ca5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_JCVY8J": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_JCVY8J"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "17304071321d725ca5"
   ]
 }

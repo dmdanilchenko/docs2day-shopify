@@ -19,7 +19,7 @@
             "link": "shopify:\/\/pages\/services",
             "button_alt_background": "#444ce7",
             "button_alt_text_color": "#ffffff",
-            "button_alt_text": "Get Started Now",
+            "button_alt_text": "Contact Us",
             "link_alt": "shopify:\/\/pages\/contact"
           }
         }
@@ -45,7 +45,7 @@
         "stack_products": false,
         "show_quick_buy": false,
         "link_title": "View all",
-        "link_url": "shopify:\/\/collections"
+        "link_url": "shopify:\/\/pages\/services"
       }
     },
     "custom_testimonials_88iAEk": {
@@ -55,44 +55,34 @@
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-            "author": "Renee Wells",
-            "author_title": "Product Designer, Quotient"
+            "text": "\"The resume I received was spot on. It was customised exactly to the job I was applying for! The whole process was easy, professional, and efficient—can’t recommend them enough.\"",
+            "author": "",
+            "author_title": ""
           }
         },
         "testimonial_B9jjKY": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-            "author": "Renee Wells",
-            "author_title": "Product Designer, Quotient"
+            "text": "“I’ve always found cover letters a pain, but this service made it simple. They really nailed it! Cheers.”",
+            "author": "",
+            "author_title": ""
           }
         },
         "testimonial_qfDPPY": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-            "author": "Renee Wells",
-            "author_title": "Product Designer, Quotient"
-          }
-        },
-        "testimonial_pzHEcC": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-            "author": "Renee Wells",
-            "author_title": "Product Designer, Quotient"
+            "text": "“After Docs2Day team worked on my LinkedIn profile, I started getting more views and messages from recruiters. Definitely made a difference.”",
+            "author": "",
+            "author_title": ""
           }
         }
       },
       "block_order": [
         "testimonial_FaUEy4",
         "testimonial_B9jjKY",
-        "testimonial_qfDPPY",
-        "testimonial_pzHEcC"
+        "testimonial_qfDPPY"
       ],
       "settings": {
         "title": "Testimonials",

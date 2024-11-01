@@ -36,9 +36,9 @@
     "animation_image_zoom": true,
     "show_vendor": true,
     "show_secondary_image": true,
-    "show_reviews_badge": false,
+    "show_reviews_badge": true,
     "show_discount": true,
-    "discount_mode": "saving",
+    "discount_mode": "percentage",
     "product_price_position": "after_title",
     "product_image_size": "short",
     "show_color_swatch": false,
@@ -59,7 +59,7 @@
     "social_linkedin": "https:\/\/linkedin.com\/in\/shopify",
     "social_snapchat": "",
     "social_fancy": "",
-    "favicon": "shopify:\/\/shop_images\/BC8C4457-73B7-4003-9830-445E7581BA8A.png",
+    "favicon": "shopify:\/\/shop_images\/Image_1-11-2024_at_5.06_AM.jpg",
     "search_mode": "product,article",
     "checkout_header_image": "",
     "checkout_logo_image": "",
@@ -126,7 +126,14 @@
         "settings": {}
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Metal": {
