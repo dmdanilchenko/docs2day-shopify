@@ -270,19 +270,19 @@
           {%- if shop.customer_accounts_enabled -%}
             <div class="header__action-item header__action-item--account">
               {%- if customer -%}
-                <span class="header__action-item-title hidden-pocket hidden-lap">{{ 'header.general.welcome' | t: first_name: customer.first_name | truncate: 20 }}</span>
+                <span class="header__action-item-title hidden-pocket hidden-lap hidden-desk">{{ 'header.general.welcome' | t: first_name: customer.first_name | truncate: 20 }}</span>
               {%- else -%}
-                <span class="header__action-item-title hidden-pocket hidden-lap">{{ 'header.general.login' | t }}</span>
+                <span class="header__action-item-title hidden-pocket hidden-lap hidden-desk">{{ 'header.general.login' | t }}</span>
               {%- endif -%}
 
               <div class="header__action-item-content">
                 {% if customer %}
                   <button class="header__action-item-link" data-action="toggle-my-account-linklist" aria-controls="desktop-account-selector" aria-expanded="false">
-                    <span class="header__action-item-link header__account-icon icon-state hidden-desk" aria-label="{{ 'header.general.account' | t }}">
+                    <span class="header__action-item-link header__account-icon icon-state" aria-label="{{ 'header.general.account' | t }}">
                       <span class="icon-state__primary">{%- render 'icon', icon: 'account' -%}</span>
                       {% render 'icon', icon: 'arrow-bottom' %}
                     </span>
-                    <span class="header__action-item-link hidden-pocket hidden-lap">
+                    <span class="header__action-item-link hidden-pocket hidden-lap hidden-desk">
                       {{- 'header.general.account' | t -}}
                       {% render 'icon', icon: 'arrow-bottom' %}
                     </span>
@@ -304,10 +304,10 @@
                     </div>
                   </div>
                 {% else %}
-                  <a href="{{ routes.account_login_url }}" class="header__action-item-link header__account-icon icon-state hidden-desk" aria-label="{{ 'header.general.account' | t }}">
+                  <a href="{{ routes.account_login_url }}" class="header__action-item-link header__account-icon icon-state" aria-label="{{ 'header.general.account' | t }}">
                     <span class="icon-state__primary">{%- render 'icon', icon: 'account' -%}</span>
                   </a>
-                  <a href="{{ routes.account_login_url }}" class="header__action-item-link hidden-pocket hidden-lap">
+                  <a href="{{ routes.account_login_url }}" class="header__action-item-link hidden-pocket hidden-lap hidden-desk">
                     {{- 'header.general.account' | t -}}
                   </a>
                 {% endif %}
@@ -327,7 +327,7 @@
                   <span class="icon-state__secondary">{%- render 'icon', icon: 'close' -%}</span>
                 </div>
 
-                <span class="hidden-pocket hidden-lap">{{ 'header.general.cart' | t }}</span>
+                <span class="hidden-pocket hidden-lap hidden-desk">{{ 'header.general.cart' | t }}</span>
               </div>
             </a>
 

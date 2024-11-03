@@ -1,5 +1,60 @@
 {
   "sections": {
+    "video_with_text_d64KbV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_pEtAYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Professional Edge with Tailored Career Documents",
+            "heading_size": "h1"
+          }
+        },
+        "text_MUL44z": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click here for your best resume yet—satisfaction guaranteed.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_wjkE8V": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Your Resume Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "button_dbGXDA": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Services",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_pEtAYC",
+        "text_MUL44z",
+        "button_wjkE8V",
+        "button_dbGXDA"
+      ],
+      "disabled": true,
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/vecteezy_female-teacher-examining-the-student-s-test-on-working-the_3189083.mp4",
+        "video_link": "",
+        "layout": "video_first",
+        "desktop_image_width": "large",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "overlap",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "classes": ""
+      }
+    },
     "slideshow_DBqmGG": {
       "type": "slideshow",
       "blocks": {
@@ -178,6 +233,7 @@
     }
   },
   "order": [
+    "video_with_text_d64KbV",
     "slideshow_DBqmGG",
     "featured_collection_6kPAdJ",
     "custom_testimonials_88iAEk",
