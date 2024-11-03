@@ -235,7 +235,12 @@
 
       {%- if settings.show_reviews_badge -%}
         <a class="product-item__reviews-badge link" href="{{ product.url }}#product-reviews">
-          {%- render 'product-rating', product: product -%}
+          {% comment %}{%- render 'product-rating', product: product -%}{% endcomment %}
+          <!-- Start of Judge.me code -->
+          <div class='jdgm-widget jdgm-preview-badge'>
+            {{ product.metafields.judgeme.badge }}
+          </div>
+          <!-- End of Judge.me code -->
         </a>
       {%- endif -%}
 

@@ -11,16 +11,16 @@
             "overlay_opacity": 100,
             "text_color": "#ffffff",
             "title": "Get the Professional Edge with Tailored Career Documents",
-            "content": "Expert Resume, Cover Letter, and LinkedIn Profile Services to Boost Your Career",
+            "content": "Click here for your best resume yet—satisfaction guaranteed.",
             "content_position": "middle_left",
             "button_background": "#fb913c",
             "button_text_color": "#ffffff",
-            "button_text": "View Our Services",
-            "link": "shopify:\/\/pages\/services",
+            "button_text": "Get Your Resume Now",
+            "link": "shopify:\/\/products\/resumes-1",
             "button_alt_background": "#444ce7",
             "button_alt_text_color": "#ffffff",
-            "button_alt_text": "Contact Us",
-            "link_alt": "shopify:\/\/pages\/contact"
+            "button_alt_text": "View Services",
+            "link_alt": "shopify:\/\/pages\/services"
           }
         }
       },
