@@ -34,7 +34,7 @@
         "attachment_RGAVUV": {
           "type": "attachment",
           "settings": {
-            "label": "File upload",
+            "label": "Upload Old Document Here",
             "required": true
           }
         },

@@ -20,16 +20,16 @@
         "button_wjkE8V": {
           "type": "button",
           "settings": {
-            "button_label": "Get Your Resume Now",
-            "button_link": "",
+            "button_label": "View Services",
+            "button_link": "shopify:\/\/pages\/services",
             "button_style_secondary": false
           }
         },
         "button_dbGXDA": {
           "type": "button",
           "settings": {
-            "button_label": "View Services",
-            "button_link": "",
+            "button_label": "Get Resume Now",
+            "button_link": "shopify:\/\/products\/resumes-1",
             "button_style_secondary": true
           }
         }
@@ -40,7 +40,6 @@
         "button_wjkE8V",
         "button_dbGXDA"
       ],
-      "disabled": true,
       "settings": {
         "video": "shopify:\/\/files\/videos\/vecteezy_female-teacher-examining-the-student-s-test-on-working-the_3189083.mp4",
         "video_link": "",
@@ -50,7 +49,7 @@
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "content_layout": "overlap",
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 0,
         "classes": ""
       }
@@ -82,6 +81,7 @@
       "block_order": [
         "image_QTrLkh"
       ],
+      "disabled": true,
       "settings": {
         "edge_to_edge": true,
         "section_size": "preserve_ratio",
