@@ -60,6 +60,11 @@
     margin-bottom: 20px;
 }
 
+.product-form__info-item--attachment + .product-form__info-item--attachment {
+    margin-top: 20px;
+    display: block;
+}
+
 .form__input-wrapper .error {
     display: block;
     text-align: left;
@@ -132,6 +137,7 @@ input::file-selector-button:hover {
 
 .social-media__item svg {
     opacity: 1;
+    fill: #fff;
 }
 
 .form__field {

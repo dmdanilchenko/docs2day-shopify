@@ -9,14 +9,51 @@
     "custom_packages_mPx9Rn": {
       "type": "custom-packages",
       "blocks": {
+        "block_meyebL": {
+          "type": "block",
+          "settings": {
+            "product_type": "Individual Services",
+            "title": "Resume",
+            "price": "$118",
+            "button_title": "Order now",
+            "url": "shopify:\/\/products\/resumes-1",
+            "description_title": "Resume",
+            "description": "<ul><li>Custom resumes tailored to your career goals<\/li><li>Professional formatting to impress employers<\/li><li>Highlights key achievements and experience<\/li><\/ul>"
+          }
+        },
+        "block_fCNULP": {
+          "type": "block",
+          "settings": {
+            "product_type": "Individual Services",
+            "title": "Cover Letter",
+            "price": "$42",
+            "button_title": "Learn more",
+            "url": "shopify:\/\/products\/cover-letter",
+            "description_title": "Cover Letter",
+            "description": "<ul><li>Tailored to your job and industry<\/li><li>Highlights your strengths effectively<\/li><li>Crafted to catch hiring managers’ attention<\/li><\/ul>"
+          }
+        },
+        "block_tiRbR7": {
+          "type": "block",
+          "settings": {
+            "product_type": "Individual Services",
+            "title": "LinkedIn Optimisation",
+            "price": "$42",
+            "button_title": "Learn more",
+            "url": "shopify:\/\/products\/linkedin-optimisation",
+            "description_title": "LinkedIn Optimisation",
+            "description": "<ul><li>Showcases your skills and experience effectively<\/li><li>Builds a strong, professional online presence<\/li><li>Tailored to your industry and career objectives<\/li><li>Optimised for recruiter search visibility<\/li><\/ul>"
+          }
+        },
         "block_pU4kKV": {
           "type": "block",
           "settings": {
+            "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_010db08a-dea3-4822-89b3-c67ed5231269.svg",
             "title": "Essential Package",
-            "price": "$300",
+            "price": "$144",
             "button_title": "Learn more",
-            "url": "",
+            "url": "shopify:\/\/products\/essential-package-resume-cover-letter",
             "description_title": "Resume + Cover Letter",
             "description": "<ul><li>A professionally tailored resume to showcase your strengths<\/li><li>A job-specific cover letter to make your application stand out.<\/li><\/ul>"
           }
@@ -24,11 +61,12 @@
         "block_ipAQ3q": {
           "type": "block",
           "settings": {
+            "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_e9db64f1-1f67-4abd-9a8b-0c8b52a5ba9b.svg",
             "title": "Professional Package",
-            "price": "$460",
+            "price": "$172",
             "button_title": "Learn more",
-            "url": "",
+            "url": "shopify:\/\/products\/professional-package-resume-cover-letter-linkedin-optimisation",
             "description_title": "Resume + Cover Letter + LinkedIn Optimisation",
             "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
           }
@@ -36,22 +74,56 @@
         "block_FYgAYg": {
           "type": "block",
           "settings": {
+            "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_dbf2de34-0fcf-47e1-8ba8-1b4d116b0472.svg",
             "title": "Resume + LinkedIn Optimisation Package",
-            "price": "$375",
+            "price": "$144",
             "button_title": "Learn more",
-            "url": "",
+            "url": "shopify:\/\/products\/resume-linkedin-optimisation-package",
             "description_title": "Resume + LinkedIn Optimisation",
             "description": "<ul><li>A tailored resume that aligns with your career goals<\/li><li>A fully optimised LinkedIn profile to increase your chances of getting noticed by recruiters<\/li><\/ul>"
+          }
+        },
+        "block_nY4KNJ": {
+          "type": "block",
+          "settings": {
+            "product_type": "Subscription Plans",
+            "image": "shopify:\/\/shop_images\/Featured_icon_2c277b17-2a84-44d4-8eb9-d6a8fc8c5473.svg",
+            "title": "Cover Letter Plan",
+            "price": "$30 AUD\/month",
+            "button_title": "Subscribe Now",
+            "url": "shopify:\/\/products\/cover-letter-plan",
+            "description_title": "Cover Letter Plan",
+            "description": "<p>Stay prepared for every opportunity with our Cover Letter Plan. For just$30 AUD per month, you’ll receive a professionally tailored cover letterfor each new job application. This plan ensures you always make a strongfirst impression.<\/p><ul><li>Up to 5 personalised cover letters<\/li><li>A job-specific cover letter to make your application stand out<\/li><\/ul>"
+          }
+        },
+        "block_JiR6Yc": {
+          "type": "block",
+          "settings": {
+            "product_type": "Subscription Plans",
+            "image": "shopify:\/\/shop_images\/Featured_icon_d03061da-2360-4b01-aaad-fa0888ce15b2.svg",
+            "title": "Job Seeker Pro Plan",
+            "price": "$75 AUD\/month",
+            "button_title": "Subscribe Now",
+            "url": "shopify:\/\/products\/job-seeker-pro-plan",
+            "description_title": "Job Seeker Pro Plan",
+            "description": "<p>Gain full support in your job search with the Job Seeker Pro Plan. Each month, you’ll receive a custom resume update, a new cover letter tailored to your next job application, and LinkedIn profile adjustments to keep your profile fresh and relevant. Ideal for those actively applying and looking to keep their job application materials up to date.<\/p><ul><li>1 resume update<\/li><li>2 personalised cover letters<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
           }
         }
       },
       "block_order": [
+        "block_meyebL",
+        "block_fCNULP",
+        "block_tiRbR7",
         "block_pU4kKV",
         "block_ipAQ3q",
-        "block_FYgAYg"
+        "block_FYgAYg",
+        "block_nY4KNJ",
+        "block_JiR6Yc"
       ],
-      "settings": {}
+      "settings": {
+        "show_filter": true
+      }
     }
   },
   "order": [

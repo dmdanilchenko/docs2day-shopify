@@ -101,11 +101,53 @@ window.addEventListener('load', function () {
         checkScroll()
     });
     checkScroll();
+
     function checkScroll() {
         if (window.scrollY > 100) {
             body.classList.add('is-scrolled');
         } else {
             body.classList.remove('is-scrolled');
+        }
+    }
+
+
+    // add event listener to filter-button
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const packages = document.querySelectorAll('.package-box');
+    const packagesContainer = document.querySelector('.package-container');
+
+    if (filterButtons) {
+        filterButtons.forEach(function (filterButton) {
+            filterButton.addEventListener('click', function () {
+                filterPackages(filterButton);
+                filterButtons.forEach(function (button) {
+                    button.classList.remove('filter-button--active');
+                });
+                filterButton.classList.add('filter-button--active');
+            });
+
+            if (filterButton.classList.contains('filter-button--active')) {
+                filterPackages(filterButton);
+            }
+        });
+    }
+
+    function filterPackages(filterButton) {
+        const filter = filterButton.getAttribute('data-filter');
+        let showcount = 0;
+        packages.forEach(function (package) {
+            if (package.classList.contains(filter)) {
+                package.classList.add('show');
+                showcount++;
+            } else {
+                package.classList.remove('show');
+            }
+        });
+
+        if (showcount <= 2) {
+            packagesContainer.classList.add('two-columns');
+        } else {
+            packagesContainer.classList.remove('two-columns');
         }
     }
 });

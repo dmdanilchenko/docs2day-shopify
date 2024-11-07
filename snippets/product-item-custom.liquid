@@ -254,11 +254,15 @@
           {{ price_list }}
         {%- endif -%}
 
-        <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
         {%- if settings.show_reviews_badge -%}
-          <a class="product-item__reviews-badge link" href="{{ product.url }}#product-reviews">
-            {%- render 'product-rating', product: product -%}
-          </a>
+          {% comment %}<a class="product-item__reviews-badge link" href="{{ product.url }}#product-reviews">{% endcomment %}
+            {% comment %}{%- render 'product-rating', product: product -%}{% endcomment %}
+          {% comment %}</a>{% endcomment %}
+          <!-- Start of Judge.me code -->
+          <div class='jdgm-widget jdgm-preview-badge'>
+            {{ product.metafields.judgeme.badge }}
+          </div>
+          <!-- End of Judge.me code -->
         {%- endif -%}
 
         {%- if settings.show_inventory_quantity and product.variants.first.inventory_management != blank and product.template_suffix != 'pre-order' -%}

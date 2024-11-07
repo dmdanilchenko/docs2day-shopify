@@ -6,43 +6,47 @@
         "custom-css-class": "page-type-subscription"
       }
     },
-    "custom_subscriptions_BXAHVx": {
-      "type": "custom-subscriptions",
+    "custom_packages_kNBaKb": {
+      "type": "custom-packages",
       "blocks": {
-        "block_XWzj8r": {
+        "block_dDCqHP": {
           "type": "block",
           "settings": {
+            "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_2c277b17-2a84-44d4-8eb9-d6a8fc8c5473.svg",
             "title": "Cover Letter Plan",
             "price": "$30 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "shopify:\/\/products\/cover-letter-plan",
             "description_title": "Cover Letter Plan",
-            "description": "<p>Stay prepared for every opportunity with our Cover Letter Plan. For just$30 AUD per month, you’ll receive a professionally tailored cover letterfor each new job application. This plan ensures you always make a strongfirst impression.<\/p><ul><li>Up to 5 personalised cover letters<\/li><li>A job-specific cover letter to make your application stand out<\/li><\/ul>"
+            "description": "<p><\/p><ul><li>Up to 5 personalised cover letters<\/li><li>A job-specific cover letter<\/li><\/ul><p>Stay prepared for every opportunity with our Cover Letter Plan. For just$30 AUD per month, you’ll receive a professionally tailored cover letterfor each new job application. This plan ensures you always make a strongfirst impression.<\/p>"
           }
         },
-        "block_CVUM9M": {
+        "block_MgAg7D": {
           "type": "block",
           "settings": {
+            "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_d03061da-2360-4b01-aaad-fa0888ce15b2.svg",
             "title": "Job Seeker Pro Plan",
             "price": "$75 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "shopify:\/\/products\/job-seeker-pro-plan",
             "description_title": "Job Seeker Pro Plan",
-            "description": "<p>Gain full support in your job search with the Job Seeker Pro Plan. Each month, you’ll receive a custom resume update, a new cover letter tailored to your next job application, and LinkedIn profile adjustments to keep your profile fresh and relevant. Ideal for those actively applying and looking to keep their job application materials up to date.<\/p><ul><li>1 resume update<\/li><li>2 personalised cover letters<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+            "description": "<ul><li>1 resume update<\/li><li>2 personalised cover letters<\/li><li>LinkedIn profile optimisation<\/li><\/ul><p>Gain full support in your job search with the Job Seeker Pro Plan. Each month, you’ll receive a custom resume update, a new cover letter tailored to your next job application, and LinkedIn profile adjustments to keep your profile fresh and relevant. Ideal for those actively applying and looking to keep their job application materials up to date.<\/p>"
           }
         }
       },
       "block_order": [
-        "block_XWzj8r",
-        "block_CVUM9M"
+        "block_dDCqHP",
+        "block_MgAg7D"
       ],
-      "settings": {}
+      "settings": {
+        "show_filter": false
+      }
     }
   },
   "order": [
     "main",
-    "custom_subscriptions_BXAHVx"
+    "custom_packages_kNBaKb"
   ]
 }

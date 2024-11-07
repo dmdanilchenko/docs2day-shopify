@@ -1,5 +1,59 @@
 {
   "sections": {
+    "video_with_text_d64KbV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_pEtAYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Professional Edge with Tailored Career Documents",
+            "heading_size": "h1"
+          }
+        },
+        "text_MUL44z": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click here for your best resume yet—satisfaction guaranteed.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_wjkE8V": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Services",
+            "button_link": "shopify:\/\/pages\/services",
+            "button_style_secondary": false
+          }
+        },
+        "button_dbGXDA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Resume Now",
+            "button_link": "shopify:\/\/products\/resumes-1",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_pEtAYC",
+        "text_MUL44z",
+        "button_wjkE8V",
+        "button_dbGXDA"
+      ],
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/vecteezy_female-teacher-examining-the-student-s-test-on-working-the_3189083.mp4",
+        "video_link": "",
+        "layout": "video_first",
+        "desktop_image_width": "large",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "overlap",
+        "padding_top": 48,
+        "padding_bottom": 0,
+        "classes": ""
+      }
+    },
     "slideshow_DBqmGG": {
       "type": "slideshow",
       "blocks": {
@@ -11,22 +65,23 @@
             "overlay_opacity": 100,
             "text_color": "#ffffff",
             "title": "Get the Professional Edge with Tailored Career Documents",
-            "content": "Expert Resume, Cover Letter, and LinkedIn Profile Services to Boost Your Career",
+            "content": "Click here for your best resume yet—satisfaction guaranteed.",
             "content_position": "middle_left",
             "button_background": "#fb913c",
             "button_text_color": "#ffffff",
-            "button_text": "View Our Services",
-            "link": "shopify:\/\/pages\/services",
+            "button_text": "Get Your Resume Now",
+            "link": "shopify:\/\/products\/resumes-1",
             "button_alt_background": "#444ce7",
             "button_alt_text_color": "#ffffff",
-            "button_alt_text": "Contact Us",
-            "link_alt": "shopify:\/\/pages\/contact"
+            "button_alt_text": "View Services",
+            "link_alt": "shopify:\/\/pages\/services"
           }
         }
       },
       "block_order": [
         "image_QTrLkh"
       ],
+      "disabled": true,
       "settings": {
         "edge_to_edge": true,
         "section_size": "preserve_ratio",
@@ -178,6 +233,7 @@
     }
   },
   "order": [
+    "video_with_text_d64KbV",
     "slideshow_DBqmGG",
     "featured_collection_6kPAdJ",
     "custom_testimonials_88iAEk",
