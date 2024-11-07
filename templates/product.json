@@ -65,7 +65,7 @@
       "settings": {
         "image_size": "small",
         "enable_video_looping": false,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "zoom_effect": "outside",
         "carousel_effect": "fade"
       }

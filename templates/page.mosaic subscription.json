@@ -14,7 +14,7 @@
           "settings": {
             "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_2c277b17-2a84-44d4-8eb9-d6a8fc8c5473.svg",
-            "title": "Cover Letter Plan",
+            "title": "Cover Letter Subscription",
             "price": "$30 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "shopify:\/\/products\/cover-letter-plan",
@@ -27,7 +27,7 @@
           "settings": {
             "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Featured_icon_d03061da-2360-4b01-aaad-fa0888ce15b2.svg",
-            "title": "Job Seeker Pro Plan",
+            "title": "Job Seeker Pro Subscription",
             "price": "$75 AUD\/month",
             "button_title": "Subscribe Now",
             "url": "shopify:\/\/products\/job-seeker-pro-plan",
