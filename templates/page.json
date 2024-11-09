@@ -54,6 +54,150 @@
         "button_text": "",
         "button_link": "shopify:\/\/collections\/all"
       }
+    },
+    "custom_features_eEJpFA": {
+      "type": "custom-features",
+      "blocks": {
+        "feature_3BMtGD": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group.svg",
+            "title": "Resume Writing",
+            "text": "Tailored resumes that showcase your unique skills and experience, designed to align with specific job requirements. Stand out in the competitive job market with a professionally crafted resume that increases your chances of landing the job you need."
+          }
+        },
+        "feature_yHp6Yp": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_a5b3bb97-0150-459c-bd24-60a0cfb1cee7.svg",
+            "title": "Cover Letter Writing",
+            "text": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates."
+          }
+        },
+        "feature_VKBxqz": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1977b13c-a5ca-4129-881e-be029b9f72eb.svg",
+            "title": "Cover Letter Writing",
+            "text": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates."
+          }
+        }
+      },
+      "block_order": [
+        "feature_3BMtGD",
+        "feature_yHp6Yp",
+        "feature_VKBxqz"
+      ],
+      "settings": {
+        "bg_color": "#444ce7"
+      }
+    },
+    "custom_values_TQpg7m": {
+      "type": "custom-values",
+      "blocks": {
+        "value_bCeGzb": {
+          "type": "value",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_ac7b03dd-edee-4c1c-909c-d6ef7c043bde.png",
+            "title": "Integrity",
+            "text": "We believe in transparency and honesty, delivering services that truly reflect our clients' skills and experiences."
+          }
+        },
+        "value_6Ueg4F": {
+          "type": "value",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_6aa38edf-62e9-4293-891d-00e0d5cb7dee.png",
+            "title": "Commitment",
+            "text": "We are dedicated to helping clients achieve their career aspirations, whether they're advancing in their current field or transitioning into a new one."
+          }
+        },
+        "value_UBkh7L": {
+          "type": "value",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Featured_icon_2ca151c0-9d07-4edb-87a1-074b9e3f80d7.png",
+            "title": "Excellence",
+            "text": "We strive to offer top-quality services tailored to each client, ensuring every detail is perfect and aligned with their job goals."
+          }
+        }
+      },
+      "block_order": [
+        "value_bCeGzb",
+        "value_6Ueg4F",
+        "value_UBkh7L"
+      ],
+      "settings": {
+        "title": "Core values driving our success"
+      }
+    },
+    "custom_team_kJr4kr": {
+      "type": "custom-team",
+      "blocks": {
+        "team_member_MH6Ajk": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        },
+        "team_member_bMbWV3": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        },
+        "team_member_VHLR43": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        },
+        "team_member_bmRhXh": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        },
+        "team_member_gNBB8J": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        },
+        "team_member_NY3rMJ": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "name": "Team Member Name",
+            "role": "Team Member Role",
+            "description": "Team Member Description"
+          }
+        }
+      },
+      "block_order": [
+        "team_member_MH6Ajk",
+        "team_member_bMbWV3",
+        "team_member_VHLR43",
+        "team_member_bmRhXh",
+        "team_member_gNBB8J",
+        "team_member_NY3rMJ"
+      ],
+      "settings": {
+        "title": "Meet Our Team"
+      }
     }
   },
   "order": [
@@ -61,6 +205,9 @@
     "image_with_text_GDTrwL",
     "image_with_text_PE9Rdn",
     "image_with_text_jrLAkE",
-    "image_with_text_BgyBmJ"
+    "image_with_text_BgyBmJ",
+    "custom_features_eEJpFA",
+    "custom_values_TQpg7m",
+    "custom_team_kJr4kr"
   ]
 }
