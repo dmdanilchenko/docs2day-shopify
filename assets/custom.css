@@ -65,6 +65,10 @@
     display: block;
 }
 
+.form__input-wrapper {
+    margin-bottom: 24px;
+}
+
 .form__input-wrapper .error {
     display: block;
     text-align: left;
@@ -111,10 +115,6 @@ input::file-selector-button:hover {
 
 .footer__newsletter-form button {
     margin-top: 0;
-}
-
-.form__input-wrapper {
-    margin-bottom: 0;
 }
 
 .footer__link-item {
@@ -263,6 +263,27 @@ input::file-selector-button:hover {
     line-height: 24px;
 }
 
+#contact_form {
+    text-align: left;
+}
+
+#contact_form h2 {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+}
+
+#contact_form .form__header p {
+    color: var(--Gray-700, #3F3F46);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#contact_form .form__submit {
+    width: 100%;
+    margin: 32px 0;
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;
@@ -296,6 +317,10 @@ input::file-selector-button:hover {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    #contact_form {
+        margin-top: 32px;
     }
 }
 
@@ -391,6 +416,23 @@ input::file-selector-button:hover {
     .block-list__item > :first-child {
         margin: 0 16px 32px;
     }
+
+    .form__input-wrapper {
+        margin-bottom: 0;
+    }
+
+    .form__input-row:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .form__input-row {
+        margin: 0 -12px;
+    }
+
+    .form__input-row > * {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -462,5 +504,11 @@ input::file-selector-button:hover {
 
     [data-section-type=blog-posts] .section__header {
         margin-bottom: 64px;
+    }
+
+    #contact_form h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.8px;
     }
 }

@@ -6,13 +6,11 @@
     max-width: none;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1000px) {
     .container--secondary-left {
         padding: 0;
     }
-}
 
-@media screen and (min-width: 1000px) {
     .container--secondary-left .contact__store-info {
         height: 100%;
         margin-left: 0;

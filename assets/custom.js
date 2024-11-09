@@ -43,7 +43,7 @@ window.addEventListener('load', function () {
                 let errors = false;
                 // get all required inputs
                 form.querySelectorAll('input[required], textarea[required]').forEach(function (input) {
-                    if (!input.value) {
+                    if (!input.value || (input.type === 'checkbox' && !input.checked)) {
                         // add aria-invalid="true"
                         input.setAttribute('aria-invalid', 'true');
                         errors = true;
