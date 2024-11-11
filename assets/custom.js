@@ -150,4 +150,23 @@ window.addEventListener('load', function () {
             packagesContainer.classList.remove('two-columns');
         }
     }
+
+    const teamMembers = document.querySelectorAll('.custom-team-member');
+    if (teamMembers) {
+        teamMembers.forEach(function (teamMember) {
+            teamMember.addEventListener('click', function () {
+                let isActive = teamMember.classList.contains('active');
+
+                teamMembers.forEach(function (member) {
+                    member.classList.remove('active');
+                });
+
+                if (isActive) {
+                    teamMember.classList.remove('active');
+                } else {
+                    teamMember.classList.add('active');
+                }
+            });
+        });
+    }
 });
