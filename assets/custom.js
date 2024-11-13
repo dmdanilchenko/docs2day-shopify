@@ -169,4 +169,35 @@ window.addEventListener('load', function () {
             });
         });
     }
+
+    // add event listener to filter-button
+    const filterFAQsButtons = document.querySelectorAll('.faq__heading');
+    const faqGroups = document.querySelectorAll('.faq__group');
+
+    if (filterFAQsButtons) {
+        filterFAQsButtons.forEach(function (filterButton) {
+            filterButton.addEventListener('click', function () {
+                filterFAQs(filterButton);
+                filterFAQsButtons.forEach(function (button) {
+                    button.classList.remove('faq__heading--active');
+                });
+                filterButton.classList.add('faq__heading--active');
+            });
+
+            if (filterButton.classList.contains('faq__heading--active')) {
+                filterFAQs(filterButton);
+            }
+        });
+    }
+
+    function filterFAQs(filterButton) {
+        const filter = filterButton.getAttribute('data-filter');
+        faqGroups.forEach(function (faq) {
+            if (faq.classList.contains(filter)) {
+                faq.classList.add('show');
+            } else {
+                faq.classList.remove('show');
+            }
+        });
+    }
 });
