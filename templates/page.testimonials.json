@@ -66,13 +66,103 @@
         "item_wV8ciF",
         "item_pwkyQx"
       ],
+      "disabled": true,
       "settings": {
         "section_size": "medium"
       }
+    },
+    "custom_testimonials_page_JdBJWC": {
+      "type": "custom-testimonials-page",
+      "blocks": {
+        "testimonial_Kbp3n6": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "The resume I received was spot on. It was customised exactly to the job I was applying for! The whole process was easy, professional, and efficient—can’t recommend them enough.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_6jd8RL": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_cG7jWH": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "I’ve always found cover letters a pain, but this service made it simple. They really nailed it! Cheers.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_FWiUT6": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_QCUPhc": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_3riiiL": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_EwxAey": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        },
+        "testimonial_GpYMnf": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Kbp3n6",
+        "testimonial_6jd8RL",
+        "testimonial_cG7jWH",
+        "testimonial_FWiUT6",
+        "testimonial_QCUPhc",
+        "testimonial_3riiiL",
+        "testimonial_EwxAey",
+        "testimonial_GpYMnf"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "mosaic_98937B"
+    "mosaic_98937B",
+    "custom_testimonials_page_JdBJWC"
   ]
 }

@@ -200,4 +200,21 @@ window.addEventListener('load', function () {
             }
         });
     }
+
+    //testimonials--show-all on click listener
+    const showAllButton = document.querySelector('.testimonials--show-all');
+    const testimonials = document.querySelectorAll('.testimonials--page');
+    if (showAllButton) {
+        showAllButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            testimonials.forEach(function (testimonial) {
+                if (testimonial.classList.contains('hidden')) {
+                    testimonial.classList.remove('hidden');
+                } else{
+                    testimonial.classList.add('hidden');
+                }
+            });
+            showAllButton.classList.add('hide');
+        });
+    }
 });
