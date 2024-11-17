@@ -10,9 +10,25 @@
         "show_tags": false,
         "show_gravatar": true
       }
+    },
+    "blog_posts_custom_N9ajcp": {
+      "type": "blog-posts-custom",
+      "settings": {
+        "blog": "news",
+        "blog_posts_count": 4,
+        "title": "Blog posts",
+        "link_title": "View all",
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_learn-more": false,
+        "stack_mobile": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "blog_posts_custom_N9ajcp"
   ]
 }
