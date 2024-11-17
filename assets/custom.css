@@ -631,9 +631,11 @@ input::file-selector-button:hover {
 
     [data-section-type=blog] h1 {
         margin: 0 auto;
+        text-align: center;
     }
 
     [data-section-type="blog-post"] h1 {
+        margin: 0 auto;
         text-align: center;
         font-size: 48px;
         font-weight: 600;
