@@ -8,11 +8,11 @@
 
   {%- if request.page_type == 'index' -%}
     <h3 class="article-item__title heading h4">
-      <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+      {{ article.title }}
     </h3>
   {%- else -%}
     <h2 class="article-item__title heading {% if featured %}h1{% else %}h3{% endif %}">
-      <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+      {{ article.title }}
     </h2>
   {%- endif -%}
 
@@ -44,5 +44,10 @@
         {{- article.content | strip_html | truncate: 150 -}}
       {%- endif -%}
     </div>
+  {%- endif -%}
+
+
+  {%- if section.settings.show_learn-more -%}
+    <a href="{{ article.url }}" class="link article-item__learn-more">Learn more {% render 'icon', icon: 'tail-right' %}</a>
   {%- endif -%}
 </div>
