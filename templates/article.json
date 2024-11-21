@@ -1,1 +1,34 @@
-{"sections":{"main":{"type":"main-blog-post","blocks":{"newsletter":{"type":"newsletter","settings":{}},"social-media":{"type":"social_media","settings":{}}},"block_order":["newsletter","social-media"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-blog-post",
+      "settings": {
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_share_buttons": true,
+        "show_tags": false,
+        "show_gravatar": true
+      }
+    },
+    "blog_posts_custom_N9ajcp": {
+      "type": "blog-posts-custom",
+      "settings": {
+        "blog": "news",
+        "blog_posts_count": 4,
+        "title": "Blog posts",
+        "link_title": "View all",
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_learn-more": false,
+        "stack_mobile": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog_posts_custom_N9ajcp"
+  ]
+}

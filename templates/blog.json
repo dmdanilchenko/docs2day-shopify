@@ -1,1 +1,22 @@
-{"sections":{"main":{"type":"main-blog","blocks":{"newsletter":{"type":"newsletter","settings":{}},"social-media":{"type":"social_media","settings":{}}},"block_order":["newsletter","social-media"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "title": "Stay Updated with Docs2Day News & Insights",
+        "articles_per_page": 8,
+        "show_search": true,
+        "highlight_first_article": false,
+        "show_tags": true,
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_learn-more": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

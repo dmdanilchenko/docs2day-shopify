@@ -43,7 +43,7 @@ window.addEventListener('load', function () {
                 let errors = false;
                 // get all required inputs
                 form.querySelectorAll('input[required], textarea[required]').forEach(function (input) {
-                    if (!input.value) {
+                    if (!input.value || (input.type === 'checkbox' && !input.checked)) {
                         // add aria-invalid="true"
                         input.setAttribute('aria-invalid', 'true');
                         errors = true;
@@ -149,5 +149,72 @@ window.addEventListener('load', function () {
         } else {
             packagesContainer.classList.remove('two-columns');
         }
+    }
+
+    const teamMembers = document.querySelectorAll('.custom-team-member');
+    if (teamMembers) {
+        teamMembers.forEach(function (teamMember) {
+            teamMember.addEventListener('click', function () {
+                let isActive = teamMember.classList.contains('active');
+
+                teamMembers.forEach(function (member) {
+                    member.classList.remove('active');
+                });
+
+                if (isActive) {
+                    teamMember.classList.remove('active');
+                } else {
+                    teamMember.classList.add('active');
+                }
+            });
+        });
+    }
+
+    // add event listener to filter-button
+    const filterFAQsButtons = document.querySelectorAll('.faq__heading');
+    const faqGroups = document.querySelectorAll('.faq__group');
+
+    if (filterFAQsButtons) {
+        filterFAQsButtons.forEach(function (filterButton) {
+            filterButton.addEventListener('click', function () {
+                filterFAQs(filterButton);
+                filterFAQsButtons.forEach(function (button) {
+                    button.classList.remove('faq__heading--active');
+                });
+                filterButton.classList.add('faq__heading--active');
+            });
+
+            if (filterButton.classList.contains('faq__heading--active')) {
+                filterFAQs(filterButton);
+            }
+        });
+    }
+
+    function filterFAQs(filterButton) {
+        const filter = filterButton.getAttribute('data-filter');
+        faqGroups.forEach(function (faq) {
+            if (faq.classList.contains(filter)) {
+                faq.classList.add('show');
+            } else {
+                faq.classList.remove('show');
+            }
+        });
+    }
+
+    //testimonials--show-all on click listener
+    const showAllButton = document.querySelector('.testimonials--show-all');
+    const testimonials = document.querySelectorAll('.testimonials--page');
+    if (showAllButton) {
+        showAllButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            testimonials.forEach(function (testimonial) {
+                if (testimonial.classList.contains('hidden')) {
+                    testimonial.classList.remove('hidden');
+                } else{
+                    testimonial.classList.add('hidden');
+                }
+            });
+            showAllButton.classList.add('hide');
+        });
     }
 });

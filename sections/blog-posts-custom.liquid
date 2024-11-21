@@ -1,6 +1,6 @@
 {%- assign blog = section.settings.blog -%}
 
-<section class="section" data-section-id="{{ section.id }}" data-section-type="blog-posts">
+<section class="section" data-section-id="{{ section.id }}" data-section-type="blog-posts-custom">
   <div class="container">
     {%- if section.settings.title != blank -%}
       <header class="section__header">
@@ -15,12 +15,12 @@
     {%- capture block_list -%}
       <div class="block-list block-list--loose">
         {%- for article in blog.articles limit: section.settings.blog_posts_count -%}
-          <div class="block-list__item 1/2--tablet 1/3--lap-and-up {% if section.settings.stack_mobile and forloop.index == 3 %}hidden-tablet{% endif %}">
+          <div class="block-list__item 1/2--tablet 1/2--lap-and-up">
             {%- render 'article-item', article: article, featured: false -%}
           </div>
         {%- else -%}
           {%- for i in (1..section.settings.blog_posts_count) -%}
-            <div class="block-list__item 1/2--tablet 1/3--lap-and-up {% if section.settings.stack_mobile and i == 3 %}hidden-tablet{% endif %}">
+            <div class="block-list__item 1/2--tablet 1/3--lap-and-up">
               <div class="article-item">
                 <div class="article-item__image-container article-item__image-container--placeholder">
                   {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
@@ -73,7 +73,7 @@
 
 {% schema %}
 {
-  "name": "Blog posts",
+  "name": "Blog posts Custom",
   "settings": [
     {
       "type": "blog",
@@ -84,10 +84,10 @@
       "type": "range",
       "id": "blog_posts_count",
       "label": "Blog posts to show",
-      "min": 3,
-      "max": 9,
-      "step": 3,
-      "default": 3
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "default": 4
 	  },
     {
       "type": "text",
@@ -142,7 +142,7 @@
   "presets": [
     {
       "category": "Blog",
-      "name": "Blog posts",
+      "name": "Blog posts custom",
       "settings": {
         "blog": "news"
       }

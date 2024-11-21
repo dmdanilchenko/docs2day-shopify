@@ -65,6 +65,10 @@
     display: block;
 }
 
+.form__input-wrapper {
+    margin-bottom: 24px;
+}
+
 .form__input-wrapper .error {
     display: block;
     text-align: left;
@@ -113,10 +117,6 @@ input::file-selector-button:hover {
     margin-top: 0;
 }
 
-.form__input-wrapper {
-    margin-bottom: 0;
-}
-
 .footer__link-item {
     display: block;
     color: var(--Secondary-300, #A4BCFD);
@@ -138,6 +138,44 @@ input::file-selector-button:hover {
 .social-media__item svg {
     opacity: 1;
     fill: #fff;
+}
+
+[data-section-type="blog-post"] .social-media__item svg,
+[data-section-type="blog-post"] .social-media__item * {
+    fill: #A0A0AB;
+}
+
+[data-section-type="blog-post"] .social-media__item svg {
+    width: 20px;
+}
+
+[data-section-type="blog-post"] .social-media__item {
+    margin: 0;
+}
+
+.card__section--tight {
+    padding: 5px;
+}
+
+.article__image-wrapper {
+    margin-bottom: 32px;
+}
+
+[data-section-type="blog-post"] .social-media__item a {
+    border-radius: 8px;
+    border: 1px solid var(--Gray-300, #D1D1D6);
+    background: var(--Base-White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(4, 54, 55, 0.05);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__aside-item {
+    justify-content: end;
 }
 
 .form__field {
@@ -238,10 +276,22 @@ input::file-selector-button:hover {
     margin: 0;
 }
 
-[data-section-type=blog-posts] .section__title {
+[data-section-type=blog-posts] .section__title,
+[data-section-type=blog-posts-custom] .section__title {
     font-size: 30px;
     font-weight: 600;
     line-height: 38px;
+}
+
+[data-section-type=blog-posts-custom] {
+    background: var(--Secondary-600, #444CE7);
+    margin: 0;
+    padding: 48px 0;
+}
+
+[data-section-type=blog-posts-custom] *,
+[data-section-type=blog-posts-custom] .article-item__excerpt {
+    color: #fff;
 }
 
 .article-item__image-container {
@@ -261,6 +311,98 @@ input::file-selector-button:hover {
     color: var(--Gray-600, #475467);
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.article-item__learn-more {
+    color: var(--Secondary-600, #444CE7);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.article-item:hover .article-item__title {
+    color: inherit;
+}
+
+.search-bar--blog {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.search-bar--blog .search-bar__submit {
+    position: absolute;
+    background: none;
+    color: #70707B;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.search-bar--blog .search-bar__submit .icon--search {
+    top: -2px;
+    width: 16px;
+    height: 16px;
+}
+
+.search-bar--blog .search-bar__input {
+    padding: 10px 14px 10px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-300, #D1D1D6);
+    background: var(--Base-White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(4, 54, 55, 0.05);
+}
+
+.search-bar--blog .search-bar__input::placeholder {
+    color: var(--Gray-500, #70707B);
+}
+
+[data-section-type=blog] h1 {
+    margin: 0 auto;
+}
+
+#contact_form {
+    text-align: left;
+}
+
+#contact_form h2 {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+}
+
+#contact_form .form__header p {
+    color: var(--Gray-700, #3F3F46);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#contact_form .form__submit {
+    width: 100%;
+    margin: 32px 0;
+}
+
+.pagination__prev, .pagination__next {
+    color: var(--Secondary-600, #444CE7);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: var(--Secondary-25, #F5F8FF);
+    box-shadow: 0px 1px 2px 0px rgba(45, 49, 166, 0.10);
+}
+
+.pagination__nav-item.is-active {
+    border-radius: 8px;
+    background: var(--Gray-50, #FAFAFA);
+    box-shadow: 0px 1px 2px 0px rgba(4, 54, 55, 0.05), 0px 0px 0px 4px #E4E4E7;
+    color: #000;
+}
+
+.card {
+    border: none;
+    background: transparent;
 }
 
 @media screen and (max-width: 1279px) {
@@ -297,6 +439,10 @@ input::file-selector-button:hover {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    #contact_form {
+        margin-top: 32px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -316,6 +462,10 @@ input::file-selector-button:hover {
         left: 16px;
         right: 16px;
         transform: none;
+    }
+
+    .search-bar--blog.search-bar {
+        opacity: 1;
     }
 }
 
@@ -391,6 +541,27 @@ input::file-selector-button:hover {
     .block-list__item > :first-child {
         margin: 0 16px 32px;
     }
+
+    .form__input-wrapper {
+        margin-bottom: 0;
+    }
+
+    .form__input-row:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .form__input-row {
+        margin: 0 -12px;
+    }
+
+    .form__input-row > * {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .search-bar--blog {
+        width: 280px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -449,18 +620,41 @@ input::file-selector-button:hover {
         text-align: right;
     }
 
-    [data-section-type=blog-posts] {
+    [data-section-type=blog-posts],
+    [data-section-type=blog-posts-custom] {
         padding: 96px 0;
     }
 
-    [data-section-type=blog-posts] .section__title {
+    [data-section-type=blog-posts] .section__title,
+    [data-section-type=blog-posts-custom] .section__title {
         font-size: 40px;
         font-weight: 700;
         line-height: 44px;
         letter-spacing: -0.8px;
     }
 
-    [data-section-type=blog-posts] .section__header {
+    [data-section-type=blog-posts] .section__header,
+    [data-section-type=blog-posts-custom] .section__header {
         margin-bottom: 64px;
+    }
+
+    #contact_form h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.8px;
+    }
+
+    [data-section-type=blog] h1 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    [data-section-type="blog-post"] h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: -0.96px;
     }
 }

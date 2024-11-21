@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="{{ 'custom-features.css' | asset_url }}">
+<section class="section" data-section-id="{{ section.id }}" data-section-type="features">
+    <div class="container">
+      <div class="features">
+        {% for block in section.blocks %}
+          <div class="feature 1/3--lap 1/3--desk 1/3--wide">
+            <div class="feature-inner">
+              <div class="feature__image">
+                <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+              </div>
+              <div class="feature__text">
+                <h3 class="feature__title">{{ block.settings.title }}</h3>
+                <p class="feature__description">{{ block.settings.text }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Features",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#444CE7"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Feature Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom Features"
+    }
+  ]
+}
+{% endschema %}

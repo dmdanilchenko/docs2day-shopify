@@ -1,23 +1,43 @@
-<div class="container container--flush container--narrow">
+<link rel="stylesheet" href="{{ 'custom-faq.css' | asset_url }}">
+<div class="container">
   <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="faq__group-list-headings">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'separator' -%}
+          <button class="faq__heading {% if forloop.first %}faq__heading--active{% endif %}"
+               data-filter="faq__group--{{ block.settings.title | downcase | replace: ' ', '-' }}">
+            {%- if block.settings.image != blank -%}
+              <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="faq__heading-image">
+            {%- endif -%}
+            <h2 class="faq__heading-title heading h2">{{ block.settings.title | escape }}</h2>
+          </button>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
     <div class="faq__group-list">
       {%- for block in section.blocks -%}
         {%- if forloop.first or block.type == 'separator' -%}
-          <div class="faq__group">
+          <div class="faq__group faq__group--{{ block.settings.title | downcase | replace: ' ', '-' }}">
         {%- endif -%}
 
         {%- case block.type -%}
           {%- when 'separator' -%}
-            <h1 class="faq__group-title heading h2" {{ block.shopify_attributes }}>
+            <h3 class="faq__group-title heading h3" {{ block.shopify_attributes }}>
               <span class="anchor" id="block-{{ block.id }}"></span>
               {{- block.settings.title | escape -}}
-            </h1>
+            </h3>
           {%- when 'question' -%}
-            <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
+            <div class="faq__item" itemscope itemprop="mainEntity"
+                 itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
               <div class="faq__item-wrapper">
-                <button class="faq__question heading h4" data-action="toggle-collapsible" aria-expanded="false" aria-controls="block-{{ block.id }}" itemprop="name">{{ block.settings.title | escape }} <span class="plus-button plus-button--large"></span></button>
+                <button class="faq__question heading h4" data-action="toggle-collapsible" aria-expanded="false"
+                        aria-controls="block-{{ block.id }}" itemprop="name">
+                  <span class="plus-button plus-button--large"></span>
+                  {{ block.settings.title | escape }}
+                </button>
 
-                <div id="block-{{ block.id }}" class="faq__answer-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div id="block-{{ block.id }}" class="faq__answer-wrapper" itemscope itemprop="acceptedAnswer"
+                     itemtype="https://schema.org/Answer">
                   <div class="faq__answer rte" itemprop="text">
                     {{ block.settings.answer }}
                   </div>
@@ -436,6 +456,11 @@
           "id": "title",
           "label": "Heading",
           "default": "Default"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
       ]
     },
