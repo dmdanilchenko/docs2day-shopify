@@ -120,9 +120,9 @@
         "show_contact_info": true,
         "contact_info_heading": "Still have questions?",
         "contact_info_text": "<p>Can’t find the answer you’re looking for? Please chat to our friendly team.<\/p>",
-        "contact_1_icon": "bi-phone",
+        "contact_1_icon": "bi-email",
         "contact_1_heading": "Get in touch",
-        "contact_1_text": "<p>+1-212-456-7890<\/p>",
+        "contact_1_text": "<p>info@docs2day.co<\/p>",
         "contact_2_icon": "bi-email",
         "contact_2_heading": "",
         "contact_2_text": ""

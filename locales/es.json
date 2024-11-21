@@ -52,6 +52,9 @@
     },
     "errors": {
       "required_field": "Es un campo obligatorio."
+    },
+    "custom": {
+      "learn_more": "Más información"
     }
   },
   "header": {

@@ -78,8 +78,8 @@
           "type": "feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_1977b13c-a5ca-4129-881e-be029b9f72eb.svg",
-            "title": "Cover Letter Writing",
-            "text": "Personalised cover letters that highlight your strengths and match the role you’re applying for. Our expertly written cover letters help you make a strong first impression and set you apart from other candidates."
+            "title": "LinkedIn Optimisation",
+            "text": "Optimised LinkedIn profiles that highlight your unique skills and professional experience, tailored to align with industry trends and recruiter expectations. Designed to increase your visibility and maximize opportunities for career advancement."
           }
         }
       },
@@ -195,6 +195,7 @@
         "team_member_gNBB8J",
         "team_member_NY3rMJ"
       ],
+      "disabled": true,
       "settings": {
         "title": "Meet Our Team"
       }

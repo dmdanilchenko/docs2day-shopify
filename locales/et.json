@@ -1889,6 +1889,9 @@
     },
     "errors": {
       "required_field": "See on kohustuslik väli."
+    },
+    "custom": {
+      "learn_more": "Más información"
     }
   },
   "header": {
