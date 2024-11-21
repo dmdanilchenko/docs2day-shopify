@@ -49,14 +49,14 @@
     "cart_show_checkout_button": true,
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "49",
-    "social_facebook": "https:\/\/www.facebook.com\/shopify",
-    "social_twitter": "https:\/\/x.com\/shopify",
-    "social_pinterest": "",
-    "social_instagram": "https:\/\/instagram.com\/shopify",
+    "social_facebook": "https:\/\/www.facebook.com\/profile.php?id=61568397006716",
+    "social_twitter": "",
+    "social_pinterest": "https:\/\/pin.it\/3hmu4YW2i",
+    "social_instagram": "",
     "social_vimeo": "",
     "social_tumblr": "",
     "social_youtube": "",
-    "social_linkedin": "https:\/\/linkedin.com\/in\/shopify",
+    "social_linkedin": "https:\/\/www.linkedin.com\/services\/page\/800ba23334a236a24b",
     "social_snapchat": "",
     "social_fancy": "",
     "favicon": "shopify:\/\/shop_images\/Image_1-11-2024_at_5.06_AM.jpg",
@@ -130,6 +130,11 @@
     "blocks": {
       "14060646107696862457": {
         "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "5394799768760407377": {
+        "type": "shopify:\/\/apps\/whatsapp-chat-button\/blocks\/widget\/766ee640-8263-4564-82fe-7d2909b243ad",
         "disabled": false,
         "settings": {}
       }

@@ -52,6 +52,9 @@
     },
     "errors": {
       "required_field": "It is required field."
+    },
+    "custom": {
+      "learn_more": "Learn more"
     }
   },
   "header": {

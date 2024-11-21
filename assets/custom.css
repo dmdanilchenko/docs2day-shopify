@@ -135,7 +135,8 @@ input::file-selector-button:hover {
     gap: 14px;
 }
 
-.social-media__item svg {
+.social-media__item svg,
+.social-media__item * {
     opacity: 1;
     fill: #fff;
 }
@@ -405,6 +406,21 @@ input::file-selector-button:hover {
     background: transparent;
 }
 
+.seal-portal-link {
+    margin: 0 !important;
+}
+
+.seal-portal-link a {
+    display: block;
+    width: 100%;
+    padding: 2px 25px;
+}
+
+.seal-portal-link a:hover {
+    background: var(--accent-background);
+    color: var(--accent-color);
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;
@@ -489,6 +505,7 @@ input::file-selector-button:hover {
 
     .footer__wrapper {
         text-align: center;
+        padding: 50px 0 80px;
     }
 
     .footer__logo-link {

@@ -20,17 +20,17 @@
         "button_wjkE8V": {
           "type": "button",
           "settings": {
-            "button_label": "View Services",
-            "button_link": "shopify:\/\/pages\/services",
-            "button_style_secondary": false
+            "button_label": "Get Resume Now",
+            "button_link": "shopify:\/\/products\/resumes-1",
+            "button_style_secondary": true
           }
         },
         "button_dbGXDA": {
           "type": "button",
           "settings": {
-            "button_label": "Get Resume Now",
-            "button_link": "shopify:\/\/products\/resumes-1",
-            "button_style_secondary": true
+            "button_label": "View Services",
+            "button_link": "shopify:\/\/pages\/services",
+            "button_style_secondary": false
           }
         }
       },
@@ -110,18 +110,18 @@
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "text": "\"The resume I received was spot on. It was customised exactly to the job I was applying for! The whole process was easy, professional, and efficient—can’t recommend them enough.\"",
-            "author": "",
-            "author_title": ""
+            "text": "I used the service provided by the Docs2Day. My resume was more than 5 years old and needed updating. Compared to the previous resume, which was prepared by myself, the new resume prepared by the Docs2Day has a better structure, wording and is more comprehensive. It was a pleasant service, I was satisfied. I will also recommend this service to my acquaintances.",
+            "author": "Maret A.",
+            "author_title": "Resume prepared by the Docs2Day"
           }
         },
         "testimonial_B9jjKY": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "text": "“I’ve always found cover letters a pain, but this service made it simple. They really nailed it! Cheers.”",
-            "author": "",
-            "author_title": ""
+            "text": "Docs2Day provided me with expert advice and excellent customer service. They helped me update and sculpt my work history into a professional and concise Cover Letter and CV. Highly recommended!",
+            "author": "Dev T.",
+            "author_title": "Extremely impressed!"
           }
         },
         "testimonial_qfDPPY": {
@@ -129,8 +129,8 @@
           "settings": {
             "stars": 5,
             "text": "“After Docs2Day team worked on my LinkedIn profile, I started getting more views and messages from recruiters. Definitely made a difference.”",
-            "author": "",
-            "author_title": ""
+            "author": "Amanda W.",
+            "author_title": "Nice Work with LinkedIn"
           }
         }
       },
@@ -155,6 +155,7 @@
         "show_author": false,
         "show_date": false,
         "show_excerpt": true,
+        "show_learn-more": true,
         "stack_mobile": false
       }
     },

@@ -48,6 +48,6 @@
 
 
   {%- if section.settings.show_learn-more -%}
-    <a href="{{ article.url }}" class="link article-item__learn-more">Learn more {% render 'icon', icon: 'tail-right' %}</a>
+    <a href="{{ article.url }}" class="link article-item__learn-more">{{ 'general.custom.learn_more' | t }} {% render 'icon', icon: 'tail-right' %}</a>
   {%- endif -%}
 </div>
