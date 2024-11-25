@@ -19,15 +19,22 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "How do I get started with your services?",
-            "answer": "<p>Simply select the service or package that fits your needs from our Services page, then follow the instructions to upload your existing resume, cover letter, or LinkedIn profile (if applicable). Our team will start crafting your new documents right away!<\/p>"
+            "title": "How do I begin using your services?",
+            "answer": "<p>Select your career path (Mining, Government, or Working Holiday), choose your preferred package, and proceed to checkout. You’ll receive an email with further instructions once your payment is confirmed.<\/p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Can you help if I don’t have a resume or cover letter yet?",
-            "answer": "<p>Absolutely! We’re here to build a resume or cover letter from scratch. Just provide us with details about your experience, skills, and job goals, and we’ll handle the rest.<\/p>"
+            "title": "Can I get a consultation before purchasing a package?",
+            "answer": "<p>Yes, we offer complimentary consultations to help you decide which package suits your needs best. Contact us through our live chat or email to schedule a session.<\/p>"
+          }
+        },
+        "question_qwbKTi": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to provide any documents or information to start?",
+            "answer": "<p>Yes, we’ll request your current resume (if available), job preferences, and any specific requirements for your career path during the onboarding process.<\/p>"
           }
         },
         "separator-2": {
@@ -40,22 +47,22 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "How long does it take to complete my resume, cover letter, or LinkedIn profile?",
-            "answer": "<p>Our standard turnaround time is <strong>3 to 5 business days<\/strong>, but if you need it sooner, we also offer rush services for an additional fee.<\/p>"
+            "title": "How long does it take to complete my resume and cover letter?",
+            "answer": "<p>For the $350 and $500 packages, we deliver within 5 business days. For $750 packages, delivery takes 7 business days due to the added services included.<\/p>"
           }
         },
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "How do I upload my current resume or LinkedIn profile for updates?",
-            "answer": "<p>When you place your order, you’ll have the option to upload your existing documents. We’ll review your current materials and give them a fresh, professional update.<\/p>"
+            "title": "Can I upgrade my package after purchase?",
+            "answer": "<p>Yes, you can upgrade to a higher package at any time by paying the difference. The upgraded services will commence immediately after payment.<\/p>"
           }
         },
         "question_AHx3ex": {
           "type": "question",
           "settings": {
-            "title": "What if I need both a resume and a cover letter?",
-            "answer": "<p>You can choose one of our <strong>bundle packages<\/strong>, such as the Essential Package, which includes both a professionally crafted resume and a tailored cover letter at a discounted rate.<\/p>"
+            "title": "Do you offer expedited services?",
+            "answer": "<p>Yes, we offer a 48-hour express delivery option for an additional fee. Contact our support team to request expedited processing.<\/p>"
           }
         },
         "separator_4ejQHb": {
@@ -68,15 +75,15 @@
         "question_W7iGn9": {
           "type": "question",
           "settings": {
-            "title": "Can I request revisions if I’m not fully satisfied?",
-            "answer": "<p>Yes, we offer <strong>up to two rounds of revisions<\/strong> at no additional charge to ensure you’re 100% happy with your documents.<\/p>"
+            "title": "What if I’m not satisfied with the resume or cover letter?",
+            "answer": "<p>We offer unlimited revisions within 14 days of delivery to ensure you’re completely satisfied with the final product.<\/p>"
           }
         },
         "question_EycbDB": {
           "type": "question",
           "settings": {
-            "title": "Do you provide a refund if I’m not satisfied?",
-            "answer": "<p>Due to the personalized nature of our services, we do not offer refunds. However, we’re committed to your satisfaction and will work with you to ensure you’re happy with the final product.<\/p>"
+            "title": "Do you guarantee job placement with your services?",
+            "answer": "<p>While we cannot guarantee job placement, our tailored services are designed to significantly improve your chances by presenting you as a top candidate.<\/p>"
           }
         },
         "separator_aNBmjk": {
@@ -89,8 +96,8 @@
         "question_c6Rrcj": {
           "type": "question",
           "settings": {
-            "title": "Can you help with resumes and cover letters for specific industries?",
-            "answer": "<p>Yes! Our team has experience across a variety of industries, including marketing, finance, technology, and more. We tailor each resume or cover letter to fit the job and industry you’re targeting.<\/p>"
+            "title": "What if I need visa application assistance for working holiday jobs?",
+            "answer": "<p>Our Working Holiday packages include comprehensive visa guidance to ensure your application is complete and compliant with current regulations.<\/p>"
           }
         },
         "question_bYHiBF": {
@@ -105,6 +112,7 @@
         "separator-1",
         "question-1",
         "question-2",
+        "question_qwbKTi",
         "separator-2",
         "question-4",
         "question-5",

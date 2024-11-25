@@ -12,102 +12,118 @@
         "block_meyebL": {
           "type": "block",
           "settings": {
-            "product_type": "Individual Services",
-            "title": "Resume",
-            "price": "$118",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/resumes-1",
-            "description_title": "Resume",
-            "description": "<ul><li>Custom resumes tailored to your career goals<\/li><li>Professional formatting to impress employers<\/li><li>Highlights key achievements and experience<\/li><\/ul>"
+            "product_type": "Mining Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.15_PM.jpg",
+            "title": "Mining Essentials",
+            "price": "$350",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/mining-jobs-basic-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
           }
         },
         "block_fCNULP": {
           "type": "block",
           "settings": {
-            "product_type": "Individual Services",
-            "title": "Cover Letter",
-            "price": "$42",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/cover-letter",
-            "description_title": "Cover Letter",
-            "description": "<ul><li>Tailored to your job and industry<\/li><li>Highlights your strengths effectively<\/li><li>Crafted to catch hiring managers’ attention<\/li><\/ul>"
+            "product_type": "Mining Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.16_PM.jpg",
+            "title": "Mining Pro Advantage",
+            "price": "$500",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/mining-jobs-professional-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Certification Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Application Strategies<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
           }
         },
         "block_tiRbR7": {
           "type": "block",
           "settings": {
-            "product_type": "Individual Services",
-            "title": "LinkedIn Optimisation",
-            "price": "$42",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/linkedin-optimisation",
-            "description_title": "LinkedIn Optimisation",
-            "description": "<ul><li>Showcases your skills and experience effectively<\/li><li>Builds a strong, professional online presence<\/li><li>Tailored to your industry and career objectives<\/li><li>Optimised for recruiter search visibility<\/li><\/ul>"
+            "product_type": "Mining Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.16_PM_1.jpg",
+            "title": "Mining Elite Plus",
+            "price": "$750",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/mining-jobs-premium-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Everything in Mining Pro Advantage Plan<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription Membership<\/strong><\/li><\/ul>"
           }
         },
         "block_pU4kKV": {
           "type": "block",
           "settings": {
-            "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_010db08a-dea3-4822-89b3-c67ed5231269.svg",
-            "title": "Essential Package",
-            "price": "$144",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/essential-package-resume-cover-letter",
-            "description_title": "Resume + Cover Letter",
-            "description": "<ul><li>A professionally tailored resume to showcase your strengths<\/li><li>A job-specific cover letter to make your application stand out<\/li><\/ul>"
+            "product_type": "Government Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM.jpg",
+            "title": "Government Starter",
+            "price": "$350",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-basic-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
           }
         },
         "block_ipAQ3q": {
           "type": "block",
           "settings": {
-            "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_e9db64f1-1f67-4abd-9a8b-0c8b52a5ba9b.svg",
-            "title": "Professional Package",
-            "price": "$172",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/professional-package-resume-cover-letter-linkedin-optimisation",
-            "description_title": "Resume + Cover Letter + LinkedIn Optimisation",
-            "description": "<ul><li>A custom resume designed to highlight your experience and skills<\/li><li>A personalised cover letter tailored to the job you’re applying for<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul>"
+            "product_type": "Government Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_1.jpg",
+            "title": "Government Career Builder",
+            "price": "$500",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-premium-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Selection Criteria Assistance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Interview Preparation Guide<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
           }
         },
         "block_FYgAYg": {
           "type": "block",
           "settings": {
-            "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_dbf2de34-0fcf-47e1-8ba8-1b4d116b0472.svg",
-            "title": "Resume + LinkedIn Optimisation Package",
-            "price": "$144",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/resume-linkedin-optimisation-package",
-            "description_title": "Resume + LinkedIn Optimisation",
-            "description": "<ul><li>A tailored resume that aligns with your career goals<\/li><li>A fully optimised LinkedIn profile to increase your chances of getting noticed by recruiters<\/li><\/ul>"
+            "product_type": "Government Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_2.jpg",
+            "title": "Government Leadership Suite",
+            "price": "$750",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-professional-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>All Career Builder Services<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Mock Interviews<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Coaching<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription<\/strong><\/li><\/ul>"
           }
         },
         "block_nY4KNJ": {
           "type": "block",
           "settings": {
-            "product_type": "Subscription Plans",
-            "image": "shopify:\/\/shop_images\/Featured_icon_2c277b17-2a84-44d4-8eb9-d6a8fc8c5473.svg",
-            "title": "Cover Letter Subscription",
-            "price": "$30 AUD\/month",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/cover-letter-plan",
-            "description_title": "Cover Letter Plan",
-            "description": "<p><\/p><ul><li>Up to 5 personalised cover letters<\/li><li>Job-specific cover letters to make your application stand out<\/li><\/ul><p>Stay prepared for every opportunity with our Cover Letter Plan. For just$30 AUD per month, you’ll receive a professionally tailored cover letter for each new job application. This plan ensures you always make a strong first impression.<\/p>"
+            "product_type": "Working Holiday Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.37_PM.jpg",
+            "title": "Travel & Work Essentials",
+            "price": "$350",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/working-holiday-jobs-basic-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
           }
         },
         "block_JiR6Yc": {
           "type": "block",
           "settings": {
-            "product_type": "Subscription Plans",
-            "image": "shopify:\/\/shop_images\/Featured_icon_d03061da-2360-4b01-aaad-fa0888ce15b2.svg",
-            "title": "Job Seeker Pro Subscription",
-            "price": "$75 AUD\/month",
-            "button_title": "Order Now",
-            "url": "shopify:\/\/products\/job-seeker-pro-plan",
-            "description_title": "Job Seeker Pro Plan",
-            "description": "<p><\/p><ul><li>1 resume update<\/li><li>2 personalised cover letters<\/li><li>LinkedIn profile optimisation to boost recruiter visibility<\/li><\/ul><p>Gain full support in your job search with the Job Seeker Pro Plan. Each month, you’ll receive a custom resume update, a new cover letter tailored to your next job application, and LinkedIn profile adjustments to keep your profile fresh and relevant. Ideal for those actively applying and looking to keep their job application materials up to date.<\/p>"
+            "product_type": "Working Holiday Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.39_PM.jpg",
+            "title": "Adventure Pro",
+            "price": "$500",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
+            "description_title": "",
+            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Visa Application Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+          }
+        },
+        "block_MCy4MR": {
+          "type": "block",
+          "settings": {
+            "product_type": "Working Holiday Jobs",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.41_PM.jpg",
+            "title": "Global Explorer Plus",
+            "price": "$750",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
+            "description_title": "",
+            "description": "<ul><li><strong>All Adventure Pro Services<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription Membership<\/strong><\/li><\/ul>"
           }
         }
       },
@@ -119,7 +135,8 @@
         "block_ipAQ3q",
         "block_FYgAYg",
         "block_nY4KNJ",
-        "block_JiR6Yc"
+        "block_JiR6Yc",
+        "block_MCy4MR"
       ],
       "settings": {
         "show_filter": true

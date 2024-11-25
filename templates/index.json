@@ -6,21 +6,36 @@
         "heading_pEtAYC": {
           "type": "heading",
           "settings": {
-            "heading": "Get the Professional Edge with Tailored Career Documents",
+            "heading": "<strong>Get Interviews within 30 Days - Guaranteed<\/strong>",
             "heading_size": "h1"
+          }
+        },
+        "caption_mB7YWC": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
           }
         },
         "text_MUL44z": {
           "type": "text",
           "settings": {
-            "text": "<p>Click here for your best resume yet—satisfaction guaranteed.<\/p>",
+            "text": "<p><\/p><p>Trusted by Mining, Government, and Global Professionals. Let's Make Your Career Goals a Reality.<\/p>",
             "text_style": "body"
+          }
+        },
+        "heading_6DR3Cg": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
           }
         },
         "button_wjkE8V": {
           "type": "button",
           "settings": {
-            "button_label": "Get Resume Now",
+            "button_label": "Get Your Resume NOW!",
             "button_link": "shopify:\/\/products\/resumes-1",
             "button_style_secondary": true
           }
@@ -28,7 +43,7 @@
         "button_dbGXDA": {
           "type": "button",
           "settings": {
-            "button_label": "View Services",
+            "button_label": "Specialised Services",
             "button_link": "shopify:\/\/pages\/services",
             "button_style_secondary": false
           }
@@ -36,7 +51,9 @@
       },
       "block_order": [
         "heading_pEtAYC",
+        "caption_mB7YWC",
         "text_MUL44z",
+        "heading_6DR3Cg",
         "button_wjkE8V",
         "button_dbGXDA"
       ],
@@ -54,53 +71,60 @@
         "classes": ""
       }
     },
-    "slideshow_DBqmGG": {
+    "slideshow_mLzEcN": {
       "type": "slideshow",
       "blocks": {
-        "image_QTrLkh": {
+        "image_bAHEaf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/21ea0a9f91f69ac1edc74acedd556726.png",
+            "image": "shopify:\/\/shop_images\/construction-worker-in-protective-gear.jpg",
             "show_overlay": true,
-            "overlay_opacity": 100,
+            "overlay_opacity": 75,
             "text_color": "#ffffff",
-            "title": "Get the Professional Edge with Tailored Career Documents",
-            "content": "Click here for your best resume yet—satisfaction guaranteed.",
-            "content_position": "middle_left",
-            "button_background": "#fb913c",
-            "button_text_color": "#ffffff",
-            "button_text": "Get Your Resume Now",
-            "link": "shopify:\/\/products\/resumes-1",
-            "button_alt_background": "#444ce7",
-            "button_alt_text_color": "#ffffff",
-            "button_alt_text": "View Services",
-            "link_alt": "shopify:\/\/pages\/services"
+            "title": "Why Us?",
+            "content": "•\tWe chase hiring managers to get your application noticed—stress-free.\n\t•\tWe uncover skills and opportunities you didn’t even know were there.\n\t•\tYour win is ours, if you don't win we don't.",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": "",
+            "button_alt_background": "#ffffff",
+            "button_alt_text_color": "#000000",
+            "button_alt_text": "Button",
+            "link_alt": ""
+          }
+        },
+        "image_xQbG7U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/royal-palace-of-madrid.jpg",
+            "show_overlay": true,
+            "overlay_opacity": 75,
+            "text_color": "#ffffff",
+            "title": "What We Do",
+            "content": "•\tUncover Your Hidden Value: We find skills and achievements you didn't know about employers care about\n\t•\tBeat Resume Scanning Software: We craft resumes designed to pass ATS and catch the eye of hiring managers.\n\t•\tConnect you with Decision-Makers: We hunt down the people who can actually hire you.",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": "",
+            "button_alt_background": "#ffffff",
+            "button_alt_text_color": "#000000",
+            "button_alt_text": "Button",
+            "link_alt": ""
           }
         }
       },
       "block_order": [
-        "image_QTrLkh"
+        "image_bAHEaf",
+        "image_xQbG7U"
       ],
-      "disabled": true,
       "settings": {
         "edge_to_edge": true,
         "section_size": "preserve_ratio",
         "carousel_effect": "slide",
         "autoplay": true,
-        "cycle_speed": 5
-      }
-    },
-    "featured_collection_6kPAdJ": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "title": "Docs2Day Services",
-        "products_count": 12,
-        "layout": "vertical",
-        "stack_products": false,
-        "show_quick_buy": false,
-        "link_title": "View all",
-        "link_url": "shopify:\/\/pages\/services"
+        "cycle_speed": 7
       }
     },
     "custom_testimonials_88iAEk": {
@@ -140,7 +164,7 @@
         "testimonial_qfDPPY"
       ],
       "settings": {
-        "title": "Testimonials",
+        "title": "Proven Success, Backed By 5-Star Reviews",
         "bg_color": "#444ce7"
       }
     },
@@ -149,7 +173,7 @@
       "settings": {
         "blog": "news",
         "blog_posts_count": 3,
-        "title": "Stay Updated with Docs2Day News & Insights",
+        "title": "The Success Insider (Lite Edition)",
         "link_title": "View all",
         "show_category": false,
         "show_author": false,
@@ -158,87 +182,12 @@
         "show_learn-more": true,
         "stack_mobile": false
       }
-    },
-    "custom_partners_9wTf7P": {
-      "type": "custom-partners",
-      "blocks": {
-        "partner_iahznG": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo.png",
-            "url": "shopify:\/\/pages\/contact",
-            "name": "boltshift"
-          }
-        },
-        "partner_AU7hMV": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_40f17659-e3d9-4abd-85c1-7998a93e3d92.png",
-            "url": "",
-            "name": "lightbox"
-          }
-        },
-        "partner_VCrKXL": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_32a79313-a19e-4611-a9ff-aa830d659e79.png",
-            "url": "",
-            "name": "featherdev"
-          }
-        },
-        "partner_GdFtXc": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_08f50fb3-5784-458a-bc5e-1ac28fabf791.png",
-            "url": "",
-            "name": "spherule"
-          }
-        },
-        "partner_Yz64hi": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_3e11ecc5-184e-4a83-b2ce-bc36476e3dfa.png",
-            "url": "",
-            "name": "global bank"
-          }
-        },
-        "partner_4WbEYP": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_0c1d1d84-961c-46c3-b655-7ab539b7de04.png",
-            "url": "",
-            "name": "nietzsche"
-          }
-        },
-        "partner_p8AQjR": {
-          "type": "partner",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Fictional_company_logo_0c1d1d84-961c-46c3-b655-7ab539b7de04.png",
-            "url": "",
-            "name": "second"
-          }
-        }
-      },
-      "block_order": [
-        "partner_iahznG",
-        "partner_AU7hMV",
-        "partner_VCrKXL",
-        "partner_GdFtXc",
-        "partner_Yz64hi",
-        "partner_4WbEYP",
-        "partner_p8AQjR"
-      ],
-      "settings": {
-        "title": "Official partner of these companies"
-      }
     }
   },
   "order": [
     "video_with_text_d64KbV",
-    "slideshow_DBqmGG",
-    "featured_collection_6kPAdJ",
+    "slideshow_mLzEcN",
     "custom_testimonials_88iAEk",
-    "blog_posts_PaN6BL",
-    "custom_partners_9wTf7P"
+    "blog_posts_PaN6BL"
   ]
 }

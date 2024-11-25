@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "custom-css-class": "page-type-subscription"
+      }
+    },
+    "custom_packages_maYXCC": {
+      "type": "custom-packages",
+      "blocks": {
+        "block_MXhbUm": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Featured_icon_010db08a-dea3-4822-89b3-c67ed5231269.svg",
+            "title": "Forge Your Future in Mining",
+            "price": "",
+            "button_title": "Explore Packages",
+            "url": "shopify:\/\/pages\/mining-jobs",
+            "description_title": "",
+            "description": "<p>Unlock a $100K+ Career in Mining with Our Proven Tools and Support<\/p>"
+          }
+        },
+        "block_a9YBqA": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Featured_icon_e9db64f1-1f67-4abd-9a8b-0c8b52a5ba9b.svg",
+            "title": "Your Path to Public Service Excellence",
+            "price": "",
+            "button_title": "Explore Packages",
+            "url": "shopify:\/\/pages\/government-jobs",
+            "description_title": "",
+            "description": "<p>Secure a High-Stakes Role in Government with Tailored Applications and Expert Coaching<\/p>"
+          }
+        },
+        "block_XFdJbJ": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Featured_icon_dbf2de34-0fcf-47e1-8ba8-1b4d116b0472.svg",
+            "title": "Work and Wander: Your Global Adventure StartsHere",
+            "price": "",
+            "button_title": "Explore Packages",
+            "url": "shopify:\/\/pages\/working-holiday-jobs",
+            "description_title": "",
+            "description": "<p>Work, Travel, and Explore the World – We’ll Help You Every Step of the Way<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_MXhbUm",
+        "block_a9YBqA",
+        "block_XFdJbJ"
+      ],
+      "settings": {
+        "show_filter": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_packages_maYXCC"
+  ]
+}

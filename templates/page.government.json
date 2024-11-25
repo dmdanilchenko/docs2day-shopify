@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "custom-css-class": "page-type-subscription"
+      }
+    },
+    "custom_packages_maYXCC": {
+      "type": "custom-packages",
+      "blocks": {
+        "block_MXhbUm": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM.jpg",
+            "title": "Government Starter",
+            "price": "$350",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-basic-plan",
+            "description_title": "",
+            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
+          }
+        },
+        "block_a9YBqA": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_1.jpg",
+            "title": "Government Career Builder",
+            "price": "$500",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-professional-plan",
+            "description_title": "",
+            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Selection Criteria Assistance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Interview Preparation Guide<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+          }
+        },
+        "block_XFdJbJ": {
+          "type": "block",
+          "settings": {
+            "product_type": "Packages",
+            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_2.jpg",
+            "title": "Government Leadership Suite",
+            "price": "$750",
+            "button_title": "Purchase Now",
+            "url": "shopify:\/\/products\/government-jobs-premium-plan",
+            "description_title": "",
+            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Selection Criteria Assistance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Interview Preparation Guide<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Mock Interviews<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Coaching<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription<\/strong><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_MXhbUm",
+        "block_a9YBqA",
+        "block_XFdJbJ"
+      ],
+      "settings": {
+        "show_filter": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_packages_maYXCC"
+  ]
+}
