@@ -13,39 +13,39 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_010db08a-dea3-4822-89b3-c67ed5231269.svg",
-            "title": "Forge Your Future in Mining",
+            "image": "shopify:\/\/shop_images\/Image_24-11-2024_at_11.51_PM.jpg",
+            "title": "Launch Your Mining Career",
             "price": "",
             "button_title": "Explore Packages",
             "url": "shopify:\/\/pages\/mining-jobs",
             "description_title": "",
-            "description": "<p>Unlock a $100K+ Career in Mining with Our Proven Tools and Support<\/p>"
+            "description": "<p>Unlock a $100K+ Career in Mining with Our Proven Tools and Support.<\/p>"
           }
         },
         "block_a9YBqA": {
           "type": "block",
           "settings": {
             "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_e9db64f1-1f67-4abd-9a8b-0c8b52a5ba9b.svg",
-            "title": "Your Path to Public Service Excellence",
+            "image": "shopify:\/\/shop_images\/IMG_2257_abeb20b2-f377-423e-81ac-d5a64f3b71f8.jpg",
+            "title": "Government (APS)",
             "price": "",
             "button_title": "Explore Packages",
             "url": "shopify:\/\/pages\/government-jobs",
             "description_title": "",
-            "description": "<p>Secure a High-Stakes Role in Government with Tailored Applications and Expert Coaching<\/p>"
+            "description": "<p>All the tools and support you need to secure a role in government.<\/p>"
           }
         },
         "block_XFdJbJ": {
           "type": "block",
           "settings": {
             "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Featured_icon_dbf2de34-0fcf-47e1-8ba8-1b4d116b0472.svg",
-            "title": "Work and Wander: Your Global Adventure StartsHere",
+            "image": "shopify:\/\/shop_images\/IMG_2261.png",
+            "title": "Work & Wander: Your Guide to Exploring Down Under",
             "price": "",
             "button_title": "Explore Packages",
             "url": "shopify:\/\/pages\/working-holiday-jobs",
             "description_title": "",
-            "description": "<p>Work, Travel, and Explore the World – We’ll Help You Every Step of the Way<\/p>"
+            "description": "<p>Travel, Work and Explore the Australia – We’ll Help You Every Step of the Way<\/p>"
           }
         }
       },

@@ -15,11 +15,11 @@
             "product_type": "Mining Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.15_PM.jpg",
             "title": "Mining Essentials",
-            "price": "$350",
+            "price": "$199",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/mining-jobs-basic-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Mining Industry Overview<\/strong><\/p><p>✅ <strong>Qualifications Guide<\/strong><\/p><p>✅ <strong>Custom Cover Letter & Resume<\/strong><\/p><p>✅ <strong>First Day on Site Tips<\/strong><\/p><p>⭐ <strong>BONUS: Free White Card<\/strong> <em>(Valued at $125)<\/em><\/p>"
           }
         },
         "block_fCNULP": {
@@ -27,25 +27,25 @@
           "settings": {
             "product_type": "Mining Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.16_PM.jpg",
-            "title": "Mining Pro Advantage",
-            "price": "$500",
+            "title": "Mining Intermediate",
+            "price": "$800",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/mining-jobs-professional-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Certification Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Application Strategies<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Entry-Level Package<\/strong><\/p><p>✅ <strong>20-Min Career Coaching<\/strong><\/p><p>✅ <strong>3x Custom Cover Letters & Resumes<\/strong><\/p><p>✅ <strong>Interview Preparation Guide<\/strong><\/p><p>⭐ <strong>30-Day Interview Guarantee<\/strong><\/p>"
           }
         },
         "block_tiRbR7": {
           "type": "block",
           "settings": {
             "product_type": "Mining Jobs",
-            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.16_PM_1.jpg",
-            "title": "Mining Elite Plus",
-            "price": "$750",
+            "image": "shopify:\/\/shop_images\/Image_1-12-2024_at_2.56_AM.jpg",
+            "title": "Mining Advanced",
+            "price": "$1400",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/mining-jobs-premium-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Everything in Mining Pro Advantage Plan<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription Membership<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Career Growth Package<\/strong><\/p><p>✅ <strong>60-Min Executive Coaching<\/strong><\/p><p>✅ <strong>Custom Management Cover Letter & Resume<\/strong><\/p><p>✅ <strong>LinkedIn Profile Optimization<\/strong><\/p><p>✅ <strong>Advanced Interview Preparation<\/strong><\/p><p>✅ <strong>Networking Mastery Guide<\/strong><\/p><p>⭐ <strong>90-Day Interview Guarantee<\/strong><\/p><p>⭐ <strong>Priority Support & Revisions<\/strong><\/p>"
           }
         },
         "block_pU4kKV": {
@@ -53,12 +53,12 @@
           "settings": {
             "product_type": "Government Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM.jpg",
-            "title": "Government Starter",
-            "price": "$350",
+            "title": "Government APS 1 - 4",
+            "price": "$199",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/government-jobs-basic-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>APS Overview Guide<\/strong><\/p><p>✅ <strong>Eligibility Requirements<\/strong><\/p><p>✅ <strong>Custom Cover Letter & Resume<\/strong><\/p><p>✅ <strong>Application Process Tips<\/strong><\/p><p>✅ <strong>First Day Insights<\/strong><\/p><p>⭐ <strong>BONUS: Values & Conduct Module<\/strong><\/p>"
           }
         },
         "block_ipAQ3q": {
@@ -66,12 +66,12 @@
           "settings": {
             "product_type": "Government Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_1.jpg",
-            "title": "Government Career Builder",
-            "price": "$500",
+            "title": "Government APS 5 - 6",
+            "price": "$800",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/government-jobs-premium-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Selection Criteria Assistance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Interview Preparation Guide<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Entry-Level Package<\/strong><\/p><p>✅ <strong>30-Min Career Coaching<\/strong><\/p><p>✅ <strong>Custom Selection Criteria<\/strong><\/p><p>✅ <strong>Interview Prep Guide<\/strong><\/p><p>⭐ <strong>30-Day Interview Guarantee<\/strong><\/p>"
           }
         },
         "block_FYgAYg": {
@@ -79,12 +79,12 @@
           "settings": {
             "product_type": "Government Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_3.43_PM_2.jpg",
-            "title": "Government Leadership Suite",
-            "price": "$750",
+            "title": "Government EL 1 - 2",
+            "price": "$1400",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/government-jobs-professional-plan",
             "description_title": "",
-            "description": "<ul><li><strong>All Career Builder Services<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Mock Interviews<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Coaching<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Career Advancement Package<\/strong><\/p><p>✅ <strong>60-Min Executive Coaching<\/strong><\/p><p>✅ <strong>Executive Cover Letter & Resume<\/strong><\/p><p>✅ <strong>LinkedIn Profile Optimization<\/strong><\/p><p>✅ <strong>Advanced Interview Guide<\/strong><\/p><p>✅ <strong>Government Networking Strategies<\/strong><\/p><p>⭐ <strong>90-Day Interview Guarantee<\/strong><\/p><p>⭐ <strong>Priority Support & Revisions<\/strong><\/p>"
           }
         },
         "block_nY4KNJ": {
@@ -92,12 +92,12 @@
           "settings": {
             "product_type": "Working Holiday Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.37_PM.jpg",
-            "title": "Travel & Work Essentials",
-            "price": "$350",
+            "title": "Travel Lite",
+            "price": "$199",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/working-holiday-jobs-basic-plan",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Working Holidays Guide<\/strong><\/p><p>✅ <strong>Visa Application Assistance<\/strong><\/p><p>✅ <strong>Resume & Cover Letter Templates<\/strong><\/p><p>✅ <strong>Backpacker Job Search Tips<\/strong><\/p><p>✅ <strong>Accommodation & Travel Advice<\/strong><\/p>"
           }
         },
         "block_JiR6Yc": {
@@ -105,12 +105,12 @@
           "settings": {
             "product_type": "Working Holiday Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.39_PM.jpg",
-            "title": "Adventure Pro",
-            "price": "$500",
+            "title": "Travel Smart",
+            "price": "$800",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
+            "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
             "description_title": "",
-            "description": "<ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Visa Application Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Starter Package<\/strong><\/p><p>✅ <strong>30-Min Consultation & Report<\/strong><\/p><p>✅ <strong>Custom Resume & Cover Letter<\/strong><\/p><p>✅ <strong>Interview Prep Guide<\/strong><\/p><p>✅ <strong>Job Placement Assistance<\/strong><\/p><p>⭐ <strong>30-Day Job Guarantee<\/strong><\/p>"
           }
         },
         "block_MCy4MR": {
@@ -118,12 +118,12 @@
           "settings": {
             "product_type": "Working Holiday Jobs",
             "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.41_PM.jpg",
-            "title": "Global Explorer Plus",
-            "price": "$750",
+            "title": "Travel Pro",
+            "price": "$1400",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
+            "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
             "description_title": "",
-            "description": "<ul><li><strong>All Adventure Pro Services<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription Membership<\/strong><\/li><\/ul>"
+            "description": "<p>✅ <strong>Includes Adventure Seeker Package<\/strong><\/p><p>✅ <strong>Airport Pickup & Orientation<\/strong><\/p><p>✅ <strong>First Week Accommodation<\/strong><\/p><p>✅ <strong>Bank Account & Tax File Number<\/strong><\/p><p>✅ <strong>Local SIM Card<\/strong><\/p><p>✅ <strong>Social Events & Networking<\/strong><\/p><p>✅ <strong>Travel Planning & Discounts<\/strong><\/p><p>⭐ <strong>90-Day Job Guarantee<\/strong><\/p><p>⭐ <strong>Priority Support & Consultations<\/strong><\/p>"
           }
         }
       },

@@ -12,40 +12,40 @@
         "block_MXhbUm": {
           "type": "block",
           "settings": {
-            "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.53_PM.jpg",
-            "title": "Travel & Work Essentials",
-            "price": "$350",
+            "product_type": "",
+            "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.10_AM.jpg",
+            "title": "Working Holiday Starter",
+            "price": "$199",
             "button_title": "Purchase Now",
             "url": "shopify:\/\/products\/working-holiday-jobs-basic-plan",
             "description_title": "",
-            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Standard Cover Letter<\/strong><\/li><\/ul>"
+            "description": "<ul><li>Introduction to Working Holidays in Australia Guide<\/li><\/ul><p>Get essential information on visa requirements, travel planning, and an overview of life in Australia.<\/p><ul><li>Visa Application Assistance<\/li><\/ul><p>Step-by-step guidance on applying for the Working Holiday Visa (subclass 417 or 462), ensuring all documentation is correctly completed.<\/p><ul><li>Resume and Cover Letter Templates for Casual Jobs<\/li><\/ul><p>Receive professionally designed templates to create your own standout resume and cover letter suitable for various casual roles.<\/p><ul><li>Job Search Guide for Backpackers<\/li><\/ul><p>Learn effective strategies for finding work in hospitality, tourism, agriculture, and other sectors popular among backpackers.<\/p><ul><li>Accommodation and Travel Tips<\/li><\/ul><p>Access insider advice on affordable accommodation options, transportation, and how to make the most of your Australian adventure.<\/p>"
           }
         },
         "block_a9YBqA": {
           "type": "block",
           "settings": {
             "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.54_PM.jpg",
-            "title": "Adventure Pro",
-            "price": "$500",
+            "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.11_AM.jpg",
+            "title": "Adventure Seeker",
+            "price": "$800",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
+            "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
             "description_title": "",
-            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Visa Application Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul>"
+            "description": "<p><em>Includes everything from the Working Holiday Starter Package, plus:<\/em><\/p><ul><li>30-Minute Personalised Consultation with Follow-Up Report<\/li><\/ul><p>Discuss your travel and work plans with an expert, and receive a customised report with recommendations tailored to your interests.<\/p><ul><li>Custom Resume and Cover Letter for Australian Employers<\/li><\/ul><p>Receive professionally crafted documents that align with Australian employer expectations, increasing your chances of securing work.<\/p><ul><li>Interview Preparation Guide for Casual Roles<\/li><\/ul><p>Access tips on how to succeed in job interviews, including common questions and cultural expectations in Australian workplaces.<\/p><ul><li>Job Placement Assistance<\/li><\/ul><p>Benefit from our network of trusted employers; we’ll help connect you with job opportunities suited to your skills and preferences.<\/p><ul><li>30-Day Job Guarantee<\/li><\/ul><p>We’re confident in our ability to help you find work—if you don’t secure a job within 30 days of arrival, we’ll continue to support you until you do.<\/p>"
           }
         },
         "block_XFdJbJ": {
           "type": "block",
           "settings": {
-            "product_type": "Packages",
-            "image": "shopify:\/\/shop_images\/Image_23-11-2024_at_2.56_PM.jpg",
-            "title": "Global Explorer Plus",
-            "price": "$750",
+            "product_type": "person",
+            "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.14_AM.jpg",
+            "title": "Ultimate Aussie Experience Package",
+            "price": "$1400",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
+            "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
             "description_title": "",
-            "description": "<p><\/p><ul><li><strong>Tailored Resume<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Customised Cover Letter<\/strong><\/li><\/ul><p><\/p><ul><li><strong>LinkedIn Optimisation<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Visa Application Guidance<\/strong><\/li><\/ul><p><\/p><ul><li><strong>30-day interview guarantee<\/strong><\/li><\/ul><p><\/p><ul><li><strong>Monthly Subscription Membership<\/strong><\/li><\/ul>"
+            "description": "<p><em>Includes everything from the Adventure Seeker Package, plus:<\/em><\/p><ul><li>Airport Pickup and Welcome Orientation<\/li><\/ul><p>Arrive stress-free with airport pickup services and a welcome orientation to help you settle in quickly.<\/p><ul><li>First Week Accommodation Assistance<\/li><\/ul><p>We’ll arrange your first week’s accommodation in a reputable hostel or budget hotel, giving you a comfortable start to your journey.<\/p><ul><li>Australian Bank Account and Tax File Number Setup<\/li><\/ul><p>Assistance with setting up an Australian bank account and obtaining your Tax File Number, essential for working and getting paid.<\/p><ul><li>Local SIM Card with Prepaid Credit<\/li><\/ul><p>Stay connected from day one with a local SIM card, including prepaid credit for calls and data.<\/p><ul><li>Social Events and Networking Opportunities<\/li><\/ul><p>Invitations to exclusive events and meet-ups to help you connect with fellow travellers and locals.<\/p><ul><li>Travel Planning Assistance and Discounts<\/li><\/ul><p>Personalised help planning trips around Australia, plus exclusive discounts on tours, activities, and experiences.<\/p><ul><li>90-Day Job Guarantee<\/li><\/ul><p>If you don’t secure a job within 90 days, we’ll continue to provide support until you do.<\/p><ul><li>Priority Support and Unlimited Consultation<\/li><\/ul><p>Enjoy dedicated assistance throughout your stay, with unlimited access to our team for any questions or help you need.<\/p>"
           }
         }
       },
@@ -55,7 +55,8 @@
         "block_XFdJbJ"
       ],
       "settings": {
-        "show_filter": false
+        "show_filter": false,
+        "bg_image": "shopify:\/\/shop_images\/IMG_2261.png"
       }
     }
   },
