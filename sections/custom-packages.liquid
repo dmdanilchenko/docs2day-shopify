@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="{{ 'custom-packages.css' | asset_url }}">
-<section class="section" data-section-id="{{ section.id }}" data-section-type="html">
+{% if section.settings.bg_image != blank %}
+  <style>
+    [data-section-id="{{ section.id }}"] {
+        background-image: url({{ section.settings.bg_image | img_url: '1920x' }});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  </style>
+{% endif %}
+<section class="section section--packages" data-section-id="{{ section.id }}" data-section-type="html">
   <div class="container">
     <div class="html rte">
       {%- if section.settings.show_filter -%}
@@ -27,7 +36,8 @@
       {% for block in section.blocks %}
         {% assign count = count | plus: 1 %}
       {% endfor %}
-      <div class="package-container {% if section.settings.show_filter %} package-container--with-filter {% endif %} {% if count <= 2 %}two-columns{% endif %}">
+      <div
+        class="package-container {% if section.settings.show_filter %} package-container--with-filter {% endif %} {% if count <= 2 %}two-columns{% endif %}">
         {%- for block in section.blocks -%}
         {%- if section.settings.show_filter -%}
         <div class="package-box package-box--{{ block.settings.product_type | downcase | replace: ' ', '-' }}">
@@ -53,6 +63,7 @@
         </div>
       </div>
     </div>
+  </div>
 </section>
 {% schema %}
 {
@@ -63,6 +74,11 @@
       "id": "show_filter",
       "label": "Show filter",
       "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
     }
   ],
   "blocks": [

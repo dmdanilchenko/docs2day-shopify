@@ -55,7 +55,8 @@
         "block_XFdJbJ"
       ],
       "settings": {
-        "show_filter": false
+        "show_filter": false,
+        "bg_image": "shopify:\/\/shop_images\/IMG_0249_3.jpg"
       }
     }
   },

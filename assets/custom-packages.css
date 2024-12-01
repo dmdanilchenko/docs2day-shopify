@@ -1,9 +1,13 @@
+.section--packages {
+    margin: 0;
+    padding: 50px 0;
+}
+
 /* Container for the three packages */
 .package-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    margin-top: 40px;
     flex-wrap: wrap;
 }
 
@@ -15,6 +19,24 @@
     background-color: #fff;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.package-box:hover {
+    background: var(--Secondary-500, #6172F3);
+    border: 1px solid #6172F3;
+}
+
+.package-box:hover .package-title {
+    color: #fff;
+}
+
+.package-box:hover .package-price {
+    color: #fff;
+}
+
+.package-box:hover .package-description {
+    color: #fff;
 }
 
 /* Icon styling */
@@ -145,6 +167,11 @@
 }
 
 @media screen and (min-width: 641px) {
+    .section--packages {
+        margin: 0;
+        padding: 60px 0;
+    }
+
     .package-container {
         grid-template-columns: 1fr 1fr;
     }

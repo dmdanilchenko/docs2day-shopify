@@ -4,6 +4,7 @@
 
 .home-transparent-header main {
     top: -130px;
+    margin-bottom: -130px;
     position: relative;
 }
 
@@ -488,6 +489,7 @@ input::file-selector-button:hover {
 
     .home-transparent-header main {
         top: -200px;
+        margin-bottom: -200px;
     }
 
     .footer__title {
@@ -583,6 +585,7 @@ input::file-selector-button:hover {
 @media screen and (min-width: 1000px) {
     .home-transparent-header main {
         top: -260px;
+        margin-bottom: -260px;
     }
 
     .slideshow__title {
