@@ -13,12 +13,12 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-basic-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.23_AM.jpg",
             "title": "Entry-Level APS Levels 1-4 ($50k-$80k)",
-            "price": "$199",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/government-jobs-basic-plan",
             "description_title": "",
+            "dropdown_for_description": true,
             "description": "<ul><li>Introduction to the APS Guide<\/li><\/ul><p>Gain a comprehensive overview of the Australian Public Service (APS), including its structure, functions, and the diverse opportunities available.<\/p><ul><li>Eligibility and Qualifications Guide<\/li><\/ul><p>Understand the essential qualifications, citizenship requirements, and security clearances needed to start your APS career.<\/p><ul><li>APS 1-4 Cover Letter & Resume<\/li><\/ul><p>Our service provides a custom cover letter and resume tailored specifically for APS 1-4 roles, emphasizing your skills, experience, and alignment with key public service values. <\/p><ul><li>APS Application Process Guide<\/li><\/ul><p>Navigate the APS application process with ease using our step-by-step guide, including tips on addressing selection criteria and preparing for assessments.<\/p><ul><li>First Day in the APS Guide<\/li><\/ul><p>Prepare confidently for your first day in the public service with insights into workplace culture, expectations, and professional conduct.<\/p><p><strong>BONUS:<\/strong> Free APS Values and Code of Conduct e-Learning Module<br\/>Familiarise yourself with the core values and ethical standards expected of APS employees.<\/p>"
           }
         },
@@ -26,12 +26,12 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-premium-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.27_AM.jpg",
             "title": "Career Advancement APS Levels 5-6 ($80k - $100k)",
-            "price": "$800",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/government-jobs-premium-plan",
             "description_title": "",
+            "dropdown_for_description": false,
             "description": "<p><em>Includes everything from the Entry-Level APS Package, plus:<\/em><\/p><ul><li>20-Minute Individual Career Coaching Session with Detailed Follow-Up Report<\/li><\/ul><p>Benefit from a personalised 20-minute consultation to discuss your career goals within the APS. Receive a comprehensive report with tailored strategies to advance your public service career.<\/p><ul><li>Custom Selection Criteria Responses<\/li><\/ul><p>Get expert assistance in crafting compelling responses to the key selection criteria, a critical component of APS applications.<\/p><ul><li>Interview Preparation Guide for APS Roles<\/li><\/ul><p>Access expert advice on common interview questions, behavioural interview techniques, and strategies to impress APS selection panels.<\/p><ul><li>APS 5-6 Cover Letter & Resume<\/li><\/ul><p>Advance your career in the Australian Public Service with a custom cover letter and resume crafted specifically for APS 5-6 roles. Our service emphasizes your leadership skills, technical expertise, and alignment with public service values, positioning you as a strong candidate for mid-level APS opportunities.<\/p><ul><li>30-Day Interview Guarantee<\/li><\/ul><p>We are confident in our services—if you don’t secure an interview within 30 days, we’ll provide ongoing support until you do.<\/p>"
           }
         },
@@ -39,12 +39,12 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-professional-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.42_AM.jpg",
             "title": "Leadership Package APS Executive Levels and SES ($100k - $150k+)",
-            "price": "$1400",
             "button_title": "Purchase Now",
-            "url": "shopify:\/\/products\/government-jobs-professional-plan",
             "description_title": "",
+            "dropdown_for_description": false,
             "description": "<p><em>Includes everything from the APS Career Advancement Package, plus:<\/em><\/p><ul><li>60-Minute Executive Career Coaching Session with Comprehensive Action Plan<\/li><\/ul><p>Engage in a deep-dive coaching session focused on leadership roles within the APS. We’ll explore your leadership style, strategic goals, and pathways to executive positions. Post-session, receive a detailed action plan outlining steps to achieve your leadership ambitions.<\/p><ul><li>Custom Executive-Level Cover Letter & Resume<\/li><\/ul><p>Obtain professionally crafted application documents tailored for senior and executive roles, emphasising your leadership experience and strategic contributions.<\/p><ul><li>LinkedIn Profile Optimization for Public Sector Executives<\/li><\/ul><p>Enhance your online presence with a fully optimised LinkedIn profile that highlights your expertise and attracts attention from senior recruiters.<\/p><ul><li>Advanced Interview Preparation Guide<\/li><\/ul><p>Gain insights into high-level interview techniques, including how to address complex policy issues, demonstrate leadership capabilities, and engage with executive selection panels.<\/p><ul><li>Professional Networking Strategies in Government<\/li><\/ul><p>Learn effective networking methods to connect with key stakeholders, senior officials, and decision-makers within the public service.<\/p><ul><li>EL\/SES Cover Letter & Resume<\/li><\/ul><p>Step into executive leadership with professionally tailored application documents for EL and SES roles in the Australian Public Service. Our custom cover letter and resume highlight your strategic vision, proven leadership, and alignment with high-level public service priorities, helping you stand out in competitive executive selection processes.<\/p><ul><li>90-Day Interview Guarantee<\/li><\/ul><p>If you don’t secure an interview within 90 days, we’ll continue to support you until you do.<\/p><ul><li>Priority Support and Unlimited Revisions<\/li><\/ul><p>Enjoy dedicated support throughout your job search with unlimited revisions to ensure your documents perfectly represent your professional brand.<\/p>"
           }
         }
