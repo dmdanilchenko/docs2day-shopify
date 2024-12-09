@@ -3,7 +3,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "title": "Stay Updated with The Success Insider Newsletter",
+        "title": "The Success Insider Newsletter",
         "articles_per_page": 8,
         "show_search": true,
         "highlight_first_article": false,

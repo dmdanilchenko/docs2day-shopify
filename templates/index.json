@@ -21,7 +21,7 @@
         "text_MUL44z": {
           "type": "text",
           "settings": {
-            "text": "<p><\/p><p>Trusted by Mining, Government, and Global Professionals. Let's Make Your Career Goals a Reality.<\/p>",
+            "text": "<p><\/p><p><em>Helping Professionals Land High-Paying Jobs in Mining, Government, and Beyond.<\/em><\/p>",
             "text_style": "body"
           }
         },
@@ -32,18 +32,10 @@
             "heading_size": "h1"
           }
         },
-        "button_wjkE8V": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get Your Resume NOW!",
-            "button_link": "shopify:\/\/products\/resumes-1",
-            "button_style_secondary": true
-          }
-        },
         "button_dbGXDA": {
           "type": "button",
           "settings": {
-            "button_label": "Specialised Services",
+            "button_label": "Start Earning $100k+ – Fast-Track Your Career Now!",
             "button_link": "shopify:\/\/pages\/services",
             "button_style_secondary": false
           }
@@ -54,7 +46,6 @@
         "caption_mB7YWC",
         "text_MUL44z",
         "heading_6DR3Cg",
-        "button_wjkE8V",
         "button_dbGXDA"
       ],
       "settings": {
@@ -69,6 +60,47 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "classes": ""
+      }
+    },
+    "custom_testimonials_88iAEk": {
+      "type": "custom-testimonials",
+      "blocks": {
+        "testimonial_FaUEy4": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "I used the service provided by the Docs2Day. My resume was more than 5 years old and needed updating. Compared to the previous resume, which was prepared by myself, the new resume prepared by the Docs2Day has a better structure, wording and is more comprehensive. It was a pleasant service, I was satisfied. I will also recommend this service to my acquaintances.",
+            "author": "Maret A.",
+            "author_title": "Resume prepared by the Docs2Day"
+          }
+        },
+        "testimonial_B9jjKY": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Docs2Day provided me with expert advice and excellent customer service. They helped me update and sculpt my work history into a professional and concise Cover Letter and CV. Highly recommended!",
+            "author": "Dev T.",
+            "author_title": "Extremely impressed!"
+          }
+        },
+        "testimonial_qfDPPY": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“After Docs2Day team worked on my LinkedIn profile, I started getting more views and messages from recruiters. Definitely made a difference.”",
+            "author": "Amanda W.",
+            "author_title": "Nice Work with LinkedIn"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FaUEy4",
+        "testimonial_B9jjKY",
+        "testimonial_qfDPPY"
+      ],
+      "settings": {
+        "title": "Proven Success, Backed By 5-Star Reviews",
+        "bg_color": "#444ce7"
       }
     },
     "slideshow_mLzEcN": {
@@ -127,53 +159,12 @@
         "cycle_speed": 7
       }
     },
-    "custom_testimonials_88iAEk": {
-      "type": "custom-testimonials",
-      "blocks": {
-        "testimonial_FaUEy4": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "text": "I used the service provided by the Docs2Day. My resume was more than 5 years old and needed updating. Compared to the previous resume, which was prepared by myself, the new resume prepared by the Docs2Day has a better structure, wording and is more comprehensive. It was a pleasant service, I was satisfied. I will also recommend this service to my acquaintances.",
-            "author": "Maret A.",
-            "author_title": "Resume prepared by the Docs2Day"
-          }
-        },
-        "testimonial_B9jjKY": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "text": "Docs2Day provided me with expert advice and excellent customer service. They helped me update and sculpt my work history into a professional and concise Cover Letter and CV. Highly recommended!",
-            "author": "Dev T.",
-            "author_title": "Extremely impressed!"
-          }
-        },
-        "testimonial_qfDPPY": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "text": "“After Docs2Day team worked on my LinkedIn profile, I started getting more views and messages from recruiters. Definitely made a difference.”",
-            "author": "Amanda W.",
-            "author_title": "Nice Work with LinkedIn"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_FaUEy4",
-        "testimonial_B9jjKY",
-        "testimonial_qfDPPY"
-      ],
-      "settings": {
-        "title": "Proven Success, Backed By 5-Star Reviews",
-        "bg_color": "#444ce7"
-      }
-    },
     "blog_posts_PaN6BL": {
       "type": "blog-posts",
       "settings": {
         "blog": "news",
         "blog_posts_count": 3,
-        "title": "The Success Insider (Lite Edition)",
+        "title": "The Success Insider Newsletter",
         "link_title": "View all",
         "show_category": false,
         "show_author": false,
@@ -186,8 +177,8 @@
   },
   "order": [
     "video_with_text_d64KbV",
-    "slideshow_mLzEcN",
     "custom_testimonials_88iAEk",
+    "slideshow_mLzEcN",
     "blog_posts_PaN6BL"
   ]
 }

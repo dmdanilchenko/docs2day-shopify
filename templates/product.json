@@ -35,7 +35,7 @@
           "type": "attachment",
           "settings": {
             "label": "Upload Old Document Here",
-            "required": true
+            "required": false
           }
         },
         "button_p3pBck": {

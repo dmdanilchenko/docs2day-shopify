@@ -14,12 +14,12 @@
           "settings": {
             "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/Image_24-11-2024_at_11.51_PM.jpg",
-            "title": "Launch Your Mining Career",
+            "title": "Mining",
             "price": "",
-            "button_title": "Explore Packages",
+            "button_title": "Get Hired Fast!",
             "url": "shopify:\/\/pages\/mining-jobs",
             "description_title": "",
-            "description": "<p>Unlock a $100K+ Career in Mining with Our Proven Tools and Support.<\/p>"
+            "description": "<ul><li>Launch Your $100k+ Mining Career<\/li><\/ul>"
           }
         },
         "block_a9YBqA": {
@@ -27,12 +27,12 @@
           "settings": {
             "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/IMG_2257_abeb20b2-f377-423e-81ac-d5a64f3b71f8.jpg",
-            "title": "Government (APS)",
+            "title": "Government",
             "price": "",
-            "button_title": "Explore Packages",
+            "button_title": "Get Hired Fast!",
             "url": "shopify:\/\/pages\/government-jobs",
             "description_title": "",
-            "description": "<p>All the tools and support you need to secure a role in government.<\/p>"
+            "description": "<ul><li>Get Hired in Stable Government Roles.<\/li><\/ul>"
           }
         },
         "block_XFdJbJ": {
@@ -40,12 +40,12 @@
           "settings": {
             "product_type": "Packages",
             "image": "shopify:\/\/shop_images\/IMG_2261.png",
-            "title": "Work & Wander: Your Guide to Exploring Down Under",
+            "title": "Work & Travel Australia",
             "price": "",
-            "button_title": "Explore Packages",
+            "button_title": "Get Hired Fast!",
             "url": "shopify:\/\/pages\/working-holiday-jobs",
             "description_title": "",
-            "description": "<p>Travel, Work and Explore the Australia – We’ll Help You Every Step of the Way<\/p>"
+            "description": "<ul><li>Secure work and travel opportunities across Australia.<\/li><\/ul>"
           }
         }
       },
