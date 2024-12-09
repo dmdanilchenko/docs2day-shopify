@@ -217,4 +217,14 @@ window.addEventListener('load', function () {
             showAllButton.classList.add('hide');
         });
     }
+
+    //init accordion for package-description
+    const packageDescriptionTrigger = document.querySelectorAll('.package-description ul');
+    if (packageDescriptionTrigger) {
+        packageDescriptionTrigger.forEach(function (packageDescription) {
+            packageDescription.addEventListener('click', function () {
+                packageDescription.classList.toggle('active');
+            });
+        });
+    }
 });

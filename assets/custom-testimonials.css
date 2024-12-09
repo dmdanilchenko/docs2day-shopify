@@ -30,6 +30,7 @@
 .container--testimonials .testimonial {
     padding: 0 14px 0 0;
     background: none;
+    flex-direction: row;
 }
 
 .container--testimonials .testimonial:after {
@@ -40,7 +41,7 @@
     display: flex;
     padding: 32px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
     border-radius: 24px;
@@ -147,17 +148,6 @@
         padding: 0 16px;
     }
 
-    .testimonial__text {
-        font-size: 36px;
-        line-height: 44px;
-        letter-spacing: -0.72px;
-    }
-
-    .testimonial__author {
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 28px;
-    }
 
     .testimonial__author-title {
         font-size: 20px;

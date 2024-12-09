@@ -182,6 +182,16 @@
         font-size: 24px;
         line-height: 30px;
     }
+
+    .video-with-text__buttons {
+        margin-top: 40px;
+    }
+
+    .video-with-text__buttons .button {
+        font-size: 20px;
+        line-height: 3.5;
+        padding: 0 40px;
+    }
 }
 
 @media screen and (min-width: 1000px)  and (max-width: 1200px) {

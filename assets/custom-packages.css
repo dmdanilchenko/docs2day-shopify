@@ -69,6 +69,14 @@
     margin-bottom: 20px;
 }
 
+.package-price .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+
+}
+
 /* Button styling */
 .learn-more-button {
     background-color: #fb913c; /* Orange */
@@ -122,6 +130,32 @@
 
 .package-description {
     text-align: left;
+}
+
+.package-description--dropdown ul {
+    position: relative;
+    padding-right: 20px;
+}
+
+.package-description--dropdown ul:after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.package-description--dropdown ul.active:after {
+    content: '-';
+}
+
+.package-description--dropdown ul + p {
+    display: none;
+}
+
+.package-description--dropdown ul.active + p {
+    display: block;
 }
 
 .filter-container {
