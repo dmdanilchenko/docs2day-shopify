@@ -45,19 +45,26 @@
           <div class="package-box">
             {%- endif -%}
             <div class="package-icon">
-              {% comment %}{%- if block.settings.image != blank -%}{% endcomment %}
-                {% comment %}<img src="{{ block.settings.image | img_url: '100x100' }}" alt="icon">{% endcomment %}
-              {% comment %}{%- else -%}{% endcomment %}
+              {%- if block.settings.image != blank -%}
+                <img src="{{ block.settings.image | img_url: '100x100' }}" alt="icon">
+              {%- else -%}
                 <img src="{{ block.settings.product.featured_image | product_img_url: '100x100' }}" alt="icon">
-              {% comment %}{%- endif -%}{% endcomment %}
+              {%- endif -%}
             </div>
             <div class="title-container">
-              <div class="package-title">{{ block.settings.product.title }}</div>
+              {%- if block.settings.title != blank -%}
+                <div class="package-title">{{ block.settings.title }}</div>
+              {%- else -%}
+                <div class="package-title">{{ block.settings.product.title }}</div>
+              {%- endif -%}
             </div>
             {%- assign selected_variant = block.settings.product.selected_or_first_available_variant -%}
-            <div class="package-price">
-              {%- if selected_variant.compare_at_price > selected_variant.price -%}
-                <span class="price price--highlight">
+            {% if block.settings.product == blank %}
+              <div class="package-price">{{ block.settings.price }}</div>
+            {% else %}
+              <div class="package-price">
+                {%- if selected_variant.compare_at_price > selected_variant.price -%}
+                  <span class="price price--highlight">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
                   {%- if settings.currency_code_enabled -%}
@@ -67,7 +74,7 @@
                   {%- endif -%}
                 </span>
 
-                <span class="price price--compare">
+                  <span class="price price--compare">
                   <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
                   {%- if settings.currency_code_enabled -%}
@@ -76,8 +83,8 @@
                     {{- selected_variant.compare_at_price | money -}}
                   {%- endif -%}
                 </span>
-              {%- else -%}
-                <span class="price">
+                {%- else -%}
+                  <span class="price">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
                   {%- if settings.currency_code_enabled -%}
@@ -86,11 +93,18 @@
                     {{- selected_variant.price | money -}}
                   {%- endif -%}
                 </span>
-              {%- endif -%}
-            </div>
-            <a href="{{ block.settings.product.url }}" class="learn-more-button button">
-              {{ block.settings.button_title }}
-            </a>
+                {%- endif -%}
+              </div>
+            {% endif %}
+            {%- if block.settings.url != blank -%}
+              <a href="{{ block.settings.url }}" class="learn-more-button button">
+                {{ block.settings.button_title }}
+              </a>
+            {%- else -%}
+              <a href="{{ block.settings.product.url }}" class="learn-more-button button">
+                {{ block.settings.button_title }}
+              </a>
+            {%- endif -%}
             <p class="bold-paragraph">{{ block.settings.description_title }}</p>
             <div
               class="package-description {% if block.settings.dropdown_for_description == true %}package-description--dropdown{% endif %}">{{ block.settings.description }}</div>
@@ -136,6 +150,23 @@
           "info": "Select a product to display"
         },
         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Package Name"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$300"
+        },
+        {
           "type": "header",
           "content": "Button"
         },
@@ -144,6 +175,11 @@
           "id": "button_title",
           "label": "Title",
           "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
         },
         {
           "type": "header",
