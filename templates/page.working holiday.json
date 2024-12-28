@@ -13,12 +13,14 @@
           "type": "block",
           "settings": {
             "product_type": "",
+            "product": "working-holiday-jobs-basic-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.10_AM.jpg",
             "title": "Working Holiday Starter",
             "price": "$199",
             "button_title": "Start Your Aussie Adventure",
             "url": "shopify:\/\/products\/working-holiday-jobs-basic-plan",
             "description_title": "",
+            "dropdown_for_description": false,
             "description": "<p>✅ <strong>Introduction to Working Holidays in Australia<\/strong><\/p><p>Gain expert insights into life in Australia and the steps to kickstart your journey.<\/p><p>✅ <strong>Visa Application Assistance with Our Local Partner<\/strong><\/p><p>Receive step-by-step guidance through trusted local experts to ensure your Working Holiday Visa (417\/462) application is completed correctly.<\/p><p>✅ <strong>Custom Resume & Cover Letter Templates<\/strong><\/p><p>Land casual jobs with tailored documents designed for hospitality, tourism, agriculture, and more.<\/p><p>✅ <strong>Backpacker Job Search Guide<\/strong><\/p><p>Find work in the most backpacker-friendly industries with proven strategies.<\/p><p>✅ <strong>Accommodation & Travel Tips<\/strong><\/p><p>Save time and money with insider advice on lodging, transportation, and exploring Australia.<\/p><p><br\/><\/p><p>💡 <strong>Total Value: $500+<\/strong><\/p><p>🚀 <strong>Your Investment: $199<\/strong><\/p>"
           }
         },
@@ -26,12 +28,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "working-holiday-jobs-premium-plan-copy",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.11_AM.jpg",
             "title": "Adventure Seeker",
             "price": "$800",
             "button_title": "Elevate Your Aussie Journey",
             "url": "shopify:\/\/products\/working-holiday-jobs-premium-plan-copy",
             "description_title": "",
+            "dropdown_for_description": false,
             "description": "<p><strong>Includes everything from the Working Holiday Starter Package, plus:<\/strong><\/p><p>✅ <strong>30-Minute Personalized Consultation<\/strong><\/p><p>Sit down (virtually) with our experts to create your roadmap to success. Receive a tailored report with actionable strategies.<\/p><p>✅ <strong>Custom Resume & Cover Letter for Australian Employers<\/strong><\/p><p>Show employers you’re the top candidate for their roles with documents aligned to Aussie standards.<\/p><p>✅ <strong>Interview Preparation Guide for Casual Roles<\/strong><\/p><p>Nail interviews with tips on cultural expectations and common questions.<\/p><p>✅ <strong>Job Placement Assistance<\/strong><\/p><p>We connect you with trusted employers through our exclusive network.<\/p><p>✅ <strong>30-Day Job Guarantee<\/strong><\/p><p>Don’t land a job? We’ll work with you until you do—guaranteed!<\/p><p><br\/><\/p><p>💡 <strong>Total Value: $1,200+<\/strong><\/p><p>🚀 <strong>Your Investment: $800<\/strong><\/p>"
           }
         },
@@ -39,12 +43,14 @@
           "type": "block",
           "settings": {
             "product_type": "person",
+            "product": "working-holiday-jobs-professional-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_9.14_AM.jpg",
             "title": "Ultimate Aussie Experience Package",
             "price": "$1400",
-            "button_title": "Achieve the Ultimate Aussie Dream",
+            "button_title": "Achieve Your Aussie Dream",
             "url": "shopify:\/\/products\/working-holiday-jobs-professional-plan",
             "description_title": "",
+            "dropdown_for_description": false,
             "description": "<p><strong>Includes everything from the Adventure Seeker Package, plus:<\/strong><\/p><p>✅ <strong>Airport Pickup & Welcome Orientation<\/strong><\/p><p>Start your trip stress-free with transportation and a full intro to Aussie life.<\/p><p>✅ <strong>First Week Accommodation Assistance<\/strong><\/p><p>Arrive with peace of mind knowing your lodging is pre-arranged in a top-rated hostel or hotel.<\/p><p>✅ <strong>Bank Account & Tax File Number Setup<\/strong><\/p><p>Get paid faster with a complete setup of your bank account and tax essentials.<\/p><p>✅ <strong>Local SIM Card with Prepaid Credit<\/strong><\/p><p>Stay connected from day one with an Australian SIM card loaded with credit.<\/p><p>✅ <strong>Exclusive Social Events & Networking Opportunities<\/strong><\/p><p>Make friends and build connections at events designed for travelers and locals.<\/p><p>✅ <strong>Travel Planning Assistance & Discounts<\/strong><\/p><p>Explore Australia with personalized trip planning and exclusive discounts.<\/p><p>✅ <strong>90-Day Job Guarantee<\/strong><\/p><p>We’ll support you until you secure a role—no deadlines, no excuses.<\/p><p>✅ <strong>Priority Support & Unlimited Consultation<\/strong><\/p><p>Enjoy unlimited access to our experts for questions or personalized help throughout your journey.<\/p><p><br\/><\/p><p>💡 <strong>Total Value: $2,500+<\/strong><\/p><p>🚀 <strong>Your Investment: $1,400<\/strong><\/p>"
           }
         }

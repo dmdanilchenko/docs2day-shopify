@@ -35,7 +35,7 @@
         "button_dbGXDA": {
           "type": "button",
           "settings": {
-            "button_label": "Start Earning $100k+ – Fast-Track Your Career Now!",
+            "button_label": "Click Here to Start Earning $100k+",
             "button_link": "shopify:\/\/pages\/services",
             "button_style_secondary": false
           }
@@ -57,7 +57,7 @@
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "content_layout": "overlap",
-        "padding_top": 0,
+        "padding_top": 52,
         "padding_bottom": 0,
         "classes": ""
       }
@@ -99,7 +99,7 @@
         "testimonial_qfDPPY"
       ],
       "settings": {
-        "title": "Proven Success, Backed By 5-Star Reviews",
+        "title": "Proven Success Backed by Client Testimonials",
         "bg_color": "#444ce7"
       }
     },

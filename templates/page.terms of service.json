@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "custom-css-class": "default-page"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -13,12 +13,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "mining-jobs-basic-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_7.25_AM_6e4d9db2-e1d6-4b01-a7bf-ae0715b93cc6.jpg",
             "title": "Entry-Level Package",
             "price": "$199",
             "button_title": "Secure Your First Mining Role",
             "url": "shopify:\/\/products\/mining-jobs-basic-plan",
             "description_title": "Earn $80k–$120k",
+            "dropdown_for_description": false,
             "description": "<p>✅ <strong>Introduction to Mining Masterclass<\/strong> – Save weeks of research with this insider’s guide.<\/p><p>✅ <strong>Mining Career Roadmap<\/strong> – Discover how to climb the ranks in mining.<\/p><p>✅ <strong>Entry-Level Resume & Cover Letter<\/strong> – Tailored to land your first mining job.<\/p><p>✅ <strong>First Day on Site Course<\/strong> – Prepare confidently for your first day at work.<\/p><p>🎁 <strong>BONUS: FREE White Card CPCWHS1001<\/strong> – Valid in all Australian states (Valued at $125+).<\/p><p>💵 <strong>Earning Potential:<\/strong> <em>Start earning <\/em><em><strong>$80k–$120k\/year!<\/strong><\/em><\/p><p><\/p><p>💡 <strong>Total Value: $500+<\/strong><\/p><p>🚀 <strong>Your Investment: $199<\/strong><\/p>"
           }
         },
@@ -26,12 +28,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "mining-jobs-professional-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_7.42_AM.jpg",
             "title": "Career Growth Package",
             "price": "$800",
             "button_title": "Advance Your Mining Career",
             "url": "shopify:\/\/products\/mining-jobs-professional-plan",
             "description_title": "Earn $120k–$180k",
+            "dropdown_for_description": false,
             "description": "<p>Includes everything in the Entry-Level Package, plus:<\/p><p>✅ <strong>Personalized Career Coaching<\/strong> – 20-minute session to map your goals and strategy.<\/p><p>✅ <strong>3x Custom Job-Specific Resumes & Cover Letters<\/strong> – Showcasing technical and leadership skills.<\/p><p>✅ <strong>Interview Prep Guide<\/strong> – Boost confidence and master tricky questions.<\/p><p>✅ <strong>30-Day Interview Guarantee<\/strong> – Land interviews or get continued support until you do.<br\/><\/p><p>💵 <strong>Earning Potential:<\/strong> <em>Position yourself for $120k–$180k\/year!<\/em><\/p><p><\/p><p>💡 <em>The ultimate mid-career accelerator—step into roles with more responsibility and higher pay.<\/em><\/p>"
           }
         },
@@ -39,12 +43,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "mining-jobs-premium-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.06_AM.jpg",
             "title": "Management Package",
             "price": "$1400",
             "button_title": "Step Into Mining Leadership",
             "url": "shopify:\/\/products\/mining-jobs-premium-plan",
             "description_title": "Earn $180k–$320k",
+            "dropdown_for_description": false,
             "description": "<p>Includes everything in the Career Growth Package, plus:<br\/><\/p><p>✅ <strong>Exclusive Executive Career Coaching<\/strong> – 60-minute personalized session to identify leadership opportunities, set goals, and navigate the challenges of managing large teams.<\/p><p>✅ <strong>Custom Management-Level Resume & LinkedIn Profile Optimization<\/strong> – Highlight your leadership, technical expertise, and vision for executive recruiters.<\/p><p>✅ <strong>Advanced Interview Prep Guide<\/strong> – Tackle high-level questions, present your leadership style, and ace hiring panels for management roles.<\/p><p>✅ <strong>Professional Networking Mastery Guide<\/strong> – Build meaningful connections with industry executives, decision-makers, and influencers.<\/p><p>✅ <strong>90-Day Interview Guarantee<\/strong> – If you don’t land interviews for senior roles within 90 days, we’ll continue to work with you until you succeed.<\/p><p>✅ <strong>Priority Support & Unlimited Revisions<\/strong> – Get expedited help and unlimited updates to your documents to stay ahead.<\/p><p><\/p><p>💵 <strong>Earning Potential:<\/strong> <em>Command $180k–$320k\/year in leadership roles!<\/em><\/p><p><\/p><p>💡 <em>Take control of your career—position yourself as a trusted leader, land high-paying roles, and secure your place at the top of the mining industry.<\/em><\/p>"
           }
         }

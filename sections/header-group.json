@@ -5,15 +5,15 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "background": "#ffffff",
-        "text_color": "#00badb",
-        "text": "",
+        "background": "#2d3282",
+        "text_color": "#fb913c",
+        "text": "Subscribe and save $5 on your first purchase!",
         "text_position": "center",
         "link": "",
         "show_newsletter": true,
-        "newsletter_button": "Subscribe & Save",
+        "newsletter_button": "Subscribe",
         "newsletter_title": "Newsletter",
-        "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "newsletter_content": ""
       }
     },
     "header": {

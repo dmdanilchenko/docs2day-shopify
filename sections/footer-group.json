@@ -2,40 +2,70 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "rich_text_cidVhW": {
+      "type": "rich-text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "",
+        "content": "<h4><strong>MAILING ADDRESS<\/strong><\/h4>",
+        "button_text": "",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "text_with_icons_kLCnyK": {
+      "type": "text-with-icons",
       "blocks": {
-        "newsletter_9APfUq": {
-          "type": "newsletter",
+        "item_z3adQp": {
+          "type": "item",
           "settings": {
-            "title": "Subscribe to our Newsletter",
-            "subheading": ""
+            "icon": "bi-email",
+            "title": "AUSTRALIA",
+            "content": "<h5><strong>50 St Georges Terrace<br\/>Perth, WA 6000<\/strong><\/h5>"
           }
         },
-        "links_BarQan": {
-          "type": "links",
+        "item_nUJRwM": {
+          "type": "item",
           "settings": {
-            "menu": "footer"
+            "icon": "bi-email",
+            "title": "UNITED STATES",
+            "content": "<h5>2449 SW Falcon Circle<br\/>Port St Lucie, FL 34953<\/h5>"
+          }
+        },
+        "item_mXDD4b": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-phone",
+            "title": "CUSTOMER SUPPORT LINE",
+            "content": "<h5>(08) 7082 0659<\/h5>"
           }
         }
       },
       "block_order": [
-        "newsletter_9APfUq",
-        "links_BarQan"
+        "item_z3adQp",
+        "item_nUJRwM",
+        "item_mXDD4b"
       ],
+      "settings": {
+        "stack_mobile": true
+      }
+    },
+    "footer": {
+      "type": "footer",
       "settings": {
         "logo": "shopify:\/\/shop_images\/Docs2Day_logo.svg",
         "logo_max_width": 80,
         "mobile_logo_max_width": 80,
         "show_social_media": true,
         "enable_follow_on_shop": false,
-        "show_payment_icons": false,
+        "show_payment_icons": true,
         "show_locale_selector": false,
         "show_country_selector": false
       }
     }
   },
   "order": [
+    "rich_text_cidVhW",
+    "text_with_icons_kLCnyK",
     "footer"
   ]
 }

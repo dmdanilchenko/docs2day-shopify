@@ -13,12 +13,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-basic-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.23_AM.jpg",
             "title": "Entry-Level Package",
             "price": "$199",
             "button_title": "Secure Your First APS Role",
             "url": "shopify:\/\/products\/government-jobs-basic-plan",
             "description_title": "$50 - $80k",
+            "dropdown_for_description": false,
             "description": "<p><em>Everything you need to kickstart your APS journey, including:<\/em><br\/><\/p><p>✅ <strong>Introduction APS Masterclass<\/strong> – Gain an insider’s perspective on the APS, including its structure, benefits, and opportunities.<\/p><p>✅ <strong>Eligibility and Qualifications Guide<\/strong> – Learn the citizenship, security, and skill requirements to get started.<\/p><p>✅ <strong>APS 1-4 Cover Letter & Resume<\/strong> – Professionally tailored documents to help you land your first public service role.<\/p><p>✅ <strong>APS Application Process Guide<\/strong> – Navigate the application process with ease using step-by-step instructions.<\/p><p>✅ <strong>First Day in the APS Guide<\/strong> – Prepare for success with insights into workplace culture and expectations.<\/p><p><br\/><\/p><p>🎁 <strong>BONUS: APS Values & Code of Conduct Module<\/strong> – Familiarize yourself with ethical standards for a head start.<\/p><p><br\/><\/p><p>💡 <em>Earning Potential: Unlock $50k–$80k\/year with your first APS job!<\/em><\/p>"
           }
         },
@@ -26,12 +28,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-premium-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.27_AM.jpg",
             "title": "Career Growth Package",
             "price": "$800",
             "button_title": "Advance Your APS Career",
             "url": "shopify:\/\/products\/government-jobs-premium-plan",
             "description_title": "$80 - $100k",
+            "dropdown_for_description": false,
             "description": "<p><em>Everything in the Entry-Level APS Package, plus advanced tools to climb the ranks, including:<\/em><br\/><\/p><p>✅ <strong>20-Minute Career Coaching Session<\/strong> – Get one-on-one guidance to map your goals and receive actionable advice.<\/p><p>✅ <strong>Custom Selection Criteria Responses<\/strong> – Expert-crafted responses to tackle the most critical APS selection questions.<\/p><p>✅ <strong>APS 5-6 Cover Letter & Resume<\/strong> – Tailored application documents emphasizing your leadership and technical expertise.<\/p><p>✅ <strong>Interview Preparation Guide for APS Roles<\/strong> – Sharpen your skills for behavioral and technical interviews.<\/p><p>✅ <strong>30-Day Interview Guarantee<\/strong> – Land an interview or receive ongoing support until you succeed.<\/p><p><br\/><\/p><p>💡 <em>Earning Potential: Position yourself for $80k–$100k\/year in mid-level APS roles!<\/em><\/p>"
           }
         },
@@ -39,12 +43,14 @@
           "type": "block",
           "settings": {
             "product_type": "Packages",
+            "product": "government-jobs-professional-plan",
             "image": "shopify:\/\/shop_images\/Image_27-11-2024_at_8.42_AM.jpg",
             "title": "Leadership Package",
             "price": "$1400",
             "button_title": "Step Into APS Leadership",
             "url": "shopify:\/\/products\/government-jobs-professional-plan",
             "description_title": "$100 - $150k+",
+            "dropdown_for_description": false,
             "description": "<p><em>Everything in the Career Growth APS Package, plus premium resources to lead the APS sector, including:<\/em><br\/><\/p><p>✅ <strong>60-Minute Executive Career Coaching Session<\/strong> – Deep-dive session to develop leadership skills and create a custom action plan.<\/p><p>✅ <strong>Custom Executive-Level Cover Letter & Resume<\/strong> – Highlight your vision and strategic contributions.<\/p><p>✅ <strong>LinkedIn Profile Optimization for Executives<\/strong> – Build a compelling profile to attract APS recruiters.<\/p><p>✅ <strong>Advanced Interview Preparation Guide<\/strong> – Ace complex policy and leadership interview questions with confidence.<\/p><p>✅ <strong>Professional Networking Strategies for Government<\/strong> – Build meaningful connections with senior officials and stakeholders.<\/p><p>✅ <strong>EL\/SES Cover Letter & Resume<\/strong> – Documents tailored for Executive Level and Senior Executive Service roles.<\/p><p>✅ <strong>90-Day Interview Guarantee<\/strong> – If you don’t land interviews for senior roles, we’ll continue working with you until you succeed.<\/p><p>✅ <strong>Priority Support & Unlimited Revisions<\/strong> – Enjoy expedited service and unlimited updates to your documents.<\/p><p><br\/><\/p><p>💡 <em>Earning Potential: Command $100k–$250k+ in APS leadership roles!<\/em><\/p>"
           }
         }
