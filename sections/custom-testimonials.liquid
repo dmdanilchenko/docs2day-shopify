@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="{{ 'custom-testimonials.css' | asset_url }}">
-<section class="section" data-section-id="{{ section.id }}" data-section-type="testimonials">
+{%- capture section_settings -%}
+  {
+  "autoPlay": {{ section.settings.autoplay | json }},
+  "cycleSpeed": {{ section.settings.cycle_speed | times: 1000 | json }}
+  }
+{%- endcapture -%}
+<section class="section" data-section-id="{{ section.id }}" data-section-type="testimonials" data-section-settings="{{ section_settings | escape_once }}">
   <div class="container container--testimonials">
     <div class="section-header text-center">
       <h2>{{ section.settings.title }}</h2>
@@ -48,6 +54,22 @@
       "id": "bg_color",
       "label": "Background Color",
       "default": "#444CE7"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto rotate between slides",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cycle_speed",
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "unit": "sec",
+      "label": "Change slides every",
+      "default": 5
     }
   ],
   "blocks": [

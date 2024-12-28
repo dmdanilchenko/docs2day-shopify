@@ -270,9 +270,9 @@
           {%- if shop.customer_accounts_enabled -%}
             <div class="header__action-item header__action-item--account">
               {%- if customer -%}
-                <span class="header__action-item-title hidden-pocket hidden-lap hidden-desk">{{ 'header.general.welcome' | t: first_name: customer.first_name | truncate: 20 }}</span>
+                <span class="header__action-item-title">{{ 'header.general.welcome' | t: first_name: customer.first_name | truncate: 20 }}</span>
               {%- else -%}
-                <span class="header__action-item-title hidden-pocket hidden-lap hidden-desk">{{ 'header.general.login' | t }}</span>
+                <span class="header__action-item-title">{{ 'header.general.login' | t }}</span>
               {%- endif -%}
 
               <div class="header__action-item-content">

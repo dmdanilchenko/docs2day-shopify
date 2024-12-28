@@ -9601,6 +9601,7 @@ var import_flickity200 = __toESM(require_js());
 var TestimonialsSection = class {
   constructor(element) {
     this.element = element;
+    this.options = JSON.parse(this.element.getAttribute("data-section-settings"));
     this.delegateElement = new main_default(this.element);
     this.flickityInstance = new import_flickity200.default(this.element.querySelector(".testimonials"), {
       watchCSS: true,
@@ -9610,7 +9611,8 @@ var TestimonialsSection = class {
       resize: false,
       groupCells: true,
       cellAlign: "left",
-      draggable: !window.matchMedia("(-moz-touch-enabled: 0), (hover: hover)").matches
+      draggable: !window.matchMedia("(-moz-touch-enabled: 0), (hover: hover)").matches,
+      autoPlay: this.options["autoPlay"] ? this.options["cycleSpeed"] : false
     });
     let lastWidth = window.innerWidth;
     window.addEventListener("resize", () => {

@@ -335,7 +335,8 @@
       "password": "Password",
       "submit": "Create my account",
       "already_have_account": "Already have an account?",
-      "login": "Login here"
+      "login": "Login here",
+      "phone": "Phone"
     }
   },
   "cart": {

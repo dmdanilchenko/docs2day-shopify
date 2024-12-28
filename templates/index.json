@@ -91,16 +91,28 @@
             "author": "Amanda W.",
             "author_title": "Nice Work with LinkedIn"
           }
+        },
+        "testimonial_VwEb3R": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+            "author": "Renee Wells",
+            "author_title": "Product Designer, Quotient"
+          }
         }
       },
       "block_order": [
         "testimonial_FaUEy4",
         "testimonial_B9jjKY",
-        "testimonial_qfDPPY"
+        "testimonial_qfDPPY",
+        "testimonial_VwEb3R"
       ],
       "settings": {
         "title": "Proven Success Backed by Client Testimonials",
-        "bg_color": "#444ce7"
+        "bg_color": "#444ce7",
+        "autoplay": true,
+        "cycle_speed": 5
       }
     },
     "slideshow_mLzEcN": {

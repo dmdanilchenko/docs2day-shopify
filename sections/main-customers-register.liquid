@@ -48,6 +48,11 @@
       </div>
 
       <div class="form__input-wrapper form__input-wrapper--labelled">
+        <input type="tel" id="customer[phone]" class="form__field form__field--text" name="customer[phone]" autocomplete="tel" {% if form.errors contains 'phone' %}aria-invalid="true" aria-describedby="register-form-error"{% endif %}>
+        <label for="customer[phone]" class="form__floating-label">{{ 'customer.register.phone' | t }}</label>
+      </div>
+
+      <div class="form__input-wrapper form__input-wrapper--labelled">
         <input type="password" id="customer[password]" class="form__field form__field--text" name="customer[password]" required="required" autocomplete="new-password" {% if form.errors contains 'password' %}aria-invalid="true" aria-describedby="register-form-error"{% endif %}>
         <label for="customer[password]" class="form__floating-label">{{ 'customer.register.password' | t }}</label>
       </div>
