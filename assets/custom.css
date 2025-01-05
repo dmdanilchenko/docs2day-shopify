@@ -426,6 +426,14 @@ input::file-selector-button:hover {
     color: var(--accent-color);
 }
 
+.shopify-section--announcement-bar {
+    display: none;
+}
+
+.shopify-section--announcement-bar.show {
+    display: block;
+}
+
 @media screen and (max-width: 1279px) {
     #my-account-linklist {
         right: -10px;

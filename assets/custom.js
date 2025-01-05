@@ -227,4 +227,20 @@ window.addEventListener('load', function () {
             });
         });
     }
+
+
+
+    // set session storage if someone submited form.newsletter__form
+    const newsletterForm = document.querySelector('form.newsletter__form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function () {
+            sessionStorage.setItem('is-subscribed-newsletter', 'true');
+        });
+    }
+
+    // show announcement-bar if session storage is empty
+    const announcementBar = document.querySelector('.shopify-section--announcement-bar');
+    if (announcementBar && !sessionStorage.getItem('is-subscribed-newsletter')) {
+        announcementBar.classList.add('show');
+    }
 });
